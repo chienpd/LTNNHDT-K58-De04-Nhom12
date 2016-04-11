@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="chienphamk58.ailatrieuphu.Main3Activity"
+    android:background="@mipmap/bg_altp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:background="@mipmap/tut_title"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@mipmap/tut_panel"
+        android:fillViewport="false">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="        Người chơi sẽ vượt qua 15 câu hỏi của chương trình và có 3 mốc rất quan trọng là 5, 10 và 15. Có 4 sự trợ giúp cho bạn trong quá trình chơi:"
+                android:id="@+id/textView2"
+                android:typeface="serif"
+                android:textSize="20dp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView"
+                    android:background="@mipmap/fifty" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bỏ đi hai phương án sai"
+                    android:id="@+id/textView4"
+                    android:typeface="serif"
+                    android:textSize="20dp"
+                    android:layout_gravity="center_vertical" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView2"
+                    android:background="@mipmap/khangia" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sự trợ giúp của khán giả"
+                    android:id="@+id/textView5"
+                    android:typeface="serif"
+                    android:textSize="20dp"
+                    android:layout_gravity="center_vertical" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView3"
+                    android:background="@mipmap/goidien" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nhờ sự trợ giúp của chuyên gia"
+                    android:id="@+id/textView6"
+                    android:typeface="serif"
+                    android:textSize="20dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView4"
+                    android:background="@mipmap/switch2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Đổi câu hỏi"
+                    android:id="@+id/textView7"
+                    android:typeface="serif"
+                    android:textSize="20dp"
+                    android:layout_gravity="center_vertical" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="      Bạn có thời gian là 60s để trả lời câu hỏi. Trong khi sử dụng trợ giúp, thời gian vẫn được tính."
+                android:id="@+id/textView8"
+                android:typeface="serif"
+                android:textSize="20dp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sử dụng nút"
+                    android:id="@+id/textView9"
+                    android:typeface="serif"
+                    android:textSize="20dp"
+                    android:layout_gravity="center_vertical" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView5"
+                    android:background="@mipmap/pause" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="để dừng cuộc chơi"
+                    android:id="@+id/textView10"
+                    android:typeface="serif"
+                    android:textSize="20dp"
+                    android:layout_gravity="center_vertical" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="      Trả lời đúng mỗi câu hỏi bạn sẽ nhận được mức thưởng tương ứng. Trả lời sai hoặc hết thời gian, bạn sẽ nhận được phần thưởng của mốc quan trọng trước đó. Nếu chọn dừng cuộc chơi, bạn sẽ được giữ nguyên mức thưởng hiện tại:"
+                android:id="@+id/textView11"
+                android:typeface="serif"
+                android:textSize="20dp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView6"
+                    android:background="@mipmap/cau1"
+                    android:layout_gravity="center_vertical" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="- Câu hỏi hiện tại \n-Mức thưởng mà bạn sẽ nhận được nếu trả lời đúng"
+                    android:id="@+id/textView12"
+                    android:textSize="20dp"
+                    android:typeface="serif"
+                    android:layout_gravity="center_horizontal" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

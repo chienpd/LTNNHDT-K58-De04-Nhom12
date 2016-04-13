@@ -37,7 +37,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="        Người chơi sẽ vượt qua 15 câu hỏi của chương trình và có 3 mốc rất quan trọng là 5, 10 và 15. Có 4 sự trợ giúp cho bạn trong quá trình chơi:"
+                android:text="@string/luat1"
                 android:id="@+id/textView2"
                 android:typeface="serif"
                 android:textSize="20dp" />
@@ -128,7 +128,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="      Bạn có thời gian là 60s để trả lời câu hỏi. Trong khi sử dụng trợ giúp, thời gian vẫn được tính."
+                android:text="@string/luat2"
                 android:id="@+id/textView8"
                 android:typeface="serif"
                 android:textSize="20dp" />
@@ -166,7 +166,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="      Trả lời đúng mỗi câu hỏi bạn sẽ nhận được mức thưởng tương ứng. Trả lời sai hoặc hết thời gian, bạn sẽ nhận được phần thưởng của mốc quan trọng trước đó. Nếu chọn dừng cuộc chơi, bạn sẽ được giữ nguyên mức thưởng hiện tại:"
+                android:text="@string/luat3"
                 android:id="@+id/textView11"
                 android:typeface="serif"
                 android:textSize="20dp" />
@@ -186,7 +186,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="- Câu hỏi hiện tại \n-Mức thưởng mà bạn sẽ nhận được nếu trả lời đúng"
+                    android:text="@string/luat4"
                     android:id="@+id/textView12"
                     android:textSize="20dp"
                     android:typeface="serif"

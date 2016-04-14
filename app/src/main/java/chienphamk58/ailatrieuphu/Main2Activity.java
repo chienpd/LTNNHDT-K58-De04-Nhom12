@@ -21,7 +21,7 @@ public class Main2Activity extends AppCompatActivity {
         intent = new Intent(Main2Activity.this, PlaySongServiceLevel1.class);
         startService(intent);
         final TextView myCounter = (TextView)findViewById(R.id.textView19);
-        countDownTimer = new CountDownTimer(600000,1000){
+        countDownTimer = new CountDownTimer(601000,1000){
 
             @Override
             public void onTick(long millisUntilFinished) {
@@ -30,24 +30,33 @@ public class Main2Activity extends AppCompatActivity {
 
             @Override
             public void onFinish() {
-                myCounter.setText("TimeUp!");
+
             }
         }.start();
 
     }
 
     @Override
-    protected void onStop(){
+    public void onStop(){
         super.onStop();
         stopService(intent);
-        countDownTimer.onFinish();
     }
 
+    @Override
+    public void onPause(){
+        super.onPause();
+        stopService(intent);
+    }
 
     @Override
-    protected void onDestroy(){
+    public void onDestroy(){
         super.onDestroy();
         stopService(intent);
-        countDownTimer.onFinish();
+    }
+
+    @Override
+    public void onResume(){
+        super.onResume();
+        startService(intent);
     }
 }

@@ -27,12 +27,15 @@ public class PlaySongServiceLevel1 extends Service {
         // Tạo đối tượng MediaPlayer, chơi file nhạc của bạn.
         mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.moc1);
         mediaPlayer.setLooping(true);
+        if(mediaPlayer.isPlaying())
+            mediaPlayer.stop();
     }
 
     @Override
     public int onStartCommand(Intent intent, int flags, int startId){
         // Chơi nhạc.
-        mediaPlayer.start();
+        if(!mediaPlayer.isPlaying())
+            mediaPlayer.start();
 
         return START_STICKY;
     }
@@ -42,6 +45,7 @@ public class PlaySongServiceLevel1 extends Service {
     public void onDestroy() {
         // Giải phóng nguồn dữ nguồn phát nhạc.
         super.onDestroy();
-        mediaPlayer.release();
+        if(mediaPlayer.isPlaying())
+            mediaPlayer.pause();
     }
 }

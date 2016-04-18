@@ -1,11 +1,16 @@
 package chienphamk58.ailatrieuphu;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 import android.view.WindowManager;
+import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 import java.util.concurrent.TimeUnit;
@@ -36,6 +41,38 @@ public class Main2Activity extends AppCompatActivity {
 
     }
 
+    public void Exit(View view){
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setMessage("Are you sure you want to exit and save your money?").setCancelable(false).setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int id) {
+                Main2Activity.this.finish();
+            }
+        }).setNegativeButton("No", new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int id) {
+                dialog.cancel();
+            }
+        });
+        AlertDialog alert = builder.create();
+        alert.show();
+    }
+
+    public void fifty(View view){
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        final ImageButton button = (ImageButton)findViewById(R.id.imageButton2);
+        builder.setMessage("Are you sure you want to use 50:50?").setCancelable(false).setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int id) {
+
+
+            }
+        }).setNegativeButton("No", new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int id) {
+                dialog.cancel();
+
+            }
+        });
+        AlertDialog alert = builder.create();
+        alert.show();
+    }
     @Override
     public void onStop(){
         super.onStop();

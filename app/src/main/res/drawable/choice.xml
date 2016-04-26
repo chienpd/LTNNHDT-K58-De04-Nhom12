@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:state_pressed="true" android:drawable="@drawable/case_wrong"/>
-    <item android:state_focused="true" android:drawable="@drawable/case_correct"/>
-    <item android:drawable="@drawable/case2"/>
+    <item android:state_pressed="true" android:state_activated="true" android:drawable="@drawable/case3" />
+    <item android:state_focused="true" android:drawable="@drawable/case_correct" />
+    <item android:state_enabled="true" android:drawable="@drawable/case2" />
 </selector>

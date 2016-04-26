@@ -9,6 +9,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
 
+import java.util.List;
+
+import chienphamk58.ailatrieuphu.Database.DatabaseAccess;
+
 public class MainActivity extends Activity {
 
     Intent intent;
@@ -19,6 +23,10 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
         intent = new Intent(MainActivity.this, PlaySongService.class);
         startService(intent);
+        DatabaseAccess databaseAccess = DatabaseAccess.getInstance(this);
+        databaseAccess.open();
+        List<String> qst = databaseAccess.getQuestion();
+        databaseAccess.close();
 
     }
     public void Play(View view){

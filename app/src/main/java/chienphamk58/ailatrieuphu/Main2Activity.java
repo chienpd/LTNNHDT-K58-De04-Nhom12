@@ -25,7 +25,7 @@ public class Main2Activity extends AppCompatActivity {
         setContentView(R.layout.activity_main2);
         intent = new Intent(Main2Activity.this, PlaySongServiceLevel1.class);
         startService(intent);
-        final TextView myCounter = (TextView)findViewById(R.id.textView19);
+        final TextView myCounter = (TextView)findViewById(R.id.textView14);
         countDownTimer = new CountDownTimer(601000,1000){
 
             @Override
@@ -39,6 +39,24 @@ public class Main2Activity extends AppCompatActivity {
             }
         }.start();
 
+    }
+
+    public void khangia(View view){
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        //final ImageButton button = (ImageButton)findViewById(R.id.imageButton2);
+        builder.setMessage("Are you sure you want to use hoi y kien khan gia?").setCancelable(false).setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int id) {
+
+
+            }
+        }).setNegativeButton("No", new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int id) {
+                dialog.cancel();
+
+            }
+        });
+        AlertDialog alert = builder.create();
+        alert.show();
     }
 
     public void Exit(View view){
@@ -58,7 +76,7 @@ public class Main2Activity extends AppCompatActivity {
 
     public void fifty(View view){
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        final ImageButton button = (ImageButton)findViewById(R.id.imageButton2);
+        //final ImageButton button = (ImageButton)findViewById(R.id.imageButton2);
         builder.setMessage("Are you sure you want to use 50:50?").setCancelable(false).setPositiveButton("Yes", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int id) {
 
@@ -73,6 +91,27 @@ public class Main2Activity extends AppCompatActivity {
         AlertDialog alert = builder.create();
         alert.show();
     }
+
+    @Override
+    public void onBackPressed() {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setMessage("Are you sure you want to exit and save your money?").setCancelable(false).setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int id) {
+                Main2Activity.this.finish();
+            }
+        }).setNegativeButton("No", new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int id) {
+                dialog.cancel();
+            }
+        });
+        AlertDialog alert = builder.create();
+        alert.show();
+    }
+    /*
+    public void click(View view){
+        Button btn = (Button)findViewById(R.id.button5);
+        btn.setBackgroundDrawable(getResources().getDrawable(R.drawable.case_correct));
+    }*/
     @Override
     public void onStop(){
         super.onStop();

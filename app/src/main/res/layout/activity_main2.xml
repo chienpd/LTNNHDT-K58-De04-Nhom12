@@ -1,176 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent" android:layout_height="match_parent"
     android:background="@mipmap/bg_altp">
 
-    <TextView
-        android:layout_width="180dp"
-        android:layout_height="180dp"
-        android:id="@+id/textView13"
-        android:background="@mipmap/mlogo"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <ImageButton
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:id="@+id/imageButton"
-        android:background="@mipmap/pause"
-        android:layout_below="@+id/textView13"
-        android:layout_toLeftOf="@+id/imageButton2"
-        android:layout_toStartOf="@+id/imageButton2"
-        android:onClick="Exit"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="$"
+            android:id="@+id/textView"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
 
-    <ImageButton
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:id="@+id/imageButton2"
-        android:background="@drawable/fifty_press"
-        android:layout_below="@+id/textView13"
-        android:layout_toLeftOf="@+id/imageButton3"
-        android:layout_toStartOf="@+id/imageButton3"
-        android:onClick="fifty"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="1000"
+            android:id="@+id/textView13"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/textView"
+            android:layout_toEndOf="@+id/textView" />
 
-    <ImageButton
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:id="@+id/imageButton3"
-        android:background="@mipmap/goidien"
-        android:layout_below="@+id/textView13"
-        android:layout_centerHorizontal="true" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="09:59"
+            android:id="@+id/textView14"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
 
-    <ImageButton
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:id="@+id/imageButton4"
-        android:background="@mipmap/khangia"
-        android:layout_below="@+id/textView13"
-        android:layout_toRightOf="@+id/imageButton3"
-        android:layout_toEndOf="@+id/imageButton3" />
-
-    <ImageButton
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:id="@+id/imageButton5"
-        android:background="@mipmap/switch2"
-        android:layout_below="@+id/textView13"
-        android:layout_toRightOf="@+id/imageButton4"
-        android:layout_toEndOf="@+id/imageButton4" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="@string/question_number"
-        android:id="@+id/textView14"
-        android:typeface="serif"
-        android:textStyle="bold"
-        android:layout_alignTop="@+id/textView15"
-        android:layout_toRightOf="@+id/imageButton"
-        android:layout_toEndOf="@+id/imageButton" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:id="@+id/textView15"
-        android:typeface="serif"
-        android:textStyle="bold"
-        android:layout_below="@+id/imageButton4"
-        android:layout_toRightOf="@+id/textView14"
-        android:layout_toEndOf="@+id/textView14" />
-
-    <Button
-        android:layout_width="250dp"
-        android:layout_height="40dp"
-        android:id="@+id/button5"
-        android:background="@drawable/choice"
-        android:layout_gravity="center"
-        android:layout_below="@+id/textView16"
-        android:layout_centerHorizontal="true"
-        android:typeface="serif"
-        android:textStyle="normal" />
-
-    <Button
-        android:layout_width="250dp"
-        android:layout_height="40dp"
-        android:id="@+id/button6"
-        android:layout_below="@+id/button5"
-        android:layout_alignLeft="@+id/button5"
-        android:layout_alignStart="@+id/button5"
-        android:background="@drawable/choice"
-        android:layout_gravity="center" />
-
-    <Button
-        android:layout_width="250dp"
-        android:layout_height="40dp"
-        android:id="@+id/button7"
-        android:background="@drawable/choice"
-        android:layout_below="@+id/button6"
-        android:layout_alignLeft="@+id/button8"
-        android:layout_alignStart="@+id/button8"
-        android:layout_gravity="center" />
-
-    <Button
-        android:layout_width="250dp"
-        android:layout_height="40dp"
-        android:id="@+id/button8"
-        android:layout_below="@+id/button7"
-        android:layout_alignLeft="@+id/button6"
-        android:layout_alignStart="@+id/button6"
-        android:background="@drawable/choice"
-        android:layout_alignParentBottom="false"
-        android:layout_alignWithParentIfMissing="false"
-        android:layout_gravity="center" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="80dp"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Trọng Thủy làm cho Mỵ Châu chiếc áo làm bằng lông gì ?"
-        android:id="@+id/textView16"
-        android:layout_below="@+id/textView14"
-        android:layout_centerHorizontal="true"
-        android:typeface="serif"
-        android:textSize="20dp"
-        android:layout_gravity="center"
-        android:autoText="false"
-        android:editable="false"
-        android:gravity="center_horizontal" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="$"
-        android:id="@+id/textView17"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:textColor="#feed00" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="1000"
-        android:id="@+id/textView18"
-        android:typeface="serif"
-        android:textSize="20dp"
-        android:textColor="#feed00"
-        android:layout_alignBottom="@+id/textView17"
-        android:layout_toRightOf="@+id/textView17"
-        android:layout_toEndOf="@+id/textView17" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:id="@+id/textView19"
-        android:layout_alignParentTop="true"
-        android:layout_toRightOf="@+id/textView13"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:typeface="serif"
-        android:textColor="#ffdd00" />
-</RelativeLayout>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView9"
+            android:layout_below="@+id/textView13"
+            android:layout_centerHorizontal="true"
+            android:background="@mipmap/mlogo_2" />
+    </RelativeLayout>
+</LinearLayout>

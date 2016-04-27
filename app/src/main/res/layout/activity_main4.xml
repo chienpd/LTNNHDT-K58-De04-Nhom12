@@ -98,7 +98,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Cau hoi so "
+                android:text="Câu hỏi số "
                 android:id="@+id/textView23" />
 
             <TextView
@@ -114,7 +114,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="apjfonsdifbs fisuhd fiuhcw aiu ciua fioua iufc iauzs icua sziuhchiuhciu i c iuh iau"
             android:id="@+id/textView25"
             android:layout_gravity="center_horizontal" />
 
@@ -128,34 +127,38 @@
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="New Button"
                 android:id="@+id/button9"
                 android:layout_gravity="center_horizontal"
-                android:background="@mipmap/case2" />
+                android:background="@mipmap/case2"
+                android:textAllCaps="false"
+                android:textSize="18dp" />
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="New Button"
                 android:id="@+id/button14"
                 android:layout_gravity="center_horizontal"
-                android:background="@mipmap/case2" />
+                android:background="@mipmap/case2"
+                android:textAllCaps="false"
+                android:textSize="18dp" />
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="New Button"
                 android:id="@+id/button15"
                 android:layout_gravity="center_horizontal"
-                android:background="@mipmap/case2" />
+                android:background="@mipmap/case2"
+                android:textAllCaps="false"
+                android:textSize="18dp" />
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="New Button"
                 android:id="@+id/button16"
                 android:layout_gravity="center_horizontal"
-                android:background="@mipmap/case2" />
+                android:background="@mipmap/case2"
+                android:textAllCaps="false"
+                android:textSize="18dp" />
 
         </LinearLayout>
 

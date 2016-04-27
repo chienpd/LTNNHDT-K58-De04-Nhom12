@@ -8,6 +8,7 @@ import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
+import android.widget.TextView;
 
 import java.util.List;
 
@@ -23,11 +24,6 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
         intent = new Intent(MainActivity.this, PlaySongService.class);
         startService(intent);
-        DatabaseAccess databaseAccess = DatabaseAccess.getInstance(this);
-        databaseAccess.open();
-        List<String> qst = databaseAccess.getQuestion();
-        databaseAccess.close();
-
     }
     public void Play(View view){
         AlertDialog.Builder arlertDialogBuiler = new AlertDialog.Builder(this);

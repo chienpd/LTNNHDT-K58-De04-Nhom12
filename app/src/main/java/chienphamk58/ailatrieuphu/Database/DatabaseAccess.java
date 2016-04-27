@@ -35,12 +35,12 @@ public class DatabaseAccess {
             this.database.close();
     }
 
-    public List<String> getQuestion(){
+    public List<String> getQuestion(int column){
         List<String> list = new ArrayList<>();
-        Cursor cursor = database.rawQuery("SELECT * FROM Question", null);
+        Cursor cursor = database.rawQuery("SELECT * FROM Question",null);
         cursor.moveToFirst();
         while (!cursor.isAfterLast()){
-            list.add(cursor.getString(0));
+            list.add(cursor.getString(column));
             cursor.moveToNext();
         }
         cursor.close();

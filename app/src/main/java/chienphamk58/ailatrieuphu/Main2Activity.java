@@ -3,21 +3,24 @@ package chienphamk58.ailatrieuphu;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
-import android.widget.ImageButton;
 import android.widget.TextView;
 
+import java.util.List;
 import java.util.concurrent.TimeUnit;
+
+import chienphamk58.ailatrieuphu.Database.DatabaseAccess;
 
 public class Main2Activity extends AppCompatActivity {
     Intent intent;
     CountDownTimer countDownTimer;
+    DatabaseAccess databaseAccess;
+    List<String> qst, ansA, ansB, ansC, ansD, ansID, ansCorrect;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,7 +28,7 @@ public class Main2Activity extends AppCompatActivity {
         setContentView(R.layout.activity_main2);
         intent = new Intent(Main2Activity.this, PlaySongServiceLevel1.class);
         startService(intent);
-        final TextView myCounter = (TextView)findViewById(R.id.textView14);
+        final TextView myCounter = (TextView)findViewById(R.id.textView3);
         countDownTimer = new CountDownTimer(601000,1000){
 
             @Override
@@ -38,6 +41,26 @@ public class Main2Activity extends AppCompatActivity {
 
             }
         }.start();
+        databaseAccess = DatabaseAccess.getInstance(this);
+        databaseAccess.open();
+        qst = databaseAccess.getQuestion(0);
+        ansA = databaseAccess.getQuestion(3);
+        ansB = databaseAccess.getQuestion(4);
+        ansC = databaseAccess.getQuestion(5);
+        ansD = databaseAccess.getQuestion(6);
+        databaseAccess.close();
+        Button btna = (Button)findViewById(R.id.buttonD);
+        Button btnb = (Button)findViewById(R.id.buttonB);
+        Button btnc = (Button)findViewById(R.id.buttonC);
+        Button btnd = (Button)findViewById(R.id.buttonD);
+
+        TextView question = (TextView)findViewById(R.id.textView5);
+        question.setText(qst.get(0));
+
+        btna.setText("A. " + ansA.get(0));
+        btnb.setText("B. " + ansB.get(0));
+        btnc.setText("C. " + ansC.get(0));
+        btnd.setText("D. " + ansD.get(0));
 
     }
 

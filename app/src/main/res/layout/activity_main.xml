@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -9,7 +9,16 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="chienphamk58.ailatrieuphu.MainActivity"
     android:background="@mipmap/bg_altp"
-    >
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:id="@+id/imageView8"
+        android:background="@mipmap/mlogo"
+        android:layout_above="@+id/buttonD"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal" />
 
     <Button
         android:layout_width="250dp"
@@ -23,7 +32,8 @@
         android:textStyle="bold"
         android:typeface="serif"
         android:textSize="20dp"
-        android:onClick="Play"/>
+        android:onClick="Play"
+        android:layout_gravity="center_horizontal" />
 
     <Button
         android:layout_width="250dp"
@@ -37,7 +47,8 @@
         android:textSize="20dp"
         android:layout_below="@+id/buttonD"
         android:layout_centerHorizontal="true"
-        android:onClick="Help" />
+        android:onClick="Help"
+        android:layout_gravity="center_horizontal" />
 
     <Button
         android:layout_width="250dp"
@@ -51,7 +62,8 @@
         android:textSize="20dp"
         android:layout_below="@+id/button2"
         android:layout_centerHorizontal="true"
-        android:onClick="High_Score" />
+        android:onClick="High_Score"
+        android:layout_gravity="center_horizontal" />
 
     <Button
         android:layout_width="250dp"
@@ -63,29 +75,10 @@
         android:textStyle="normal|bold"
         android:typeface="serif"
         android:textSize="20dp"
+        android:onClick="Setting"
         android:layout_below="@+id/button3"
-        android:layout_alignLeft="@+id/button3"
-        android:layout_alignStart="@+id/button3"
-        android:onClick="Setting" />
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        />
+</LinearLayout>
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/imageView8"
-        android:layout_alignParentTop="true"
-        android:background="@mipmap/mlogo"
-        android:layout_above="@+id/buttonD"
-        android:layout_alignRight="@+id/buttonD"
-        android:layout_alignEnd="@+id/buttonD"
-        android:layout_alignLeft="@+id/buttonD"
-        android:layout_alignStart="@+id/buttonD" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:id="@+id/textView15"
-        android:layout_below="@+id/button4"
-        android:layout_centerHorizontal="true" />
-
-</RelativeLayout>

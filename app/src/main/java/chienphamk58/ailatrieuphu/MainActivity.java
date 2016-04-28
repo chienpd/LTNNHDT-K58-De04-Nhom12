@@ -75,6 +75,7 @@ public class MainActivity extends Activity {
         builder.setMessage("Are you sure you want to exit?").setCancelable(false).setPositiveButton("Yes", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int id) {
                 MainActivity.this.finish();
+                stopService(intent);
             }
         }).setNegativeButton("No", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int id) {

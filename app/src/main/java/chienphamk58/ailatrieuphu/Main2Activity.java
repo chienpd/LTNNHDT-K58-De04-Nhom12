@@ -1,6 +1,7 @@
 package chienphamk58.ailatrieuphu;
 
 import android.app.AlertDialog;
+import android.app.Dialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -28,19 +29,20 @@ import static chienphamk58.ailatrieuphu.R.drawable.button_press;
 
 public class Main2Activity extends AppCompatActivity {
     Intent intent;
-    Integer level = 1;
+    Integer level = 1, moneyStr = 0;
     Integer chooseNum = 0,i;
     CountDownTimer countDownTimer;
     DatabaseAccess databaseAccess;
     List<String> qst, ansA, ansB, ansC, ansD, ansCorrect;
     static AlertDialog alertDialog;
+    Dialog dialog;
 
 
     static Button btna;
     static Button btnb;
     static Button btnc;
     static Button btnd;
-    ImageButton change;
+    ImageButton change, ask;
     static TextView question;
     MediaPlayer mediaPlayer;
     Button b;
@@ -62,7 +64,7 @@ public class Main2Activity extends AppCompatActivity {
         levelstr = (TextView)findViewById(R.id.textView4);
         money = (TextView)findViewById(R.id.textView2);
         change = (ImageButton)findViewById(R.id.imageButton4);
-
+        ask = (ImageButton)findViewById(R.id.imageButton3);
 
         databaseAccess = DatabaseAccess.getInstance(this);
         databaseAccess.open();
@@ -75,6 +77,7 @@ public class Main2Activity extends AppCompatActivity {
         ansD = databaseAccess.list5;
         ansCorrect = databaseAccess.list6;
         databaseAccess.close();
+        //
         PlayGame();
 
 
@@ -101,12 +104,13 @@ public class Main2Activity extends AppCompatActivity {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         final Integer j = i;
         //final ImageButton button = (ImageButton)findViewById(R.id.imageButton2);
-        builder.setMessage("Are you sure you want to use change question?").setCancelable(false).setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+        builder.setMessage("Bạn có muốn sử dụng sự trợ giúp đổi câu hỏi").setCancelable(false).setPositiveButton("Yes", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int id) {
             while (j==i){
                 PlayGame();
             }
-
+                change.setBackgroundResource(R.drawable.switch3);
+                change.setClickable(false);
             }
         }).setNegativeButton("No", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int id) {
@@ -116,48 +120,91 @@ public class Main2Activity extends AppCompatActivity {
         });
         AlertDialog alert = builder.create();
         alert.show();
-        change.setBackgroundResource(R.drawable.switch3);
-        change.setClickable(false);
     }
+
+    public void khangiaA(){
+        final Dialog dialog1 = new Dialog(Main2Activity.this);
+        // khởi tạo dialog
+        dialog.setContentView(R.layout.chart);
+        TextView txt = (TextView)dialog1.findViewById(R.id.chien);
+        txt.setText("chien");
+        // xét layout cho dialog
+        dialog.setTitle("Đăng kí");
+        // xét tiêu đề cho dialog
+
+
+        dialog.show();
+        // hiển thị dialog
+        ask.setBackgroundResource(R.drawable.khangia2);
+        ask.setClickable(false);
+    }
+
+    public void khangiaB(){
+        dialog = new Dialog(Main2Activity.this);
+        // khởi tạo dialog
+        dialog.setContentView(R.layout.chart);
+        // xét layout cho dialog
+        dialog.setTitle("Đăng kí");
+        // xét tiêu đề cho dialog
+
+
+        dialog.show();
+        // hiển thị dialog
+        ask.setBackgroundResource(R.drawable.khangia2);
+        ask.setClickable(false);
+    }
+
+    public void khangiaC(){
+        dialog = new Dialog(Main2Activity.this);
+        // khởi tạo dialog
+        dialog.setContentView(R.layout.chart);
+        // xét layout cho dialog
+        dialog.setTitle("Đăng kí");
+        // xét tiêu đề cho dialog
+
+
+        dialog.show();
+        // hiển thị dialog
+        ask.setBackgroundResource(R.drawable.khangia2);
+        ask.setClickable(false);
+    }
+
+    public void khangiaD(){
+        dialog = new Dialog(Main2Activity.this);
+        // khởi tạo dialog
+        dialog.setContentView(R.layout.chart);
+        // xét layout cho dialog
+        dialog.setTitle("Đăng kí");
+        // xét tiêu đề cho dialog
+
+
+        dialog.show();
+        // hiển thị dialog
+        ask.setBackgroundResource(R.drawable.khangia2);
+        ask.setClickable(false);
+    }
+
+    public void khangia(){
+        dialog = new Dialog(Main2Activity.this);
+        // khởi tạo dialog
+        dialog.setContentView(R.layout.chart);
+        // xét layout cho dialog
+        dialog.setTitle("Đăng kí");
+        // xét tiêu đề cho dialog
+
+
+        dialog.show();
+        // hiển thị dialog
+        ask.setBackgroundResource(R.drawable.khangia2);
+        ask.setClickable(false);
+    }
+
     public void khangia(View view){
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         //final ImageButton button = (ImageButton)findViewById(R.id.imageButton2);
-        builder.setMessage("Are you sure you want to use hoi y kien khan gia?").setCancelable(false).setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+        builder.setMessage("Bạn có muốn sử dụng sự trợ giúp của khán giả trong trường quay ?").setCancelable(false).setPositiveButton("Yes", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int id) {
-
-
-            }
-        }).setNegativeButton("No", new DialogInterface.OnClickListener() {
-            public void onClick(DialogInterface dialog, int id) {
-                dialog.cancel();
-
-            }
-        });
-        AlertDialog alert = builder.create();
-        alert.show();
-    }
-
-    public void Exit(View view){
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setMessage("Are you sure you want to exit and save your money?").setCancelable(false).setPositiveButton("Yes", new DialogInterface.OnClickListener() {
-            public void onClick(DialogInterface dialog, int id) {
-                Main2Activity.this.finish();
-            }
-        }).setNegativeButton("No", new DialogInterface.OnClickListener() {
-            public void onClick(DialogInterface dialog, int id) {
-                dialog.cancel();
-            }
-        });
-        AlertDialog alert = builder.create();
-        alert.show();
-    }
-
-    public void fifty(View view){
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        //final ImageButton button = (ImageButton)findViewById(R.id.imageButton2);
-        builder.setMessage("Are you sure you want to use 50:50?").setCancelable(false).setPositiveButton("Yes", new DialogInterface.OnClickListener() {
-            public void onClick(DialogInterface dialog, int id) {
-
+            khangiaA();
 
             }
         }).setNegativeButton("No", new DialogInterface.OnClickListener() {
@@ -173,7 +220,7 @@ public class Main2Activity extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setMessage("Are you sure you want to exit and save your money?").setCancelable(false).setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+        builder.setMessage("Bạn muốn tạm dừng cuộc chơi và nhận số tiền " + moneyStr +"$ của chương trình ?").setCancelable(false).setPositiveButton("Yes", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int id) {
                 Main2Activity.this.finish();
                 stopService(intent);
@@ -210,7 +257,7 @@ public class Main2Activity extends AppCompatActivity {
                 break;
         }
         final AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
-        alertDialogBuilder.setMessage("Are you sure you choose " + answer +  " ?");
+        alertDialogBuilder.setMessage("Phương án trả lời của bạn là  " + answer +  " ?");
         alertDialogBuilder.setPositiveButton("yes", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface arg0, int arg1) {
@@ -311,80 +358,92 @@ public class Main2Activity extends AppCompatActivity {
             levelstr.setText("Câu hỏi số " + level.toString());
             switch (level) {
                 case 1:
-                    money.setText("1");
+                    money.setText(moneyStr.toString());
                     setSound(R.raw.ques01);
                     i = getRandom(0, 412);
                     setAnswer(i);
                     break;
                 case 2:
-                    money.setText("1000");
+                    moneyStr += 1000;
+                    money.setText(moneyStr.toString());
                     setSound(R.raw.ques02);
                     i = getRandom(413, 715);
                     setAnswer(i);
                     break;
 
                 case 3:
-                    money.setText("2000");
+                    moneyStr += 1000;
+                    money.setText(moneyStr.toString());
                     setSound(R.raw.ques03);
                     i = getRandom(716, 961);
                     setAnswer(i);
                     break;
                 case 4:
-                    money.setText("3000");
+                    moneyStr += 1000;
+                    money.setText(moneyStr.toString());
                     setSound(R.raw.ques04);
                     i = getRandom(962, 1269);
                     setAnswer(i);
                     break;
                 case 5:
-                    money.setText("5000");
+                    moneyStr += 2000;
+                    money.setText(moneyStr.toString());
                     setSound(R.raw.ques05);
                     i = getRandom(1270, 1591);
                     setAnswer(i);
                     break;
                 case 6:
-                    money.setText("10000");
+                    moneyStr += 5000;
+                    money.setText(moneyStr.toString());
                     setSound(R.raw.ques06);
                     i = getRandom(1592, 1991);
                     setAnswer(i);
                     break;
                 case 7:
-                    money.setText("20000");
+                    moneyStr += 10000;
+                    money.setText(moneyStr.toString());
                     setSound(R.raw.ques07);
                     i = getRandom(1992, 2395);
                     setAnswer(i);
                     break;
                 case 8:
-                    money.setText("30000");
+                    moneyStr += 10000;
+                    money.setText(moneyStr.toString());
                     setSound(R.raw.ques08);
                     i = getRandom(2396, 2798);
                     setAnswer(i);
                     break;
                 case 9:
-                    money.setText("60000");
+                    moneyStr += 30000;
+                    money.setText(moneyStr.toString());
                     setSound(R.raw.ques09);
                     i = getRandom(2799, 3184);
                     setAnswer(i);
                     break;
                 case 10:
-                    money.setText("90000");
+                    moneyStr += 60000;
+                    money.setText(moneyStr.toString());
                     setSound(R.raw.ques10);
                     i = getRandom(3185, 3441);
                     setAnswer(i);
                     break;
                 case 11:
-                    money.setText("150000");
+                    moneyStr += 60000;
+                    money.setText(moneyStr.toString());
                     setSound(R.raw.ques11);
                     i = getRandom(3442, 3653);
                     setAnswer(i);
                     break;
                 case 12:
-                    money.setText("250000");
+                    moneyStr += 100000;
+                    money.setText(moneyStr.toString());
                     setSound(R.raw.ques12);
                     i = getRandom(3654, 3839);
                     setAnswer(i);
                     break;
                 case 13:
-                    money.setText("350000");
+                    moneyStr += 200000;
+                    money.setText(moneyStr.toString());
                     setSound(R.raw.ques13);
                     i = getRandom(3840, 4011);
                     setAnswer(i);

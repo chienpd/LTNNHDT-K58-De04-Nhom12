@@ -88,7 +88,8 @@
             android:layout_gravity="center"
             android:layout_below="@+id/imageView"
             android:layout_toLeftOf="@+id/textView3"
-            android:layout_toStartOf="@+id/textView3" />
+            android:layout_toStartOf="@+id/textView3"
+            android:onClick="changeQuestion" />
     </LinearLayout>
 
     <LinearLayout
@@ -107,14 +108,21 @@
             android:textSize="24dp"
             android:textStyle="bold" />
 
-        <TextView
-            android:layout_width="fill_parent"
+        <ScrollView
+            android:layout_width="wrap_content"
             android:layout_height="110dp"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="phạm đình chiến k 58 đại học bách khoa Hà Nội"
-            android:id="@+id/textView5"
-            android:layout_gravity="center_horizontal"
-            android:textSize="22dp" />
+            android:id="@+id/scrollView2" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="110dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="phạm đình chiến k 58 đại học bách khoa Hà Nội"
+                android:id="@+id/textView5"
+                android:layout_gravity="center_horizontal"
+                android:textSize="22dp" />
+        </ScrollView>
+
         <Button
             android:layout_width="fill_parent"
             android:layout_height="45dp"
@@ -151,5 +159,6 @@
             android:textAllCaps="false"
             android:textSize="18dp"
             android:onClick="onClick" />
+
     </LinearLayout>
 </RelativeLayout>

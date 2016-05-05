@@ -15,6 +15,7 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -121,90 +122,28 @@ public class Main2Activity extends AppCompatActivity {
         AlertDialog alert = builder.create();
         alert.show();
     }
-
-    public void khangiaA(){
-        final Dialog dialog1 = new Dialog(Main2Activity.this);
-        // khởi tạo dialog
-        dialog.setContentView(R.layout.chart);
-        TextView txt = (TextView)dialog1.findViewById(R.id.chien);
-        txt.setText("chien");
-        // xét layout cho dialog
-        dialog.setTitle("Đăng kí");
-        // xét tiêu đề cho dialog
-
-
-        dialog.show();
-        // hiển thị dialog
-        ask.setBackgroundResource(R.drawable.khangia2);
-        ask.setClickable(false);
-    }
-
-    public void khangiaB(){
-        dialog = new Dialog(Main2Activity.this);
-        // khởi tạo dialog
-        dialog.setContentView(R.layout.chart);
-        // xét layout cho dialog
-        dialog.setTitle("Đăng kí");
-        // xét tiêu đề cho dialog
-
-
-        dialog.show();
-        // hiển thị dialog
-        ask.setBackgroundResource(R.drawable.khangia2);
-        ask.setClickable(false);
-    }
-
-    public void khangiaC(){
-        dialog = new Dialog(Main2Activity.this);
-        // khởi tạo dialog
-        dialog.setContentView(R.layout.chart);
-        // xét layout cho dialog
-        dialog.setTitle("Đăng kí");
-        // xét tiêu đề cho dialog
-
-
-        dialog.show();
-        // hiển thị dialog
-        ask.setBackgroundResource(R.drawable.khangia2);
-        ask.setClickable(false);
-    }
-
-    public void khangiaD(){
-        dialog = new Dialog(Main2Activity.this);
-        // khởi tạo dialog
-        dialog.setContentView(R.layout.chart);
-        // xét layout cho dialog
-        dialog.setTitle("Đăng kí");
-        // xét tiêu đề cho dialog
-
-
-        dialog.show();
-        // hiển thị dialog
-        ask.setBackgroundResource(R.drawable.khangia2);
-        ask.setClickable(false);
-    }
-
-    public void khangia(){
-        dialog = new Dialog(Main2Activity.this);
-        // khởi tạo dialog
-        dialog.setContentView(R.layout.chart);
-        // xét layout cho dialog
-        dialog.setTitle("Đăng kí");
-        // xét tiêu đề cho dialog
-
-
-        dialog.show();
-        // hiển thị dialog
-        ask.setBackgroundResource(R.drawable.khangia2);
-        ask.setClickable(false);
-    }
-
     public void khangia(View view){
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         //final ImageButton button = (ImageButton)findViewById(R.id.imageButton2);
         builder.setMessage("Bạn có muốn sử dụng sự trợ giúp của khán giả trong trường quay ?").setCancelable(false).setPositiveButton("Yes", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int id) {
-            khangiaA();
+                final Dialog dialog1 = new Dialog(Main2Activity.this);
+                // khởi tạo dialog
+                dialog1.setContentView(R.layout.chart);
+                ProgressBar progressBar1 = (ProgressBar)dialog1.findViewById(R.id.progressBar);
+                ProgressBar progressBar2 = (ProgressBar)dialog1.findViewById(R.id.progressBar);
+                ProgressBar progressBar3 = (ProgressBar)dialog1.findViewById(R.id.progressBar);
+                ProgressBar progressBar4 = (ProgressBar)dialog1.findViewById(R.id.progressBar);
+                progressBar1.setProgress(100);
+                progressBar2.setProgress(50);
+                progressBar3.setProgress(25);
+                progressBar4.setProgress(0);
+
+
+                dialog1.show();
+                // hiển thị dialog
+                ask.setBackgroundResource(R.drawable.khangia2);
+                ask.setClickable(false);
 
             }
         }).setNegativeButton("No", new DialogInterface.OnClickListener() {

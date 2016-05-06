@@ -107,7 +107,8 @@
             android:id="@+id/textView4"
             android:layout_gravity="center_horizontal"
             android:textSize="24dp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:typeface="serif" />
 
         <ScrollView
             android:layout_width="wrap_content"
@@ -132,7 +133,8 @@
             android:background="@mipmap/case2"
             android:textAllCaps="false"
             android:textSize="18dp"
-            android:onClick="onClick" />
+            android:onClick="onClick"
+            android:text="chien" />
         <Button
             android:layout_width="fill_parent"
             android:layout_height="45dp"

@@ -13,7 +13,7 @@
     </layouts>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ced5131-964c-46b5-b560-e4127d87dd43" name="Default" comment="">
+    <list default="true" id="4ced5131-964c-46b5-b560-e4127d87dd43" name="Default" comment="fix hoi y kien khan gia&#10;fix dialog">
       <change type="MODIFICATION" beforePath="/mnt/DATA/Dropbox/AiLaTrieuPhu/.gradle/2.10/taskArtifacts/cache.properties.lock" afterPath="/mnt/DATA/Dropbox/AiLaTrieuPhu/.gradle/2.10/taskArtifacts/cache.properties.lock" />
       <change type="MODIFICATION" beforePath="/mnt/DATA/Dropbox/AiLaTrieuPhu/.gradle/2.10/taskArtifacts/fileHashes.bin" afterPath="/mnt/DATA/Dropbox/AiLaTrieuPhu/.gradle/2.10/taskArtifacts/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="/mnt/DATA/Dropbox/AiLaTrieuPhu/.gradle/2.10/taskArtifacts/fileSnapshots.bin" afterPath="/mnt/DATA/Dropbox/AiLaTrieuPhu/.gradle/2.10/taskArtifacts/fileSnapshots.bin" />
@@ -22,13 +22,14 @@
       <change type="MODIFICATION" beforePath="/mnt/DATA/Dropbox/AiLaTrieuPhu/.gradle/2.10/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" afterPath="/mnt/DATA/Dropbox/AiLaTrieuPhu/.gradle/2.10/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" />
       <change type="MODIFICATION" beforePath="/mnt/DATA/Dropbox/AiLaTrieuPhu/.gradle/2.10/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" afterPath="/mnt/DATA/Dropbox/AiLaTrieuPhu/.gradle/2.10/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" />
       <change type="MODIFICATION" beforePath="/mnt/DATA/Dropbox/AiLaTrieuPhu/.gradle/2.10/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterPath="/mnt/DATA/Dropbox/AiLaTrieuPhu/.gradle/2.10/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" />
-      <change type="MODIFICATION" beforePath="/mnt/DATA/Dropbox/AiLaTrieuPhu/build/generated/mockable-android-23.jar" afterPath="/mnt/DATA/Dropbox/AiLaTrieuPhu/build/generated/mockable-android-23.jar" />
+      <change type="MODIFICATION" beforePath="/mnt/DATA/Dropbox/AiLaTrieuPhu/.idea/misc.xml" afterPath="/mnt/DATA/Dropbox/AiLaTrieuPhu/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="/mnt/DATA/Dropbox/AiLaTrieuPhu/.idea/workspace.xml" afterPath="/mnt/DATA/Dropbox/AiLaTrieuPhu/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/app.iml" afterPath="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/app.iml" />
       <change type="MODIFICATION" beforePath="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/java/chienphamk58/ailatrieuphu/Main2Activity.java" afterPath="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/java/chienphamk58/ailatrieuphu/Main2Activity.java" />
+      <change type="MODIFICATION" beforePath="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/layout/activity_main.xml" afterPath="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/layout/activity_main.xml" />
       <change type="MODIFICATION" beforePath="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/layout/activity_main2.xml" afterPath="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/layout/activity_main2.xml" />
-      <change type="MODIFICATION" beforePath="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/layout/chart.xml" afterPath="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/layout/chart.xml" />
-      <change type="MODIFICATION" beforePath="/mnt/DATA/Dropbox/AiLaTrieuPhu/gradlew.bat" afterPath="/mnt/DATA/Dropbox/AiLaTrieuPhu/gradlew.bat" />
+      <change type="MODIFICATION" beforePath="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/layout/activity_main5.xml" afterPath="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/layout/activity_main5.xml" />
+      <change type="MODIFICATION" beforePath="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/values/strings.xml" afterPath="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/values/strings.xml" />
     </list>
     <ignored path="AiLaTrieuPhu.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -63,23 +64,11 @@
       <file leaf-file-name="Main2Activity.java" pinned="false" current-in-tab="true">
         <entry file="file:///mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/java/chienphamk58/ailatrieuphu/Main2Activity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.9633027">
-              <caret line="394" column="78" selection-start-line="394" selection-start-column="78" selection-end-line="394" selection-end-column="78" />
+            <state vertical-scroll-proportion="0.36697248">
+              <caret line="535" column="23" selection-start-line="535" selection-start-column="23" selection-end-line="535" selection-end-column="23" />
               <folding>
-                <element signature="e#11098#12484#0" expanded="true" />
-                <element signature="e#12374#12375#0" expanded="true" />
-                <element signature="e#12432#12433#0" expanded="true" />
-                <element signature="e#12483#12484#0" expanded="true" />
-                <element signature="e#12538#12759#0" expanded="true" />
-                <element signature="e#12758#12759#0" expanded="true" />
-                <element signature="e#13813#13814#0" expanded="true" />
-                <element signature="e#13879#13880#0" expanded="true" />
-                <element signature="e#14526#14527#0" expanded="true" />
-                <element signature="e#14592#14593#0" expanded="true" />
-                <element signature="e#15239#15240#0" expanded="true" />
-                <element signature="e#15305#15306#0" expanded="true" />
-                <element signature="e#15953#15954#0" expanded="true" />
-                <element signature="e#16019#16020#0" expanded="true" />
+                <element signature="e#20442#20714#0" expanded="true" />
+                <element signature="e#20713#20714#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -87,14 +76,24 @@
       </file>
       <file leaf-file-name="activity_main2.xml" pinned="false" current-in-tab="false">
         <entry file="file:///mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/layout/activity_main2.xml">
+          <provider selected="true" editor-type-id="android-designer">
+            <state />
+          </provider>
           <provider editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.625">
-              <caret line="126" column="8" selection-start-line="126" selection-start-column="8" selection-end-line="126" selection-end-column="8" />
+            <state vertical-scroll-proportion="-6.7916665">
+              <caret line="101" column="8" selection-start-line="101" selection-start-column="8" selection-end-line="101" selection-end-column="8" />
               <folding />
             </state>
           </provider>
-          <provider selected="true" editor-type-id="android-designer">
-            <state />
+        </entry>
+      </file>
+      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file:///mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/java/chienphamk58/ailatrieuphu/MainActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="38" column="58" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="58" />
+              <folding />
+            </state>
           </provider>
         </entry>
       </file>
@@ -1706,9 +1705,13 @@
         <option value="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/drawable/chart.xml" />
         <option value="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/AndroidManifest.xml" />
         <option value="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/java/chienphamk58/ailatrieuphu/Main5Activity.java" />
-        <option value="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/layout/activity_main2.xml" />
-        <option value="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/layout/chart.xml" />
         <option value="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/layout-normal/choose.xml" />
+        <option value="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/layout/chart.xml" />
+        <option value="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/layout/activity_main.xml" />
+        <option value="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/layout/activity_main3.xml" />
+        <option value="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/values/strings.xml" />
+        <option value="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/layout/activity_main5.xml" />
+        <option value="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/layout/activity_main2.xml" />
         <option value="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/java/chienphamk58/ailatrieuphu/Main2Activity.java" />
       </list>
     </option>
@@ -1743,6 +1746,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane" />
       <pane id="AndroidView">
         <subPane>
           <PATH>
@@ -1751,12 +1758,82 @@
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AiLaTrieuPhu" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AiLaTrieuPhu" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layout" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AiLaTrieuPhu" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AiLaTrieuPhu" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AiLaTrieuPhu" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ailatrieuphu" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
-      <pane id="ProjectPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -2073,7 +2150,13 @@
       <option name="project" value="LOCAL" />
       <updated>1462443649909</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="fix hoi y kien khan gia&#10;fix dialog">
+      <created>1462527259451</created>
+      <option name="number" value="00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1462527259452</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -2088,14 +2171,14 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32869565" sideWeight="0.5151515" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32869565" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2030303" sideWeight="0.48963732" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2030303" sideWeight="0.48963732" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24960753" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
@@ -2128,7 +2211,8 @@
     <MESSAGE value="add 50:50 + fix question" />
     <MESSAGE value="them hoi ys kien khan gia" />
     <MESSAGE value="them hoi y kien khan gia" />
-    <option name="LAST_COMMIT_MESSAGE" value="them hoi y kien khan gia" />
+    <MESSAGE value="fix hoi y kien khan gia&#10;fix dialog" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix hoi y kien khan gia&#10;fix dialog" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2144,49 +2228,89 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file:///mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/layout/activity_main.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="60" column="32" selection-start-line="60" selection-start-column="32" selection-end-line="60" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/layout/activity_main5.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="27" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="48" selection-start-line="8" selection-start-column="48" selection-end-line="8" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/layout/activity_main3.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="35" selection-start-line="0" selection-start-column="0" selection-end-line="199" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/layout/activity_main4.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file:///mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/java/chienphamk58/ailatrieuphu/Main2Activity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#11098#12484#0" expanded="true" />
-            <element signature="e#12374#12375#0" expanded="true" />
-            <element signature="e#12432#12433#0" expanded="true" />
-            <element signature="e#12483#12484#0" expanded="true" />
-            <element signature="e#12538#12759#0" expanded="true" />
-            <element signature="e#12758#12759#0" expanded="true" />
-            <element signature="e#13813#13814#0" expanded="true" />
-            <element signature="e#13879#13880#0" expanded="true" />
-            <element signature="e#14526#14527#0" expanded="true" />
-            <element signature="e#14592#14593#0" expanded="true" />
-            <element signature="e#15239#15240#0" expanded="true" />
-            <element signature="e#15305#15306#0" expanded="true" />
-            <element signature="e#15953#15954#0" expanded="true" />
-            <element signature="e#16019#16020#0" expanded="true" />
+            <element signature="e#20442#20714#0" expanded="true" />
+            <element signature="e#20713#20714#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file:///mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/layout/activity_main2.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="126" column="8" selection-start-line="126" selection-start-column="8" selection-end-line="126" selection-end-column="8" />
           <folding />
         </state>
       </provider>
+    </entry>
+    <entry file="file:///mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/layout/chart.xml">
       <provider editor-type-id="android-designer">
         <state />
       </provider>
-    </entry>
-    <entry file="file:///mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/layout/chart.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="5" column="39" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="39" />
           <folding />
         </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file:///mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/java/chienphamk58/ailatrieuphu/Main2Activity.java">
@@ -2194,33 +2318,21 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="187" column="30" selection-start-line="187" selection-start-column="30" selection-end-line="187" selection-end-column="30" />
           <folding>
-            <element signature="e#11098#12484#0" expanded="true" />
-            <element signature="e#12374#12375#0" expanded="true" />
-            <element signature="e#12432#12433#0" expanded="true" />
-            <element signature="e#12483#12484#0" expanded="true" />
-            <element signature="e#12538#12759#0" expanded="true" />
-            <element signature="e#12758#12759#0" expanded="true" />
-            <element signature="e#13813#13814#0" expanded="true" />
-            <element signature="e#13879#13880#0" expanded="true" />
-            <element signature="e#14526#14527#0" expanded="true" />
-            <element signature="e#14592#14593#0" expanded="true" />
-            <element signature="e#15239#15240#0" expanded="true" />
-            <element signature="e#15305#15306#0" expanded="true" />
-            <element signature="e#15953#15954#0" expanded="true" />
-            <element signature="e#16019#16020#0" expanded="true" />
+            <element signature="e#20442#20714#0" expanded="true" />
+            <element signature="e#20713#20714#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file:///mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/layout/chart.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="5" column="39" selection-start-line="5" selection-start-column="39" selection-end-line="5" selection-end-column="39" />
           <folding />
         </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file:///mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/java/chienphamk58/ailatrieuphu/Main3Activity.java">
@@ -2235,44 +2347,32 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#11098#12484#0" expanded="true" />
-            <element signature="e#12374#12375#0" expanded="true" />
-            <element signature="e#12432#12433#0" expanded="true" />
-            <element signature="e#12483#12484#0" expanded="true" />
-            <element signature="e#12538#12759#0" expanded="true" />
-            <element signature="e#12758#12759#0" expanded="true" />
-            <element signature="e#13813#13814#0" expanded="true" />
-            <element signature="e#13879#13880#0" expanded="true" />
-            <element signature="e#14526#14527#0" expanded="true" />
-            <element signature="e#14592#14593#0" expanded="true" />
-            <element signature="e#15239#15240#0" expanded="true" />
-            <element signature="e#15305#15306#0" expanded="true" />
-            <element signature="e#15953#15954#0" expanded="true" />
-            <element signature="e#16019#16020#0" expanded="true" />
+            <element signature="e#20442#20714#0" expanded="true" />
+            <element signature="e#20713#20714#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file:///mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/layout/activity_main2.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="11" column="44" selection-start-line="11" selection-start-column="44" selection-end-line="11" selection-end-column="44" />
           <folding />
         </state>
       </provider>
+    </entry>
+    <entry file="file:///mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/layout/chart.xml">
       <provider editor-type-id="android-designer">
         <state />
       </provider>
-    </entry>
-    <entry file="file:///mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/layout/chart.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
           <folding />
         </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file:///mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/java/chienphamk58/ailatrieuphu/Main2Activity.java">
@@ -2280,20 +2380,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#11098#12484#0" expanded="true" />
-            <element signature="e#12374#12375#0" expanded="true" />
-            <element signature="e#12432#12433#0" expanded="true" />
-            <element signature="e#12483#12484#0" expanded="true" />
-            <element signature="e#12538#12759#0" expanded="true" />
-            <element signature="e#12758#12759#0" expanded="true" />
-            <element signature="e#13813#13814#0" expanded="true" />
-            <element signature="e#13879#13880#0" expanded="true" />
-            <element signature="e#14526#14527#0" expanded="true" />
-            <element signature="e#14592#14593#0" expanded="true" />
-            <element signature="e#15239#15240#0" expanded="true" />
-            <element signature="e#15305#15306#0" expanded="true" />
-            <element signature="e#15953#15954#0" expanded="true" />
-            <element signature="e#16019#16020#0" expanded="true" />
+            <element signature="e#20442#20714#0" expanded="true" />
+            <element signature="e#20713#20714#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2326,20 +2414,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="138" column="5" selection-start-line="138" selection-start-column="5" selection-end-line="138" selection-end-column="5" />
           <folding>
-            <element signature="e#11098#12484#0" expanded="true" />
-            <element signature="e#12374#12375#0" expanded="true" />
-            <element signature="e#12432#12433#0" expanded="true" />
-            <element signature="e#12483#12484#0" expanded="true" />
-            <element signature="e#12538#12759#0" expanded="true" />
-            <element signature="e#12758#12759#0" expanded="true" />
-            <element signature="e#13813#13814#0" expanded="true" />
-            <element signature="e#13879#13880#0" expanded="true" />
-            <element signature="e#14526#14527#0" expanded="true" />
-            <element signature="e#14592#14593#0" expanded="true" />
-            <element signature="e#15239#15240#0" expanded="true" />
-            <element signature="e#15305#15306#0" expanded="true" />
-            <element signature="e#15953#15954#0" expanded="true" />
-            <element signature="e#16019#16020#0" expanded="true" />
+            <element signature="e#20442#20714#0" expanded="true" />
+            <element signature="e#20713#20714#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2367,14 +2443,14 @@
       </provider>
     </entry>
     <entry file="file:///mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/layout/chart.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file:///mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/java/chienphamk58/ailatrieuphu/Main2Activity.java">
@@ -2382,20 +2458,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="138" column="5" selection-start-line="138" selection-start-column="5" selection-end-line="138" selection-end-column="5" />
           <folding>
-            <element signature="e#11098#12484#0" expanded="true" />
-            <element signature="e#12374#12375#0" expanded="true" />
-            <element signature="e#12432#12433#0" expanded="true" />
-            <element signature="e#12483#12484#0" expanded="true" />
-            <element signature="e#12538#12759#0" expanded="true" />
-            <element signature="e#12758#12759#0" expanded="true" />
-            <element signature="e#13813#13814#0" expanded="true" />
-            <element signature="e#13879#13880#0" expanded="true" />
-            <element signature="e#14526#14527#0" expanded="true" />
-            <element signature="e#14592#14593#0" expanded="true" />
-            <element signature="e#15239#15240#0" expanded="true" />
-            <element signature="e#15305#15306#0" expanded="true" />
-            <element signature="e#15953#15954#0" expanded="true" />
-            <element signature="e#16019#16020#0" expanded="true" />
+            <element signature="e#20442#20714#0" expanded="true" />
+            <element signature="e#20713#20714#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2423,14 +2487,14 @@
       </provider>
     </entry>
     <entry file="file:///mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/layout/chart.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file:///mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/java/chienphamk58/ailatrieuphu/Main2Activity.java">
@@ -2438,20 +2502,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#11098#12484#0" expanded="true" />
-            <element signature="e#12374#12375#0" expanded="true" />
-            <element signature="e#12432#12433#0" expanded="true" />
-            <element signature="e#12483#12484#0" expanded="true" />
-            <element signature="e#12538#12759#0" expanded="true" />
-            <element signature="e#12758#12759#0" expanded="true" />
-            <element signature="e#13813#13814#0" expanded="true" />
-            <element signature="e#13879#13880#0" expanded="true" />
-            <element signature="e#14526#14527#0" expanded="true" />
-            <element signature="e#14592#14593#0" expanded="true" />
-            <element signature="e#15239#15240#0" expanded="true" />
-            <element signature="e#15305#15306#0" expanded="true" />
-            <element signature="e#15953#15954#0" expanded="true" />
-            <element signature="e#16019#16020#0" expanded="true" />
+            <element signature="e#20442#20714#0" expanded="true" />
+            <element signature="e#20713#20714#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2476,20 +2528,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#11098#12484#0" expanded="true" />
-            <element signature="e#12374#12375#0" expanded="true" />
-            <element signature="e#12432#12433#0" expanded="true" />
-            <element signature="e#12483#12484#0" expanded="true" />
-            <element signature="e#12538#12759#0" expanded="true" />
-            <element signature="e#12758#12759#0" expanded="true" />
-            <element signature="e#13813#13814#0" expanded="true" />
-            <element signature="e#13879#13880#0" expanded="true" />
-            <element signature="e#14526#14527#0" expanded="true" />
-            <element signature="e#14592#14593#0" expanded="true" />
-            <element signature="e#15239#15240#0" expanded="true" />
-            <element signature="e#15305#15306#0" expanded="true" />
-            <element signature="e#15953#15954#0" expanded="true" />
-            <element signature="e#16019#16020#0" expanded="true" />
+            <element signature="e#20442#20714#0" expanded="true" />
+            <element signature="e#20713#20714#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2523,14 +2563,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/java/chienphamk58/ailatrieuphu/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.027522936">
-          <caret line="59" column="5" selection-start-line="59" selection-start-column="5" selection-end-line="59" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/java/chienphamk58/ailatrieuphu/Main5Activity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.16513762">
@@ -2538,29 +2570,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/layout/activity_main3.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
     <entry file="file:///mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/java/chienphamk58/ailatrieuphu/Main3Activity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.110091746">
           <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2588,18 +2601,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/layout/chart.xml">
+    <entry file="jar:///mnt/DATA/Android_SDK/Sdk/platforms/android-23/android.jar!/android/app/Dialog.class">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="39" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="39" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/layout/chart.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.125">
+          <caret line="5" column="39" selection-start-line="5" selection-start-column="39" selection-end-line="5" selection-end-column="39" />
           <folding />
         </state>
       </provider>
+    </entry>
+    <entry file="file:///mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.30487806">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/layout/activity_main4.xml">
       <provider editor-type-id="android-designer">
         <state />
       </provider>
-    </entry>
-    <entry file="jar:///mnt/DATA/Android_SDK/Sdk/platforms/android-23/android.jar!/android/app/Dialog.class">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -2607,36 +2638,65 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/layout/activity_main2.xml">
+    <entry file="file:///mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/layout/activity_main3.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.625">
-          <caret line="126" column="8" selection-start-line="126" selection-start-column="8" selection-end-line="126" selection-end-column="8" />
+          <caret line="15" column="35" selection-start-line="0" selection-start-column="0" selection-end-line="199" selection-end-column="0" />
           <folding />
         </state>
       </provider>
+    </entry>
+    <entry file="file:///mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/layout/activity_main5.xml">
       <provider selected="true" editor-type-id="android-designer">
         <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="27" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/layout/activity_main.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.2916665">
+          <caret line="60" column="32" selection-start-line="60" selection-start-column="32" selection-end-line="60" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/java/chienphamk58/ailatrieuphu/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="38" column="58" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/layout/activity_main2.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.7916665">
+          <caret line="101" column="8" selection-start-line="101" selection-start-column="8" selection-end-line="101" selection-end-column="8" />
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file:///mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/java/chienphamk58/ailatrieuphu/Main2Activity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.9633027">
-          <caret line="394" column="78" selection-start-line="394" selection-start-column="78" selection-end-line="394" selection-end-column="78" />
+        <state vertical-scroll-proportion="0.36697248">
+          <caret line="535" column="23" selection-start-line="535" selection-start-column="23" selection-end-line="535" selection-end-column="23" />
           <folding>
-            <element signature="e#11098#12484#0" expanded="true" />
-            <element signature="e#12374#12375#0" expanded="true" />
-            <element signature="e#12432#12433#0" expanded="true" />
-            <element signature="e#12483#12484#0" expanded="true" />
-            <element signature="e#12538#12759#0" expanded="true" />
-            <element signature="e#12758#12759#0" expanded="true" />
-            <element signature="e#13813#13814#0" expanded="true" />
-            <element signature="e#13879#13880#0" expanded="true" />
-            <element signature="e#14526#14527#0" expanded="true" />
-            <element signature="e#14592#14593#0" expanded="true" />
-            <element signature="e#15239#15240#0" expanded="true" />
-            <element signature="e#15305#15306#0" expanded="true" />
-            <element signature="e#15953#15954#0" expanded="true" />
-            <element signature="e#16019#16020#0" expanded="true" />
+            <element signature="e#20442#20714#0" expanded="true" />
+            <element signature="e#20713#20714#0" expanded="true" />
           </folding>
         </state>
       </provider>

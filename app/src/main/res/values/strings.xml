@@ -6,4 +6,5 @@
     <string name="luat3">      Trả lời đúng mỗi câu hỏi bạn sẽ nhận được mức thưởng tương ứng. Trả lời sai hoặc hết thời gian, bạn sẽ nhận được phần thưởng của mốc quan trọng trước đó. Nếu chọn dừng cuộc chơi, bạn sẽ được giữ nguyên mức thưởng hiện tại:</string>
     <string name="luat4">- Câu hỏi hiện tại. \n-Mức thưởng mà bạn sẽ nhận được nếu trả lời đúng.</string>
     <string name="question_number">Câu hỏi số</string>
+    <string name="dhbk">Đại học Bách Khoa Hà Nội</string>
 </resources>

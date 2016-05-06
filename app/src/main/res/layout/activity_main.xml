@@ -53,7 +53,7 @@
     <Button
         android:layout_width="250dp"
         android:layout_height="40dp"
-        android:text="HIGH SCORE"
+        android:text="setting"
         android:id="@+id/button3"
         android:background="@drawable/button_press"
         android:textColor="#ffffff"
@@ -68,7 +68,7 @@
     <Button
         android:layout_width="250dp"
         android:layout_height="40dp"
-        android:text="SETTING"
+        android:text="About"
         android:id="@+id/button4"
         android:background="@drawable/button_press"
         android:textColor="#ffffff"

@@ -325,7 +325,6 @@ public class Main2Activity extends AppCompatActivity {
             switch (Integer.parseInt(ansCorrect.get(i))) {
                 case 1:
                     if (chooseNum == 1) {
-
                         setSound(R.raw.true_a);
                     } else {
                         setSound(R.raw.lose_a);
@@ -338,7 +337,8 @@ public class Main2Activity extends AppCompatActivity {
                         }
                         @Override
                         public void onFinish() {
-                            Question();
+                            if(chooseNum == 1)
+                                Question();
                         }
                     }.start();
                     break;
@@ -357,7 +357,9 @@ public class Main2Activity extends AppCompatActivity {
                         }
                         @Override
                         public void onFinish() {
-                            Question();
+
+                            if(chooseNum == 2)
+                                Question();
                         }
                     }.start();
                     break;
@@ -376,7 +378,9 @@ public class Main2Activity extends AppCompatActivity {
                         }
                         @Override
                         public void onFinish() {
-                            Question();
+
+                            if(chooseNum ==3)
+                                Question();
                         }
                     }.start();
 
@@ -396,7 +400,9 @@ public class Main2Activity extends AppCompatActivity {
                         }
                         @Override
                         public void onFinish() {
-                            Question();
+
+                            if(chooseNum == 4)
+                                Question();
                         }
                     }.start();
                     break;
@@ -528,11 +534,26 @@ public void Question(){
     }
 
     public void Fail(){
-        final Dialog dialog = new Dialog(Main2Activity.this);
-        // khởi tạo dialog
-        dialog.setTitle("So tien ban nhan duoc la !");
-        dialog.show();
-        stopService(intent);
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        final Intent myIntent = new Intent(Main2Activity.this, Main2Activity.class);
+        if(level == 1) {
+            money.setText("1");
+            moneyStr = 1;
+        }
+        builder.setMessage("Bạn sẽ ra về với số tiền " + moneyStr +"$\nBạn có muốn chơi lại ?").setCancelable(false).setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int id) {
+                Main2Activity.this.finish();
+                Main2Activity.this.startActivity(myIntent);
+                startService(intent);
+            }
+        }).setNegativeButton("No", new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int id) {
+                Main2Activity.this.finish();
+                dialog.cancel();
+            }
+        });
+        AlertDialog alert = builder.show();
+        alert.show();
     }
     @Override
     public void onStop(){

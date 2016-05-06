@@ -58,6 +58,7 @@ public class Main2Activity extends AppCompatActivity {
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_main2);
         intent = new Intent(getApplicationContext(), PlaySongServiceLevel1.class);
+        stopService(intent);
         startService(intent);
 
         btna = (Button)findViewById(R.id.buttonA);
@@ -274,15 +275,19 @@ public class Main2Activity extends AppCompatActivity {
                 mediaPlayer.stop();
                 switch (b.getId()){
                     case R.id.buttonA :
+                        btna.setBackgroundResource(R.drawable.case3);
                         chooseNum = 1;
                         break;
                     case R.id.buttonB:
+                        btnb.setBackgroundResource(R.drawable.case3);
                         chooseNum = 2;
                         break;
                     case R.id.buttonC:
+                        btnc.setBackgroundResource(R.drawable.case3);
                         chooseNum = 3;
                         break;
                     case R.id.buttonD:
+                        btnd.setBackgroundResource(R.drawable.case3);
                         chooseNum = 4;
                         break;
                     default:
@@ -539,7 +544,7 @@ public void Question(){
             setAnswer(i);
             break;
         case 10:
-            moneyStr += 60000;
+            moneyStr += 30000;
             money.setText(moneyStr.toString());
             setSound(R.raw.ques10);
             i = getRandom(3185, 3441);
@@ -560,25 +565,30 @@ public void Question(){
             setAnswer(i);
             break;
         case 13:
-            moneyStr += 200000;
+            moneyStr += 100000;
             money.setText(moneyStr.toString());
             setSound(R.raw.ques13);
             i = getRandom(3840, 4011);
             setAnswer(i);
             break;
         case 14:
-            money.setText("500000");
+            moneyStr += 150000;
+            money.setText(moneyStr.toString());
             setSound(R.raw.ques14);
             i = getRandom(4012, 4169);
             setAnswer(i);
             break;
         case 15:
-            money.setText("800000");
+            moneyStr += 300000;
+            money.setText(moneyStr.toString());
             setSound(R.raw.ques15);
             i = getRandom(4170, 4228);
             setAnswer(i);
             break;
         default:
+            moneyStr += 400000;
+            money.setText(moneyStr.toString());
+            Fail();
             break;
     }
 }

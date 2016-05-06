@@ -8,6 +8,8 @@ import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.CountDownTimer;
+import android.os.Handler;
+import android.os.SystemClock;
 import android.support.annotation.IntegerRes;
 import android.support.annotation.PluralsRes;
 import android.support.v7.app.AppCompatActivity;
@@ -15,6 +17,9 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.ImageView;
+import android.widget.ProgressBar;
+import android.widget.SeekBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -30,12 +35,11 @@ import static chienphamk58.ailatrieuphu.R.drawable.button_press;
 public class Main2Activity extends AppCompatActivity {
     Intent intent;
     Integer level = 1, moneyStr = 0;
-    Integer chooseNum = 0,i;
+    Integer chooseNum = 0,i, j = 0;
     CountDownTimer countDownTimer;
     DatabaseAccess databaseAccess;
     List<String> qst, ansA, ansB, ansC, ansD, ansCorrect;
     static AlertDialog alertDialog;
-    Dialog dialog;
 
 
     static Button btna;
@@ -47,7 +51,6 @@ public class Main2Activity extends AppCompatActivity {
     MediaPlayer mediaPlayer;
     Button b;
     TextView levelstr,money;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -78,7 +81,7 @@ public class Main2Activity extends AppCompatActivity {
         ansCorrect = databaseAccess.list6;
         databaseAccess.close();
         //
-        PlayGame();
+        Question();
 
 
         final TextView myCounter = (TextView)findViewById(R.id.textView3);
@@ -107,7 +110,7 @@ public class Main2Activity extends AppCompatActivity {
         builder.setMessage("Bạn có muốn sử dụng sự trợ giúp đổi câu hỏi").setCancelable(false).setPositiveButton("Yes", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int id) {
             while (j==i){
-                PlayGame();
+                Question();
             }
                 change.setBackgroundResource(R.drawable.switch3);
                 change.setClickable(false);
@@ -121,90 +124,90 @@ public class Main2Activity extends AppCompatActivity {
         AlertDialog alert = builder.create();
         alert.show();
     }
-
-    public void khangiaA(){
-        final Dialog dialog1 = new Dialog(Main2Activity.this);
-        // khởi tạo dialog
-        dialog.setContentView(R.layout.chart);
-        TextView txt = (TextView)dialog1.findViewById(R.id.chien);
-        txt.setText("chien");
-        // xét layout cho dialog
-        dialog.setTitle("Đăng kí");
-        // xét tiêu đề cho dialog
-
-
-        dialog.show();
-        // hiển thị dialog
-        ask.setBackgroundResource(R.drawable.khangia2);
-        ask.setClickable(false);
-    }
-
-    public void khangiaB(){
-        dialog = new Dialog(Main2Activity.this);
-        // khởi tạo dialog
-        dialog.setContentView(R.layout.chart);
-        // xét layout cho dialog
-        dialog.setTitle("Đăng kí");
-        // xét tiêu đề cho dialog
-
-
-        dialog.show();
-        // hiển thị dialog
-        ask.setBackgroundResource(R.drawable.khangia2);
-        ask.setClickable(false);
-    }
-
-    public void khangiaC(){
-        dialog = new Dialog(Main2Activity.this);
-        // khởi tạo dialog
-        dialog.setContentView(R.layout.chart);
-        // xét layout cho dialog
-        dialog.setTitle("Đăng kí");
-        // xét tiêu đề cho dialog
-
-
-        dialog.show();
-        // hiển thị dialog
-        ask.setBackgroundResource(R.drawable.khangia2);
-        ask.setClickable(false);
-    }
-
-    public void khangiaD(){
-        dialog = new Dialog(Main2Activity.this);
-        // khởi tạo dialog
-        dialog.setContentView(R.layout.chart);
-        // xét layout cho dialog
-        dialog.setTitle("Đăng kí");
-        // xét tiêu đề cho dialog
-
-
-        dialog.show();
-        // hiển thị dialog
-        ask.setBackgroundResource(R.drawable.khangia2);
-        ask.setClickable(false);
-    }
-
-    public void khangia(){
-        dialog = new Dialog(Main2Activity.this);
-        // khởi tạo dialog
-        dialog.setContentView(R.layout.chart);
-        // xét layout cho dialog
-        dialog.setTitle("Đăng kí");
-        // xét tiêu đề cho dialog
-
-
-        dialog.show();
-        // hiển thị dialog
-        ask.setBackgroundResource(R.drawable.khangia2);
-        ask.setClickable(false);
-    }
-
     public void khangia(View view){
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         //final ImageButton button = (ImageButton)findViewById(R.id.imageButton2);
+
         builder.setMessage("Bạn có muốn sử dụng sự trợ giúp của khán giả trong trường quay ?").setCancelable(false).setPositiveButton("Yes", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int id) {
-            khangiaA();
+                final Dialog dialog1 = new Dialog(Main2Activity.this);
+                dialog1.setTitle("Hỏi ý kiến khán giả");
+                Integer A,B,C,D;
+                // khởi tạo dialog
+                dialog1.setContentView(R.layout.chart);
+                ImageView imageViewA = (ImageView)dialog1.findViewById(R.id.imageView7);
+                ImageView imageViewB = (ImageView)dialog1.findViewById(R.id.imageView9);
+                ImageView imageViewC = (ImageView)dialog1.findViewById(R.id.imageView10);
+                ImageView imageViewD = (ImageView)dialog1.findViewById(R.id.imageView11);
+                TextView Atv = (TextView)dialog1.findViewById(R.id.textView17);
+                TextView Btv = (TextView)dialog1.findViewById(R.id.textView18);
+                TextView Ctv = (TextView)dialog1.findViewById(R.id.textView19);
+                TextView Dtv = (TextView)dialog1.findViewById(R.id.textView20);
+
+                switch (Integer.parseInt(ansCorrect.get(i))) {
+                    case 1:
+                        A = imageViewA.getLayoutParams().height = getRandom(40,100)*3;
+                        A /= 3;
+                        Atv.setText(A.toString()+"%");
+                        B = imageViewB.getLayoutParams().height = getRandom(0,100 - A)*3;
+                        B /= 3;
+                        Btv.setText(B.toString()+"%");
+                        C = imageViewC.getLayoutParams().height = getRandom(0,100 - A - B )*3;
+                        C /= 3;
+                        Ctv.setText(C.toString()+"%");
+                        D = imageViewD.getLayoutParams().height = (100 - A - B - C)*3;
+                        D /= 3;
+                        Dtv.setText(D.toString()+"%");
+                        break;
+
+                    case 2:
+                        B = imageViewB.getLayoutParams().height = getRandom(40,100)*3;
+                        B /= 3;
+                        Btv.setText(B.toString()+"%");
+                        A = imageViewA.getLayoutParams().height = getRandom(0,100 - B)*3;
+                        A /= 3;
+                        Atv.setText(A.toString()+"%");
+                        C = imageViewC.getLayoutParams().height = getRandom(0,100 - A - B )*3;
+                        C /= 3;
+                        Ctv.setText(C.toString()+"%");
+                        D = imageViewD.getLayoutParams().height = (100 - A - B - C)*3;
+                        D /= 3;
+                        Dtv.setText(D.toString()+"%");
+                        break;
+                    case 3:
+                        C = imageViewC.getLayoutParams().height = getRandom(40,100)*3;
+                        C /= 3;
+                        Ctv.setText(C.toString()+"%");
+                        A = imageViewA.getLayoutParams().height = getRandom(0,100 - C)*3;
+                        A /= 3;
+                        Atv.setText(A.toString()+"%");
+                        B = imageViewB.getLayoutParams().height = getRandom(0,100 - A - C)*3;
+                        B /= 3;
+                        Btv.setText(B.toString()+"%");
+                        D = imageViewD.getLayoutParams().height = (100 - A - B - C)*3;
+                        D /= 3;
+                        Dtv.setText(D.toString()+"%");
+                        break;
+                    case 4:
+                        D = imageViewD.getLayoutParams().height = getRandom(40,100)*3;
+                        D /= 3;
+                        Dtv.setText(D.toString()+"%");
+                        A = imageViewA.getLayoutParams().height = getRandom(0,100 - D)*3;
+                        A /= 3;
+                        Atv.setText(A.toString()+"%");
+                        B = imageViewB.getLayoutParams().height = getRandom(0,100 - A - D)*3;
+                        B /= 3;
+                        Btv.setText(B.toString()+"%");
+                        C = imageViewC.getLayoutParams().height = (100 - A - B - D)*3;
+                        C /= 3;
+                        Ctv.setText(C.toString()+"%");
+                        break;
+                }
+
+                dialog1.show();
+                // hiển thị dialog
+                ask.setBackgroundResource(R.drawable.khangia2);
+                ask.setClickable(false);
 
             }
         }).setNegativeButton("No", new DialogInterface.OnClickListener() {
@@ -257,11 +260,11 @@ public class Main2Activity extends AppCompatActivity {
                 break;
         }
         final AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
-        alertDialogBuilder.setMessage("Phương án trả lời của bạn là  " + answer +  " ?");
+        alertDialogBuilder.setMessage("Phương án trả lời của bạn là " + answer +  " ?");
         alertDialogBuilder.setPositiveButton("yes", new DialogInterface.OnClickListener() {
             @Override
-            public void onClick(DialogInterface arg0, int arg1) {
-
+            public void onClick(final DialogInterface dialog, int whick) {
+                mediaPlayer.stop();
                 switch (b.getId()){
                     case R.id.buttonA :
                         chooseNum = 1;
@@ -277,8 +280,22 @@ public class Main2Activity extends AppCompatActivity {
                         break;
                     default:
                         chooseNum = 0;
+                }if(alertDialog != null && alertDialog.isShowing()){
+                    alertDialog.dismiss();
                 }
-                PlayGame();
+                new CountDownTimer(1,1000){
+                    @Override
+                    public void onTick(long millisUntilFinished) {
+                        dialog.dismiss();
+                        if(alertDialog != null && alertDialog.isShowing()) {
+                            alertDialog.dismiss();
+                        }
+                    }
+                    @Override
+                    public void onFinish() {
+                        PlayGame();
+                    }
+                }.start();
             }
         });
 
@@ -287,11 +304,9 @@ public class Main2Activity extends AppCompatActivity {
             public void onClick(DialogInterface dialog, int which) {
                 chooseNum = 0;
                 mediaPlayer.stop();
-                dialog.cancel();
             }
         });
-        alertDialog = alertDialogBuilder.create();
-        alertDialog.show();
+        alertDialog = alertDialogBuilder.show();
     }
 
 
@@ -299,170 +314,211 @@ public class Main2Activity extends AppCompatActivity {
         mediaPlayer = new MediaPlayer().create(getApplicationContext(), id);
         mediaPlayer.start();
     }
+
+
     public void PlayGame() {
+        if(alertDialog != null && alertDialog.isShowing()){
+            alertDialog.dismiss();
+        }
         if (chooseNum != 0) {
+            mediaPlayer.stop();
             switch (Integer.parseInt(ansCorrect.get(i))) {
                 case 1:
                     if (chooseNum == 1) {
+
                         setSound(R.raw.true_a);
                     } else {
                         setSound(R.raw.lose_a);
+                        Fail();
                     }
-                    try {
-                        Thread.sleep(3000);
-                    } catch (InterruptedException e) {
-                        e.printStackTrace();
-                    }
+                    new CountDownTimer(3000,500){
+                        @Override
+                        public void onTick(long millisUntilFinished) {
+                            btna.setBackgroundResource(R.drawable.case_wrong);
+                        }
+                        @Override
+                        public void onFinish() {
+                            Question();
+                        }
+                    }.start();
                     break;
                 case 2:
                     if (chooseNum == 2) {
                         setSound(R.raw.true_b);
                     } else {
                         setSound(R.raw.lose_b);
+                        Fail();
                     }
-                    try {
-                        Thread.sleep(3000);
-                    } catch (InterruptedException e) {
-                        e.printStackTrace();
-                    }
+
+                    new CountDownTimer(3000,500){
+                        @Override
+                        public void onTick(long millisUntilFinished) {
+                            btnb.setBackgroundResource(R.drawable.case_wrong);
+                        }
+                        @Override
+                        public void onFinish() {
+                            Question();
+                        }
+                    }.start();
                     break;
                 case 3:
                     if (chooseNum == 3) {
                         setSound(R.raw.true_c);
                     } else {
                         setSound(R.raw.lose_c);
+                        Fail();
                     }
-                    try {
-                        Thread.sleep(3000);
-                    } catch (InterruptedException e) {
-                        e.printStackTrace();
-                    }
+
+                    new CountDownTimer(3000,500){
+                        @Override
+                        public void onTick(long millisUntilFinished) {
+                            btnc.setBackgroundResource(R.drawable.case_wrong);
+                        }
+                        @Override
+                        public void onFinish() {
+                            Question();
+                        }
+                    }.start();
+
                     break;
                 case 4:
                     if (chooseNum == 4) {
                         setSound(R.raw.true_d);
                     } else {
                         setSound(R.raw.lose_d);
+                        Fail();
                     }
-                    try {
-                        Thread.sleep(3000);
-                    } catch (InterruptedException e) {
-                        e.printStackTrace();
-                    }
+
+                    new CountDownTimer(3000,500){
+                        @Override
+                        public void onTick(long millisUntilFinished) {
+                            btnd.setBackgroundResource(R.drawable.case_wrong);
+                        }
+                        @Override
+                        public void onFinish() {
+                            Question();
+                        }
+                    }.start();
                     break;
             }
             level++;
         }
 
-            chooseNum = 0;
-            levelstr.setText("Câu hỏi số " + level.toString());
-            switch (level) {
-                case 1:
-                    money.setText(moneyStr.toString());
-                    setSound(R.raw.ques01);
-                    i = getRandom(0, 412);
-                    setAnswer(i);
-                    break;
-                case 2:
-                    moneyStr += 1000;
-                    money.setText(moneyStr.toString());
-                    setSound(R.raw.ques02);
-                    i = getRandom(413, 715);
-                    setAnswer(i);
-                    break;
 
-                case 3:
-                    moneyStr += 1000;
-                    money.setText(moneyStr.toString());
-                    setSound(R.raw.ques03);
-                    i = getRandom(716, 961);
-                    setAnswer(i);
-                    break;
-                case 4:
-                    moneyStr += 1000;
-                    money.setText(moneyStr.toString());
-                    setSound(R.raw.ques04);
-                    i = getRandom(962, 1269);
-                    setAnswer(i);
-                    break;
-                case 5:
-                    moneyStr += 2000;
-                    money.setText(moneyStr.toString());
-                    setSound(R.raw.ques05);
-                    i = getRandom(1270, 1591);
-                    setAnswer(i);
-                    break;
-                case 6:
-                    moneyStr += 5000;
-                    money.setText(moneyStr.toString());
-                    setSound(R.raw.ques06);
-                    i = getRandom(1592, 1991);
-                    setAnswer(i);
-                    break;
-                case 7:
-                    moneyStr += 10000;
-                    money.setText(moneyStr.toString());
-                    setSound(R.raw.ques07);
-                    i = getRandom(1992, 2395);
-                    setAnswer(i);
-                    break;
-                case 8:
-                    moneyStr += 10000;
-                    money.setText(moneyStr.toString());
-                    setSound(R.raw.ques08);
-                    i = getRandom(2396, 2798);
-                    setAnswer(i);
-                    break;
-                case 9:
-                    moneyStr += 30000;
-                    money.setText(moneyStr.toString());
-                    setSound(R.raw.ques09);
-                    i = getRandom(2799, 3184);
-                    setAnswer(i);
-                    break;
-                case 10:
-                    moneyStr += 60000;
-                    money.setText(moneyStr.toString());
-                    setSound(R.raw.ques10);
-                    i = getRandom(3185, 3441);
-                    setAnswer(i);
-                    break;
-                case 11:
-                    moneyStr += 60000;
-                    money.setText(moneyStr.toString());
-                    setSound(R.raw.ques11);
-                    i = getRandom(3442, 3653);
-                    setAnswer(i);
-                    break;
-                case 12:
-                    moneyStr += 100000;
-                    money.setText(moneyStr.toString());
-                    setSound(R.raw.ques12);
-                    i = getRandom(3654, 3839);
-                    setAnswer(i);
-                    break;
-                case 13:
-                    moneyStr += 200000;
-                    money.setText(moneyStr.toString());
-                    setSound(R.raw.ques13);
-                    i = getRandom(3840, 4011);
-                    setAnswer(i);
-                    break;
-                case 14:
-                    money.setText("500000");
-                    setSound(R.raw.ques14);
-                    i = getRandom(4012, 4169);
-                    setAnswer(i);
-                    break;
-                case 15:
-                    money.setText("800000");
-                    setSound(R.raw.ques15);
-                    i = getRandom(4170, 4228);
-                    setAnswer(i);
-                    break;
-            }
         }
+public void Question(){
+    btna.setBackgroundResource(R.drawable.case2);
+    btnb.setBackgroundResource(R.drawable.case2);
+    btnc.setBackgroundResource(R.drawable.case2);
+    btnd.setBackgroundResource(R.drawable.case2);
+    chooseNum = 0;
+    levelstr.setText("Câu hỏi số " + level.toString());
+    switch (level) {
+        case 1:
+            money.setText(moneyStr.toString());
+            setSound(R.raw.ques01);
+            i = getRandom(0, 412);
+            setAnswer(i);
+            break;
+        case 2:
+            moneyStr += 1000;
+            money.setText(moneyStr.toString());
+            setSound(R.raw.ques02);
+            i = getRandom(413, 715);
+            setAnswer(i);
+            break;
 
+        case 3:
+            moneyStr += 1000;
+            money.setText(moneyStr.toString());
+            setSound(R.raw.ques03);
+            i = getRandom(716, 961);
+            setAnswer(i);
+            break;
+        case 4:
+            moneyStr += 1000;
+            money.setText(moneyStr.toString());
+            setSound(R.raw.ques04);
+            i = getRandom(962, 1269);
+            setAnswer(i);
+            break;
+        case 5:
+            moneyStr += 2000;
+            money.setText(moneyStr.toString());
+            setSound(R.raw.ques05);
+            i = getRandom(1270, 1591);
+            setAnswer(i);
+            break;
+        case 6:
+            moneyStr += 5000;
+            money.setText(moneyStr.toString());
+            setSound(R.raw.ques06);
+            i = getRandom(1592, 1991);
+            setAnswer(i);
+            break;
+        case 7:
+            moneyStr += 10000;
+            money.setText(moneyStr.toString());
+            setSound(R.raw.ques07);
+            i = getRandom(1992, 2395);
+            setAnswer(i);
+            break;
+        case 8:
+            moneyStr += 10000;
+            money.setText(moneyStr.toString());
+            setSound(R.raw.ques08);
+            i = getRandom(2396, 2798);
+            setAnswer(i);
+            break;
+        case 9:
+            moneyStr += 30000;
+            money.setText(moneyStr.toString());
+            setSound(R.raw.ques09);
+            i = getRandom(2799, 3184);
+            setAnswer(i);
+            break;
+        case 10:
+            moneyStr += 60000;
+            money.setText(moneyStr.toString());
+            setSound(R.raw.ques10);
+            i = getRandom(3185, 3441);
+            setAnswer(i);
+            break;
+        case 11:
+            moneyStr += 60000;
+            money.setText(moneyStr.toString());
+            setSound(R.raw.ques11);
+            i = getRandom(3442, 3653);
+            setAnswer(i);
+            break;
+        case 12:
+            moneyStr += 100000;
+            money.setText(moneyStr.toString());
+            setSound(R.raw.ques12);
+            i = getRandom(3654, 3839);
+            setAnswer(i);
+            break;
+        case 13:
+            moneyStr += 200000;
+            money.setText(moneyStr.toString());
+            setSound(R.raw.ques13);
+            i = getRandom(3840, 4011);
+            setAnswer(i);
+            break;
+        case 14:
+            money.setText("500000");
+            setSound(R.raw.ques14);
+            i = getRandom(4012, 4169);
+            setAnswer(i);
+            break;
+        case 15:
+            money.setText("800000");
+            setSound(R.raw.ques15);
+            i = getRandom(4170, 4228);
+            setAnswer(i);
+            break;
+    }
+}
     public void setAnswer(Integer i){
         question.setText(qst.get(i));
         btna.setText("A. " + ansA.get(i));
@@ -471,6 +527,13 @@ public class Main2Activity extends AppCompatActivity {
         btnd.setText("D. " + ansD.get(i));
     }
 
+    public void Fail(){
+        final Dialog dialog = new Dialog(Main2Activity.this);
+        // khởi tạo dialog
+        dialog.setTitle("So tien ban nhan duoc la !");
+        dialog.show();
+        stopService(intent);
+    }
     @Override
     public void onStop(){
         super.onStop();

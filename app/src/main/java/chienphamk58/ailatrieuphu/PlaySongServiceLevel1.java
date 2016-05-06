@@ -46,6 +46,6 @@ public class PlaySongServiceLevel1 extends Service {
         // Giải phóng nguồn dữ nguồn phát nhạc.
         super.onDestroy();
         if(mediaPlayer.isPlaying())
-            mediaPlayer.pause();
+            mediaPlayer.stop();
     }
 }

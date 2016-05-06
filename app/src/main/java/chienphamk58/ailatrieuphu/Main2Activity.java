@@ -31,6 +31,7 @@ import java.util.concurrent.TimeUnit;
 import chienphamk58.ailatrieuphu.Database.DatabaseAccess;
 
 import static chienphamk58.ailatrieuphu.R.drawable.button_press;
+import static chienphamk58.ailatrieuphu.R.drawable.case2;
 
 public class Main2Activity extends AppCompatActivity {
     Intent intent;
@@ -56,7 +57,7 @@ public class Main2Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_main2);
-        intent = new Intent(Main2Activity.this, PlaySongServiceLevel1.class);
+        intent = new Intent(getApplicationContext(), PlaySongServiceLevel1.class);
         startService(intent);
 
         btna = (Button)findViewById(R.id.buttonA);
@@ -223,6 +224,10 @@ public class Main2Activity extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        if(level == 1) {
+            money.setText("1");
+            moneyStr = 1;
+        }
         builder.setMessage("Bạn muốn tạm dừng cuộc chơi và nhận số tiền " + moneyStr +"$ của chương trình ?").setCancelable(false).setPositiveButton("Yes", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int id) {
                 Main2Activity.this.finish();
@@ -230,6 +235,8 @@ public class Main2Activity extends AppCompatActivity {
             }
         }).setNegativeButton("No", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int id) {
+                if(level == 1)
+                    money.setText("0");
                 dialog.cancel();
             }
         });
@@ -325,93 +332,141 @@ public class Main2Activity extends AppCompatActivity {
             switch (Integer.parseInt(ansCorrect.get(i))) {
                 case 1:
                     if (chooseNum == 1) {
+                        level++;
                         setSound(R.raw.true_a);
                     } else {
                         setSound(R.raw.lose_a);
-                        Fail();
                     }
-                    new CountDownTimer(3000,500){
+                    new CountDownTimer(3000,200){
                         @Override
                         public void onTick(long millisUntilFinished) {
-                            btna.setBackgroundResource(R.drawable.case_wrong);
+                            j++;
+                            if(j%2 == 0)
+                                if(chooseNum == 1)
+                                    btna.setBackgroundResource(R.drawable.case_correct);
+                                else
+                                    getCorrectButton().setBackgroundResource(R.drawable.case_wrong);
+
+                            else
+                                if(chooseNum == 1)
+                                    btna.setBackgroundResource(R.drawable.case3);
+                                else
+                                    getCorrectButton().setBackgroundResource(R.drawable.case3);
                         }
                         @Override
                         public void onFinish() {
+                            j = 0;
                             if(chooseNum == 1)
                                 Question();
+                            else Fail();
                         }
                     }.start();
                     break;
                 case 2:
                     if (chooseNum == 2) {
+                        level++;
                         setSound(R.raw.true_b);
                     } else {
                         setSound(R.raw.lose_b);
-                        Fail();
                     }
 
-                    new CountDownTimer(3000,500){
+                    new CountDownTimer(3000,200){
                         @Override
                         public void onTick(long millisUntilFinished) {
-                            btnb.setBackgroundResource(R.drawable.case_wrong);
+                            j++;
+                            if(j%2 == 0)
+                                if(chooseNum == 2)
+                                    btnb.setBackgroundResource(R.drawable.case_correct);
+                                else
+                                    getCorrectButton().setBackgroundResource(R.drawable.case_wrong);
+
+                            else
+                                if(chooseNum == 2)
+                                    btnb.setBackgroundResource(R.drawable.case3);
+                                else
+                                    getCorrectButton().setBackgroundResource(R.drawable.case3);
                         }
                         @Override
                         public void onFinish() {
-
+                            j = 0;
                             if(chooseNum == 2)
                                 Question();
+                            else Fail();
                         }
                     }.start();
                     break;
                 case 3:
                     if (chooseNum == 3) {
+                        level++;
                         setSound(R.raw.true_c);
                     } else {
                         setSound(R.raw.lose_c);
-                        Fail();
                     }
 
-                    new CountDownTimer(3000,500){
+                    new CountDownTimer(3000,200){
                         @Override
                         public void onTick(long millisUntilFinished) {
-                            btnc.setBackgroundResource(R.drawable.case_wrong);
+                            j++;
+                            if(j%2 == 0)
+                                if(chooseNum == 3)
+                                    btnc.setBackgroundResource(R.drawable.case_correct);
+                                else
+                                    getCorrectButton().setBackgroundResource(R.drawable.case_wrong);
+
+                            else
+                                if(chooseNum == 3)
+                                    btnc.setBackgroundResource(R.drawable.case3);
+                                else
+                                    getCorrectButton().setBackgroundResource(R.drawable.case3);
                         }
                         @Override
                         public void onFinish() {
-
+                            j = 0;
                             if(chooseNum ==3)
                                 Question();
+                            else Fail();
                         }
                     }.start();
 
                     break;
                 case 4:
                     if (chooseNum == 4) {
+                        level++;
                         setSound(R.raw.true_d);
                     } else {
                         setSound(R.raw.lose_d);
-                        Fail();
                     }
 
-                    new CountDownTimer(3000,500){
+                    new CountDownTimer(3000,200){
                         @Override
                         public void onTick(long millisUntilFinished) {
-                            btnd.setBackgroundResource(R.drawable.case_wrong);
+                            j++;
+                            if(j%2 == 0)
+                                if(chooseNum == 4)
+                                    btnd.setBackgroundResource(R.drawable.case_correct);
+                                else
+                                    getCorrectButton().setBackgroundResource(R.drawable.case_wrong);
+
+                            else
+                            if(chooseNum == 4)
+                                btnd.setBackgroundResource(R.drawable.case3);
+                            else
+                                getCorrectButton().setBackgroundResource(R.drawable.case3);
                         }
                         @Override
                         public void onFinish() {
-
+                            j = 0;
                             if(chooseNum == 4)
                                 Question();
+                            else Fail();
                         }
                     }.start();
                     break;
             }
-            level++;
         }
 
 
-        }
+    }
 public void Question(){
     btna.setBackgroundResource(R.drawable.case2);
     btnb.setBackgroundResource(R.drawable.case2);
@@ -523,6 +578,8 @@ public void Question(){
             i = getRandom(4170, 4228);
             setAnswer(i);
             break;
+        default:
+            break;
     }
 }
     public void setAnswer(Integer i){
@@ -533,22 +590,44 @@ public void Question(){
         btnd.setText("D. " + ansD.get(i));
     }
 
+    public Button getCorrectButton(){
+        Integer k = null;
+        switch (Integer.parseInt(ansCorrect.get(i))){
+            case 1:
+                k = R.id.buttonA;
+                break;
+            case 2:
+                k = R.id.buttonB;
+                break;
+            case 3:
+                k =  R.id.buttonC;
+                break;
+            case 4:
+               k =  R.id.buttonD;
+                break;
+        }
+        return  (Button)findViewById(k);
+    }
     public void Fail(){
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        final Intent myIntent = new Intent(Main2Activity.this, Main2Activity.class);
+        final Intent myIntent = new Intent(getApplicationContext(), Main2Activity.class);
         if(level == 1) {
             money.setText("1");
             moneyStr = 1;
         }
-        builder.setMessage("Bạn sẽ ra về với số tiền " + moneyStr +"$\nBạn có muốn chơi lại ?").setCancelable(false).setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+        builder.setMessage("Bạn sẽ ra về với số tiền là " + moneyStr +"$\nBạn có muốn chơi lại ?").setCancelable(false).setPositiveButton("Yes", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int id) {
+                moneyStr = 0;
+                stopService(intent);
+                mediaPlayer.stop();
                 Main2Activity.this.finish();
                 Main2Activity.this.startActivity(myIntent);
-                startService(intent);
             }
         }).setNegativeButton("No", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int id) {
                 Main2Activity.this.finish();
+                stopService(intent);
+                mediaPlayer.stop();
                 dialog.cancel();
             }
         });

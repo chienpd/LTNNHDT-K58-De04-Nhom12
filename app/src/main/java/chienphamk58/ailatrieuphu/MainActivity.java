@@ -14,7 +14,7 @@ import android.widget.Toast;
 public class MainActivity extends Activity {
     Intent intent;
     MediaPlayer mediaPlayer;
-    Button btnPlay, btnHelp, btnAbout, btnSetting;
+    Button btnPlay, btnHelp, btnAbout;
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,8 +23,7 @@ public class MainActivity extends Activity {
         intent = new Intent(MainActivity.this, PlaySongService.class);
         btnPlay = (Button)findViewById(R.id.button1);
         btnHelp = (Button)findViewById(R.id.button2);
-        btnAbout = (Button)findViewById(R.id.button3);
-        btnSetting = (Button)findViewById(R.id.button4);
+        btnAbout = (Button)findViewById(R.id.button4);
         startService(intent);
     }
     public void Play(View view){
@@ -39,7 +38,6 @@ public class MainActivity extends Activity {
         arlertDialogBuiler.setMessage("Bạn đã sẵn sàng chơi ?").setCancelable(false).setPositiveButton("Yes",new DialogInterface.OnClickListener(){
             public void onClick(DialogInterface dialog, int id){
                 btnPlay.setClickable(false);
-                btnSetting.setClickable(false);
                 btnHelp.setClickable(false);
                 btnAbout.setClickable(false);
                 mediaPlayer.stop();
@@ -57,7 +55,6 @@ public class MainActivity extends Activity {
                         MainActivity.this.startActivity(myIntent);
                         btnPlay.setBackgroundResource(R.drawable.button_press);
                         btnPlay.setClickable(true);
-                        btnSetting.setClickable(true);
                         btnHelp.setClickable(true);
                         btnAbout.setClickable(true);
                     }
@@ -70,7 +67,6 @@ public class MainActivity extends Activity {
                 dialog.cancel();
                 mediaPlayer.stop();
                 btnPlay.setClickable(true);
-                btnSetting.setClickable(true);
                 btnHelp.setClickable(true);
                 btnAbout.setClickable(true);
             }

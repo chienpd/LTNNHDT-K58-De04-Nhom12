@@ -46,7 +46,7 @@ public class Main2Activity extends AppCompatActivity {
         btna = (Button)findViewById(R.id.buttonA);
         btnb = (Button)findViewById(R.id.buttonB);
         btnc = (Button)findViewById(R.id.buttonC);
-        btnd = (Button)findViewById(R.id.button1);
+        btnd = (Button)findViewById(R.id.buttonD);
         question = (TextView)findViewById(R.id.textView5);
         levelstr = (TextView)findViewById(R.id.textView4);
         money = (TextView)findViewById(R.id.textView2);
@@ -284,14 +284,14 @@ public class Main2Activity extends AppCompatActivity {
                 setSound(R.raw.ans_c);
                 btnc.setBackgroundResource(R.drawable.case3);
                 break;
-            case R.id.button1:
+            case R.id.buttonD:
                 answer = "D";
                 setSound(R.raw.ans_d);
                 btnd.setBackgroundResource(R.drawable.case3);
                 break;
         }
         final AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
-        alertDialogBuilder.setMessage("Phương án trả lời của bạn là " + answer +  " ?");
+        alertDialogBuilder.setMessage("Phương án trả lời của bạn là " + answer +  " ?").setCancelable(false);
         alertDialogBuilder.setPositiveButton("Đồng ý", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(final DialogInterface dialog, int whick) {
@@ -669,7 +669,7 @@ public class Main2Activity extends AppCompatActivity {
                 k =  R.id.buttonC;
                 break;
             case 4:
-               k =  R.id.button1;
+               k =  R.id.buttonD;
                 break;
         }
         return  (Button)findViewById(k);

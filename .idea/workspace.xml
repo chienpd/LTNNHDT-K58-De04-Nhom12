@@ -14,8 +14,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4ced5131-964c-46b5-b560-e4127d87dd43" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="/mnt/DATA/Dropbox/AiLaTrieuPhu/.gradle/2.10/taskArtifacts/cache.properties.lock" afterPath="/mnt/DATA/Dropbox/AiLaTrieuPhu/.gradle/2.10/taskArtifacts/cache.properties.lock" />
+      <change type="MODIFICATION" beforePath="/mnt/DATA/Dropbox/AiLaTrieuPhu/.gradle/2.10/taskArtifacts/fileHashes.bin" afterPath="/mnt/DATA/Dropbox/AiLaTrieuPhu/.gradle/2.10/taskArtifacts/fileHashes.bin" />
+      <change type="MODIFICATION" beforePath="/mnt/DATA/Dropbox/AiLaTrieuPhu/.gradle/2.10/taskArtifacts/fileSnapshots.bin" afterPath="/mnt/DATA/Dropbox/AiLaTrieuPhu/.gradle/2.10/taskArtifacts/fileSnapshots.bin" />
+      <change type="MODIFICATION" beforePath="/mnt/DATA/Dropbox/AiLaTrieuPhu/.gradle/2.10/taskArtifacts/outputFileStates.bin" afterPath="/mnt/DATA/Dropbox/AiLaTrieuPhu/.gradle/2.10/taskArtifacts/outputFileStates.bin" />
+      <change type="MODIFICATION" beforePath="/mnt/DATA/Dropbox/AiLaTrieuPhu/.gradle/2.10/taskArtifacts/taskArtifacts.bin" afterPath="/mnt/DATA/Dropbox/AiLaTrieuPhu/.gradle/2.10/taskArtifacts/taskArtifacts.bin" />
+      <change type="MODIFICATION" beforePath="/mnt/DATA/Dropbox/AiLaTrieuPhu/.gradle/2.10/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" afterPath="/mnt/DATA/Dropbox/AiLaTrieuPhu/.gradle/2.10/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" />
+      <change type="MODIFICATION" beforePath="/mnt/DATA/Dropbox/AiLaTrieuPhu/.gradle/2.10/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" afterPath="/mnt/DATA/Dropbox/AiLaTrieuPhu/.gradle/2.10/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" />
+      <change type="MODIFICATION" beforePath="/mnt/DATA/Dropbox/AiLaTrieuPhu/.gradle/2.10/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterPath="/mnt/DATA/Dropbox/AiLaTrieuPhu/.gradle/2.10/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" />
+      <change type="MODIFICATION" beforePath="/mnt/DATA/Dropbox/AiLaTrieuPhu/.idea/misc.xml" afterPath="/mnt/DATA/Dropbox/AiLaTrieuPhu/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="/mnt/DATA/Dropbox/AiLaTrieuPhu/.idea/workspace.xml" afterPath="/mnt/DATA/Dropbox/AiLaTrieuPhu/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/java/chienphamk58/ailatrieuphu/Main2Activity.java" afterPath="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/java/chienphamk58/ailatrieuphu/Main2Activity.java" />
+      <change type="MODIFICATION" beforePath="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/java/chienphamk58/ailatrieuphu/MainActivity.java" afterPath="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/java/chienphamk58/ailatrieuphu/MainActivity.java" />
+      <change type="MODIFICATION" beforePath="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/drawable/choice.xml" afterPath="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/drawable/choice.xml" />
+      <change type="MODIFICATION" beforePath="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/layout/activity_main.xml" afterPath="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/layout/activity_main.xml" />
+      <change type="MODIFICATION" beforePath="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/layout/activity_main2.xml" afterPath="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/layout/activity_main2.xml" />
     </list>
     <ignored path="AiLaTrieuPhu.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -50,14 +63,19 @@
       <file leaf-file-name="Main2Activity.java" pinned="false" current-in-tab="true">
         <entry file="file:///mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/java/chienphamk58/ailatrieuphu/Main2Activity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3853211">
-              <caret line="34" column="13" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
+            <state vertical-scroll-proportion="0.097247705">
+              <caret line="343" column="48" selection-start-line="343" selection-start-column="48" selection-end-line="343" selection-end-column="48" />
               <folding>
                 <element signature="method#onCreate#0;class#Main2Activity#0" expanded="false" />
                 <element signature="method#onBackPressed#0;class#Main2Activity#0" expanded="false" />
                 <element signature="method#changeQuestion#0;class#Main2Activity#0" expanded="false" />
                 <element signature="method#khangia#0;class#Main2Activity#0" expanded="false" />
-                <element signature="method#onClick#0;class#Main2Activity#0" expanded="false" />
+                <element signature="e#5663#11588#0" expanded="true" />
+                <element signature="e#11587#11588#0" expanded="true" />
+                <element signature="e#11618#11781#0" expanded="true" />
+                <element signature="e#11780#11781#0" expanded="true" />
+                <element signature="e#13016#14402#0" expanded="true" />
+                <element signature="e#14401#14402#0" expanded="true" />
                 <element signature="method#setSound#0;class#Main2Activity#0" expanded="false" />
                 <element signature="method#PlayGame#0;class#Main2Activity#0" expanded="false" />
                 <element signature="method#Question#0;class#Main2Activity#0" expanded="false" />
@@ -65,11 +83,43 @@
                 <element signature="method#setAnswer#0;class#Main2Activity#0" expanded="false" />
                 <element signature="method#getCorrectButton#0;class#Main2Activity#0" expanded="false" />
                 <element signature="method#Fail#0;class#Main2Activity#0" expanded="false" />
-                <element signature="method#onStop#0;class#Main2Activity#0" expanded="false" />
-                <element signature="method#onPause#0;class#Main2Activity#0" expanded="false" />
-                <element signature="method#onDestroy#0;class#Main2Activity#0" expanded="false" />
                 <element signature="method#onResume#0;class#Main2Activity#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file:///mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/java/chienphamk58/ailatrieuphu/MainActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="61" column="52" selection-start-line="61" selection-start-column="52" selection-end-line="61" selection-end-column="52" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#onCreate#0;class#MainActivity#0" expanded="false" />
+                <element signature="method#Help#0;class#MainActivity#0" expanded="false" />
+                <element signature="method#High_Score#0;class#MainActivity#0" expanded="false" />
+                <element signature="method#Setting#0;class#MainActivity#0" expanded="false" />
+                <element signature="method#onBackPressed#0;class#MainActivity#0" expanded="false" />
+                <element signature="method#onStop#0;class#MainActivity#0" expanded="false" />
+                <element signature="method#onPause#0;class#MainActivity#0" expanded="false" />
+                <element signature="method#onDestroy#0;class#MainActivity#0" expanded="false" />
+                <element signature="method#onResume#0;class#MainActivity#0" expanded="false" />
+                <element signature="method#setSound#0;class#MainActivity#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="activity_main2.xml" pinned="false" current-in-tab="false">
+        <entry file="file:///mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/layout/activity_main2.xml">
+          <provider editor-type-id="android-designer">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-6.4545455">
+              <caret line="165" column="40" selection-start-line="165" selection-start-column="40" selection-end-line="165" selection-end-column="40" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -89,7 +139,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="/mnt/DATA/Dropbox/AiLaTrieuPhu" />
     <push-targets>
-      <push-target-info repo="/mnt/DATA/Dropbox/AiLaTrieuPhu" source="master" target-remote="origin" target-branch="master" />
+      <push-target-info repo="/mnt/DATA/Dropbox/AiLaTrieuPhu" source="master" target-remote="chienpham" target-branch="master" />
     </push-targets>
   </component>
   <component name="GradleLocalSettings">
@@ -1689,15 +1739,16 @@
         <option value="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/layout/chart.xml" />
         <option value="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/values/strings.xml" />
         <option value="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/layout/activity_main5.xml" />
-        <option value="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/layout/activity_main2.xml" />
         <option value="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/java/chienphamk58/ailatrieuphu/PlaySongServiceLevel1.java" />
         <option value="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/AndroidManifest.xml" />
         <option value="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/java/chienphamk58/ailatrieuphu/PlaySongServiceLevel2.java" />
         <option value="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/java/chienphamk58/ailatrieuphu/PlaySongServiceLevel1_1.java" />
         <option value="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/layout/activity_main3.xml" />
-        <option value="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/layout/activity_main.xml" />
         <option value="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/java/chienphamk58/ailatrieuphu/PlaySongService.java" />
+        <option value="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/drawable/choice.xml" />
+        <option value="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/layout/activity_main.xml" />
         <option value="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/java/chienphamk58/ailatrieuphu/MainActivity.java" />
+        <option value="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/layout/activity_main2.xml" />
         <option value="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/java/chienphamk58/ailatrieuphu/Main2Activity.java" />
       </list>
     </option>
@@ -1750,19 +1801,13 @@
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="AiLaTrieuPhu" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+              <option name="myItemId" value="values" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -1775,12 +1820,54 @@
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AiLaTrieuPhu" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="ailatrieuphu" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layout" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AiLaTrieuPhu" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="drawable" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AiLaTrieuPhu" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -2140,7 +2227,13 @@
       <option name="project" value="LOCAL" />
       <updated>1462629515255</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Ai La Trieu Phu">
+      <created>1462630177545</created>
+      <option name="number" value="00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1462630177545</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -2153,7 +2246,9 @@
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32869565" sideWeight="0.5181818" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" x="100" y="208" width="1166" height="499" />
       <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3275862" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -2173,9 +2268,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" x="100" y="208" width="1166" height="499" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -2208,37 +2301,27 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file:///mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/java/chienphamk58/ailatrieuphu/Main2Activity.java</url>
-          <line>272</line>
+          <line>294</line>
           <properties />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file:///mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/java/chienphamk58/ailatrieuphu/Main2Activity.java</url>
+          <line>37</line>
+          <properties class="chienphamk58.ailatrieuphu.Main2Activity" method="onCreate" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file:///mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/java/chienphamk58/ailatrieuphu/MainActivity.java</url>
+          <line>102</line>
+          <properties class="chienphamk58.ailatrieuphu.MainActivity" method="onBackPressed" />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="1" />
+      <option name="time" value="4" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file:///mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/layout/activity_main3.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="35" selection-start-line="0" selection-start-column="0" selection-end-line="199" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/layout/activity_main4.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/java/chienphamk58/ailatrieuphu/Main2Activity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -2248,7 +2331,12 @@
             <element signature="method#onBackPressed#0;class#Main2Activity#0" expanded="false" />
             <element signature="method#changeQuestion#0;class#Main2Activity#0" expanded="false" />
             <element signature="method#khangia#0;class#Main2Activity#0" expanded="false" />
-            <element signature="method#onClick#0;class#Main2Activity#0" expanded="false" />
+            <element signature="e#5663#11588#0" expanded="true" />
+            <element signature="e#11587#11588#0" expanded="true" />
+            <element signature="e#11618#11781#0" expanded="true" />
+            <element signature="e#11780#11781#0" expanded="true" />
+            <element signature="e#13016#14402#0" expanded="true" />
+            <element signature="e#14401#14402#0" expanded="true" />
             <element signature="method#setSound#0;class#Main2Activity#0" expanded="false" />
             <element signature="method#PlayGame#0;class#Main2Activity#0" expanded="false" />
             <element signature="method#Question#0;class#Main2Activity#0" expanded="false" />
@@ -2256,9 +2344,6 @@
             <element signature="method#setAnswer#0;class#Main2Activity#0" expanded="false" />
             <element signature="method#getCorrectButton#0;class#Main2Activity#0" expanded="false" />
             <element signature="method#Fail#0;class#Main2Activity#0" expanded="false" />
-            <element signature="method#onStop#0;class#Main2Activity#0" expanded="false" />
-            <element signature="method#onPause#0;class#Main2Activity#0" expanded="false" />
-            <element signature="method#onDestroy#0;class#Main2Activity#0" expanded="false" />
             <element signature="method#onResume#0;class#Main2Activity#0" expanded="false" />
           </folding>
         </state>
@@ -2295,7 +2380,12 @@
             <element signature="method#onBackPressed#0;class#Main2Activity#0" expanded="false" />
             <element signature="method#changeQuestion#0;class#Main2Activity#0" expanded="false" />
             <element signature="method#khangia#0;class#Main2Activity#0" expanded="false" />
-            <element signature="method#onClick#0;class#Main2Activity#0" expanded="false" />
+            <element signature="e#5663#11588#0" expanded="true" />
+            <element signature="e#11587#11588#0" expanded="true" />
+            <element signature="e#11618#11781#0" expanded="true" />
+            <element signature="e#11780#11781#0" expanded="true" />
+            <element signature="e#13016#14402#0" expanded="true" />
+            <element signature="e#14401#14402#0" expanded="true" />
             <element signature="method#setSound#0;class#Main2Activity#0" expanded="false" />
             <element signature="method#PlayGame#0;class#Main2Activity#0" expanded="false" />
             <element signature="method#Question#0;class#Main2Activity#0" expanded="false" />
@@ -2303,9 +2393,6 @@
             <element signature="method#setAnswer#0;class#Main2Activity#0" expanded="false" />
             <element signature="method#getCorrectButton#0;class#Main2Activity#0" expanded="false" />
             <element signature="method#Fail#0;class#Main2Activity#0" expanded="false" />
-            <element signature="method#onStop#0;class#Main2Activity#0" expanded="false" />
-            <element signature="method#onPause#0;class#Main2Activity#0" expanded="false" />
-            <element signature="method#onDestroy#0;class#Main2Activity#0" expanded="false" />
             <element signature="method#onResume#0;class#Main2Activity#0" expanded="false" />
           </folding>
         </state>
@@ -2338,7 +2425,12 @@
             <element signature="method#onBackPressed#0;class#Main2Activity#0" expanded="false" />
             <element signature="method#changeQuestion#0;class#Main2Activity#0" expanded="false" />
             <element signature="method#khangia#0;class#Main2Activity#0" expanded="false" />
-            <element signature="method#onClick#0;class#Main2Activity#0" expanded="false" />
+            <element signature="e#5663#11588#0" expanded="true" />
+            <element signature="e#11587#11588#0" expanded="true" />
+            <element signature="e#11618#11781#0" expanded="true" />
+            <element signature="e#11780#11781#0" expanded="true" />
+            <element signature="e#13016#14402#0" expanded="true" />
+            <element signature="e#14401#14402#0" expanded="true" />
             <element signature="method#setSound#0;class#Main2Activity#0" expanded="false" />
             <element signature="method#PlayGame#0;class#Main2Activity#0" expanded="false" />
             <element signature="method#Question#0;class#Main2Activity#0" expanded="false" />
@@ -2346,9 +2438,6 @@
             <element signature="method#setAnswer#0;class#Main2Activity#0" expanded="false" />
             <element signature="method#getCorrectButton#0;class#Main2Activity#0" expanded="false" />
             <element signature="method#Fail#0;class#Main2Activity#0" expanded="false" />
-            <element signature="method#onStop#0;class#Main2Activity#0" expanded="false" />
-            <element signature="method#onPause#0;class#Main2Activity#0" expanded="false" />
-            <element signature="method#onDestroy#0;class#Main2Activity#0" expanded="false" />
             <element signature="method#onResume#0;class#Main2Activity#0" expanded="false" />
           </folding>
         </state>
@@ -2385,7 +2474,12 @@
             <element signature="method#onBackPressed#0;class#Main2Activity#0" expanded="false" />
             <element signature="method#changeQuestion#0;class#Main2Activity#0" expanded="false" />
             <element signature="method#khangia#0;class#Main2Activity#0" expanded="false" />
-            <element signature="method#onClick#0;class#Main2Activity#0" expanded="false" />
+            <element signature="e#5663#11588#0" expanded="true" />
+            <element signature="e#11587#11588#0" expanded="true" />
+            <element signature="e#11618#11781#0" expanded="true" />
+            <element signature="e#11780#11781#0" expanded="true" />
+            <element signature="e#13016#14402#0" expanded="true" />
+            <element signature="e#14401#14402#0" expanded="true" />
             <element signature="method#setSound#0;class#Main2Activity#0" expanded="false" />
             <element signature="method#PlayGame#0;class#Main2Activity#0" expanded="false" />
             <element signature="method#Question#0;class#Main2Activity#0" expanded="false" />
@@ -2393,9 +2487,6 @@
             <element signature="method#setAnswer#0;class#Main2Activity#0" expanded="false" />
             <element signature="method#getCorrectButton#0;class#Main2Activity#0" expanded="false" />
             <element signature="method#Fail#0;class#Main2Activity#0" expanded="false" />
-            <element signature="method#onStop#0;class#Main2Activity#0" expanded="false" />
-            <element signature="method#onPause#0;class#Main2Activity#0" expanded="false" />
-            <element signature="method#onDestroy#0;class#Main2Activity#0" expanded="false" />
             <element signature="method#onResume#0;class#Main2Activity#0" expanded="false" />
           </folding>
         </state>
@@ -2433,7 +2524,12 @@
             <element signature="method#onBackPressed#0;class#Main2Activity#0" expanded="false" />
             <element signature="method#changeQuestion#0;class#Main2Activity#0" expanded="false" />
             <element signature="method#khangia#0;class#Main2Activity#0" expanded="false" />
-            <element signature="method#onClick#0;class#Main2Activity#0" expanded="false" />
+            <element signature="e#5663#11588#0" expanded="true" />
+            <element signature="e#11587#11588#0" expanded="true" />
+            <element signature="e#11618#11781#0" expanded="true" />
+            <element signature="e#11780#11781#0" expanded="true" />
+            <element signature="e#13016#14402#0" expanded="true" />
+            <element signature="e#14401#14402#0" expanded="true" />
             <element signature="method#setSound#0;class#Main2Activity#0" expanded="false" />
             <element signature="method#PlayGame#0;class#Main2Activity#0" expanded="false" />
             <element signature="method#Question#0;class#Main2Activity#0" expanded="false" />
@@ -2441,9 +2537,6 @@
             <element signature="method#setAnswer#0;class#Main2Activity#0" expanded="false" />
             <element signature="method#getCorrectButton#0;class#Main2Activity#0" expanded="false" />
             <element signature="method#Fail#0;class#Main2Activity#0" expanded="false" />
-            <element signature="method#onStop#0;class#Main2Activity#0" expanded="false" />
-            <element signature="method#onPause#0;class#Main2Activity#0" expanded="false" />
-            <element signature="method#onDestroy#0;class#Main2Activity#0" expanded="false" />
             <element signature="method#onResume#0;class#Main2Activity#0" expanded="false" />
           </folding>
         </state>
@@ -2491,7 +2584,12 @@
             <element signature="method#onBackPressed#0;class#Main2Activity#0" expanded="false" />
             <element signature="method#changeQuestion#0;class#Main2Activity#0" expanded="false" />
             <element signature="method#khangia#0;class#Main2Activity#0" expanded="false" />
-            <element signature="method#onClick#0;class#Main2Activity#0" expanded="false" />
+            <element signature="e#5663#11588#0" expanded="true" />
+            <element signature="e#11587#11588#0" expanded="true" />
+            <element signature="e#11618#11781#0" expanded="true" />
+            <element signature="e#11780#11781#0" expanded="true" />
+            <element signature="e#13016#14402#0" expanded="true" />
+            <element signature="e#14401#14402#0" expanded="true" />
             <element signature="method#setSound#0;class#Main2Activity#0" expanded="false" />
             <element signature="method#PlayGame#0;class#Main2Activity#0" expanded="false" />
             <element signature="method#Question#0;class#Main2Activity#0" expanded="false" />
@@ -2499,9 +2597,6 @@
             <element signature="method#setAnswer#0;class#Main2Activity#0" expanded="false" />
             <element signature="method#getCorrectButton#0;class#Main2Activity#0" expanded="false" />
             <element signature="method#Fail#0;class#Main2Activity#0" expanded="false" />
-            <element signature="method#onStop#0;class#Main2Activity#0" expanded="false" />
-            <element signature="method#onPause#0;class#Main2Activity#0" expanded="false" />
-            <element signature="method#onDestroy#0;class#Main2Activity#0" expanded="false" />
             <element signature="method#onResume#0;class#Main2Activity#0" expanded="false" />
           </folding>
         </state>
@@ -2549,7 +2644,12 @@
             <element signature="method#onBackPressed#0;class#Main2Activity#0" expanded="false" />
             <element signature="method#changeQuestion#0;class#Main2Activity#0" expanded="false" />
             <element signature="method#khangia#0;class#Main2Activity#0" expanded="false" />
-            <element signature="method#onClick#0;class#Main2Activity#0" expanded="false" />
+            <element signature="e#5663#11588#0" expanded="true" />
+            <element signature="e#11587#11588#0" expanded="true" />
+            <element signature="e#11618#11781#0" expanded="true" />
+            <element signature="e#11780#11781#0" expanded="true" />
+            <element signature="e#13016#14402#0" expanded="true" />
+            <element signature="e#14401#14402#0" expanded="true" />
             <element signature="method#setSound#0;class#Main2Activity#0" expanded="false" />
             <element signature="method#PlayGame#0;class#Main2Activity#0" expanded="false" />
             <element signature="method#Question#0;class#Main2Activity#0" expanded="false" />
@@ -2557,9 +2657,6 @@
             <element signature="method#setAnswer#0;class#Main2Activity#0" expanded="false" />
             <element signature="method#getCorrectButton#0;class#Main2Activity#0" expanded="false" />
             <element signature="method#Fail#0;class#Main2Activity#0" expanded="false" />
-            <element signature="method#onStop#0;class#Main2Activity#0" expanded="false" />
-            <element signature="method#onPause#0;class#Main2Activity#0" expanded="false" />
-            <element signature="method#onDestroy#0;class#Main2Activity#0" expanded="false" />
             <element signature="method#onResume#0;class#Main2Activity#0" expanded="false" />
           </folding>
         </state>
@@ -2591,7 +2688,12 @@
             <element signature="method#onBackPressed#0;class#Main2Activity#0" expanded="false" />
             <element signature="method#changeQuestion#0;class#Main2Activity#0" expanded="false" />
             <element signature="method#khangia#0;class#Main2Activity#0" expanded="false" />
-            <element signature="method#onClick#0;class#Main2Activity#0" expanded="false" />
+            <element signature="e#5663#11588#0" expanded="true" />
+            <element signature="e#11587#11588#0" expanded="true" />
+            <element signature="e#11618#11781#0" expanded="true" />
+            <element signature="e#11780#11781#0" expanded="true" />
+            <element signature="e#13016#14402#0" expanded="true" />
+            <element signature="e#14401#14402#0" expanded="true" />
             <element signature="method#setSound#0;class#Main2Activity#0" expanded="false" />
             <element signature="method#PlayGame#0;class#Main2Activity#0" expanded="false" />
             <element signature="method#Question#0;class#Main2Activity#0" expanded="false" />
@@ -2599,9 +2701,6 @@
             <element signature="method#setAnswer#0;class#Main2Activity#0" expanded="false" />
             <element signature="method#getCorrectButton#0;class#Main2Activity#0" expanded="false" />
             <element signature="method#Fail#0;class#Main2Activity#0" expanded="false" />
-            <element signature="method#onStop#0;class#Main2Activity#0" expanded="false" />
-            <element signature="method#onPause#0;class#Main2Activity#0" expanded="false" />
-            <element signature="method#onDestroy#0;class#Main2Activity#0" expanded="false" />
             <element signature="method#onResume#0;class#Main2Activity#0" expanded="false" />
           </folding>
         </state>
@@ -2623,14 +2722,6 @@
       </provider>
     </entry>
     <entry file="file:///mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/values/styles.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/values/attrs_chart.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -2711,28 +2802,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/layout/activity_main2.xml">
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="101" column="8" selection-start-line="101" selection-start-column="8" selection-end-line="101" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/layout/activity_main.xml">
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="60" column="32" selection-start-line="60" selection-start-column="32" selection-end-line="60" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/java/chienphamk58/ailatrieuphu/PlaySongService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.559633">
@@ -2782,24 +2851,87 @@
         </state>
       </provider>
     </entry>
+    <entry file="file:///mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/drawable/button_press.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/values/attrs_chart.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/drawable/choice.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.875">
+          <caret line="3" column="107" selection-start-line="3" selection-start-column="107" selection-end-line="3" selection-end-column="107" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/layout/activity_main.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.7916665">
+          <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/layout/activity_main2.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.4545455">
+          <caret line="165" column="40" selection-start-line="165" selection-start-column="40" selection-end-line="165" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file:///mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/java/chienphamk58/ailatrieuphu/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.0183486">
-          <caret line="54" column="0" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
-          <folding />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="61" column="52" selection-start-line="61" selection-start-column="52" selection-end-line="61" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#onCreate#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#Help#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#High_Score#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#Setting#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#onBackPressed#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#onStop#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#onPause#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#onDestroy#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#onResume#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#setSound#0;class#MainActivity#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file:///mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/java/chienphamk58/ailatrieuphu/Main2Activity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3853211">
-          <caret line="34" column="13" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
+        <state vertical-scroll-proportion="0.097247705">
+          <caret line="343" column="48" selection-start-line="343" selection-start-column="48" selection-end-line="343" selection-end-column="48" />
           <folding>
             <element signature="method#onCreate#0;class#Main2Activity#0" expanded="false" />
             <element signature="method#onBackPressed#0;class#Main2Activity#0" expanded="false" />
             <element signature="method#changeQuestion#0;class#Main2Activity#0" expanded="false" />
             <element signature="method#khangia#0;class#Main2Activity#0" expanded="false" />
-            <element signature="method#onClick#0;class#Main2Activity#0" expanded="false" />
+            <element signature="e#5663#11588#0" expanded="true" />
+            <element signature="e#11587#11588#0" expanded="true" />
+            <element signature="e#11618#11781#0" expanded="true" />
+            <element signature="e#11780#11781#0" expanded="true" />
+            <element signature="e#13016#14402#0" expanded="true" />
+            <element signature="e#14401#14402#0" expanded="true" />
             <element signature="method#setSound#0;class#Main2Activity#0" expanded="false" />
             <element signature="method#PlayGame#0;class#Main2Activity#0" expanded="false" />
             <element signature="method#Question#0;class#Main2Activity#0" expanded="false" />
@@ -2807,9 +2939,6 @@
             <element signature="method#setAnswer#0;class#Main2Activity#0" expanded="false" />
             <element signature="method#getCorrectButton#0;class#Main2Activity#0" expanded="false" />
             <element signature="method#Fail#0;class#Main2Activity#0" expanded="false" />
-            <element signature="method#onStop#0;class#Main2Activity#0" expanded="false" />
-            <element signature="method#onPause#0;class#Main2Activity#0" expanded="false" />
-            <element signature="method#onDestroy#0;class#Main2Activity#0" expanded="false" />
             <element signature="method#onResume#0;class#Main2Activity#0" expanded="false" />
           </folding>
         </state>

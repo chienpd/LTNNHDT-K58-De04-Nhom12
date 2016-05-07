@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent" android:layout_height="match_parent"
+    tools:context="chienphamk58.ailatrieuphu.Main2Activity"
     android:background="@mipmap/bg_altp">
 
     <TextView
@@ -130,7 +132,7 @@
             android:layout_height="45dp"
             android:id="@+id/buttonA"
             android:layout_gravity="center_horizontal"
-            android:background="@mipmap/case2"
+            android:background="@drawable/button_press"
             android:textAllCaps="false"
             android:textSize="18dp"
             android:onClick="onClick"
@@ -140,7 +142,7 @@
             android:layout_height="45dp"
             android:id="@+id/buttonB"
             android:layout_gravity="center_horizontal"
-            android:background="@mipmap/case2"
+            android:background="@drawable/button_press"
             android:textAllCaps="false"
             android:textSize="18dp"
             android:onClick="onClick" />
@@ -149,7 +151,7 @@
             android:layout_height="45dp"
             android:id="@+id/buttonC"
             android:layout_gravity="center_horizontal"
-            android:background="@mipmap/case2"
+            android:background="@drawable/button_press"
             android:textAllCaps="false"
             android:textSize="18dp"
             android:onClick="onClick" />
@@ -158,7 +160,7 @@
             android:layout_height="45dp"
             android:id="@+id/buttonD"
             android:layout_gravity="center_horizontal"
-            android:background="@mipmap/case2"
+            android:background="@drawable/button_press"
             android:textAllCaps="false"
             android:textSize="18dp"
             android:onClick="onClick" />

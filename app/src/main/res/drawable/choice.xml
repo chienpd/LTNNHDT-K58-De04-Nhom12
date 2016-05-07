@@ -2,6 +2,5 @@
 
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:state_pressed="true" android:state_activated="true" android:drawable="@drawable/case3" />
-    <item android:state_focused="true" android:drawable="@drawable/case_correct" />
     <item android:state_enabled="true" android:drawable="@drawable/case2" />
 </selector>

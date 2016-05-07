@@ -9,22 +9,22 @@ import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.view.View;
 import android.view.WindowManager;
-import android.widget.TextView;
+import android.widget.Button;
 import android.widget.Toast;
-
-import java.util.List;
-
-import chienphamk58.ailatrieuphu.Database.DatabaseAccess;
-
 public class MainActivity extends Activity {
     Intent intent;
     MediaPlayer mediaPlayer;
+    Button btnPlay, btnHelp, btnAbout, btnSetting;
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_main);
         intent = new Intent(MainActivity.this, PlaySongService.class);
+        btnPlay = (Button)findViewById(R.id.button1);
+        btnHelp = (Button)findViewById(R.id.button2);
+        btnAbout = (Button)findViewById(R.id.button3);
+        btnSetting = (Button)findViewById(R.id.button4);
         startService(intent);
     }
     public void Play(View view){
@@ -38,10 +38,15 @@ public class MainActivity extends Activity {
         // set dialog Message
         arlertDialogBuiler.setMessage("Bạn đã sẵn sàng chơi ?").setCancelable(false).setPositiveButton("Yes",new DialogInterface.OnClickListener(){
             public void onClick(DialogInterface dialog, int id){
+                btnPlay.setClickable(false);
+                btnSetting.setClickable(false);
+                btnHelp.setClickable(false);
+                btnAbout.setClickable(false);
                 mediaPlayer.stop();
                 setSound(R.raw.gofind);
                 Toast toast=Toast.makeText(MainActivity.this, "Chúng ta bắt đầu đi tìm Ai Là Triệu Phú ",   Toast.LENGTH_LONG);
                 toast.show();
+                btnPlay.setBackgroundResource(R.drawable.case3);
                 new CountDownTimer(3000,1000){
                     @Override
                     public void onTick(long millisUntilFinished) {
@@ -50,6 +55,11 @@ public class MainActivity extends Activity {
                     @Override
                     public void onFinish() {
                         MainActivity.this.startActivity(myIntent);
+                        btnPlay.setBackgroundResource(R.drawable.button_press);
+                        btnPlay.setClickable(true);
+                        btnSetting.setClickable(true);
+                        btnHelp.setClickable(true);
+                        btnAbout.setClickable(true);
                     }
                 }.start();
 
@@ -59,6 +69,10 @@ public class MainActivity extends Activity {
             public void onClick(DialogInterface dialog, int id){
                 dialog.cancel();
                 mediaPlayer.stop();
+                btnPlay.setClickable(true);
+                btnSetting.setClickable(true);
+                btnHelp.setClickable(true);
+                btnAbout.setClickable(true);
             }
         });
 

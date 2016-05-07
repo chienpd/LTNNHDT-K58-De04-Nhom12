@@ -16,7 +16,7 @@
         android:layout_height="250dp"
         android:id="@+id/imageView8"
         android:background="@mipmap/mlogo"
-        android:layout_above="@+id/buttonD"
+        android:layout_above="@+id/button1"
         android:layout_centerHorizontal="true"
         android:layout_gravity="center_horizontal" />
 
@@ -24,7 +24,7 @@
         android:layout_width="250dp"
         android:layout_height="40dp"
         android:text="PLAY"
-        android:id="@+id/buttonD"
+        android:id="@+id/button1"
         android:background="@drawable/button_press"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
@@ -45,7 +45,7 @@
         android:textStyle="normal|bold"
         android:typeface="serif"
         android:textSize="20dp"
-        android:layout_below="@+id/buttonD"
+        android:layout_below="@+id/button1"
         android:layout_centerHorizontal="true"
         android:onClick="Help"
         android:layout_gravity="center_horizontal" />

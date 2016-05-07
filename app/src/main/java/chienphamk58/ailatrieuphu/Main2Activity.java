@@ -23,14 +23,14 @@ import java.util.concurrent.TimeUnit;
 import chienphamk58.ailatrieuphu.Database.DatabaseAccess;
 public class Main2Activity extends AppCompatActivity {
     Intent intent;
-    Integer level = 1, moneyStr = 0, fail = 0, chooseNum = 0,i, j = 0;
-    CountDownTimer countDownTimer;
+    Integer level = 1, moneyStr = 0, chooseNum = 0,i, j = 0;
+    CountDownTimer countDownTimer2;
     DatabaseAccess databaseAccess;
     List<String> qst, ansA, ansB, ansC, ansD, ansCorrect;
-    static AlertDialog alertDialog;
-    static Button btna, btnb,btnc, btnd;
+    AlertDialog alertDialog;
+    Button btna, btnb,btnc, btnd;
     ImageButton change, ask;
-    static TextView question;
+    TextView question;
     MediaPlayer mediaPlayer;
     Button b;
     TextView levelstr,money;
@@ -39,22 +39,24 @@ public class Main2Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_main2);
+
         intent = new Intent(getApplicationContext(), PlaySongServiceLevel1.class);
         startService(intent);
+
         btna = (Button)findViewById(R.id.buttonA);
         btnb = (Button)findViewById(R.id.buttonB);
         btnc = (Button)findViewById(R.id.buttonC);
-        btnd = (Button)findViewById(R.id.buttonD);
+        btnd = (Button)findViewById(R.id.button1);
         question = (TextView)findViewById(R.id.textView5);
         levelstr = (TextView)findViewById(R.id.textView4);
         money = (TextView)findViewById(R.id.textView2);
         change = (ImageButton)findViewById(R.id.imageButton4);
         ask = (ImageButton)findViewById(R.id.imageButton3);
+        final TextView myCounter = (TextView)findViewById(R.id.textView3);
 
         databaseAccess = DatabaseAccess.getInstance(this);
         databaseAccess.open();
         databaseAccess.getData();
-
         qst = databaseAccess.list1;
         ansA = databaseAccess.list2;
         ansB = databaseAccess.list3;
@@ -62,23 +64,17 @@ public class Main2Activity extends AppCompatActivity {
         ansD = databaseAccess.list5;
         ansCorrect = databaseAccess.list6;
         databaseAccess.close();
-        //
-        Question();
 
-        final TextView myCounter = (TextView)findViewById(R.id.textView3);
-        countDownTimer = new CountDownTimer(601000,1000){
+        Question();
+        countDownTimer2 = new CountDownTimer(601000,1000){
             @Override
             public void onTick(long millisUntilFinished) {
                 myCounter.setText(String.format("%02d:%02d", TimeUnit.MILLISECONDS.toMinutes(millisUntilFinished),TimeUnit.MILLISECONDS.toSeconds(millisUntilFinished)-TimeUnit.MINUTES.toSeconds(TimeUnit.MILLISECONDS.toMinutes(millisUntilFinished))));
-                if(fail == 1){
-                    countDownTimer.cancel();
-                }
             }
             @Override
             public void onFinish() {
                 mediaPlayer.stop();
                 setSound(R.raw.out_of_time);
-                myCounter.setText("00:00");
                 new CountDownTimer(2000,1000){
                     @Override
                     public void onTick(long millisUntilFinished) {
@@ -100,12 +96,12 @@ public class Main2Activity extends AppCompatActivity {
             money.setText("1");
             moneyStr = 1;
         }
-        builder.setMessage("Bạn muốn tạm dừng cuộc chơi và nhận số tiền " + moneyStr +"$ của chương trình ?").setCancelable(false).setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+        builder.setMessage("Bạn muốn tạm dừng cuộc chơi và nhận số tiền " + moneyStr +"$ của chương trình ?").setCancelable(false).setPositiveButton("Đồng ý", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int id) {
                 Main2Activity.this.finish();
                 stopService(intent);
             }
-        }).setNegativeButton("No", new DialogInterface.OnClickListener() {
+        }).setNegativeButton("Hủy bỏ", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int id) {
                 mediaPlayer.stop();
                 if(level == 1)
@@ -119,7 +115,6 @@ public class Main2Activity extends AppCompatActivity {
     public void changeQuestion(View view){
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         final Integer j = i;
-        //final ImageButton button = (ImageButton)findViewById(R.id.imageButton2);
         builder.setMessage("Bạn có muốn sử dụng sự trợ giúp đổi câu hỏi").setCancelable(false).setPositiveButton("Yes", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int id) {
                 while (j==i){
@@ -142,15 +137,13 @@ public class Main2Activity extends AppCompatActivity {
     }
     public void khangia(View view){
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        //final ImageButton button = (ImageButton)findViewById(R.id.imageButton2);
-
-        builder.setMessage("Bạn có muốn sử dụng sự trợ giúp của khán giả trong trường quay ?").setCancelable(false).setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+        builder.setMessage("Bạn có muốn sử dụng sự trợ giúp của khán giả trong trường quay ?").setCancelable(false).setPositiveButton("Đồng ý", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int id) {
                 final Dialog dialog1 = new Dialog(Main2Activity.this);
                 dialog1.setTitle("Hỏi ý kiến khán giả");
                 Integer A,B,C,D;
-                // khởi tạo dialog
                 dialog1.setContentView(R.layout.chart);
+
                 ImageView imageViewA = (ImageView)dialog1.findViewById(R.id.imageView7);
                 ImageView imageViewB = (ImageView)dialog1.findViewById(R.id.imageView9);
                 ImageView imageViewC = (ImageView)dialog1.findViewById(R.id.imageView10);
@@ -175,7 +168,6 @@ public class Main2Activity extends AppCompatActivity {
                         D /= 3;
                         Dtv.setText(D.toString()+"%");
                         break;
-
                     case 2:
                         B = imageViewB.getLayoutParams().height = getRandom(40,100)*3;
                         B /= 3;
@@ -221,23 +213,49 @@ public class Main2Activity extends AppCompatActivity {
                 }
 
                 setSound(R.raw.khan_gia);
-                new CountDownTimer(6000,1000){
-                    @Override
-                    public void onTick(long millisUntilFinished) {
 
-                    }
-                    @Override
-                    public void onFinish() {
-                        mediaPlayer.stop();
-                        dialog1.show();
-                    }
-                }.start();
-                // hiển thị dialog
+                btna.setClickable(false);
+                btnb.setClickable(false);
+                btnc.setClickable(false);
+                btnd.setClickable(false);
+
+                if(change.isClickable()){
+                    change.setClickable(false);
+                    new CountDownTimer(6000,1000){
+                        @Override
+                        public void onTick(long millisUntilFinished) {
+                        }
+                        @Override
+                        public void onFinish() {
+                            mediaPlayer.stop();
+                            dialog1.show();
+                            change.setClickable(true);
+                            btna.setClickable(true);
+                            btnb.setClickable(true);
+                            btnc.setClickable(true);
+                            btnd.setClickable(true);
+                        }
+                    }.start();}
+                else{
+                    new CountDownTimer(6000,1000){
+                        @Override
+                        public void onTick(long millisUntilFinished) {
+                        }
+                        @Override
+                        public void onFinish() {
+                            mediaPlayer.stop();
+                            dialog1.show();
+                            btna.setClickable(true);
+                            btnb.setClickable(true);
+                            btnc.setClickable(true);
+                            btnd.setClickable(true);
+                        }
+                    }.start();
+                }
                 ask.setBackgroundResource(R.drawable.khangia2);
                 ask.setClickable(false);
-
             }
-        }).setNegativeButton("No", new DialogInterface.OnClickListener() {
+        }).setNegativeButton("Hủy bỏ", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int id) {
                 dialog.cancel();
 
@@ -254,41 +272,41 @@ public class Main2Activity extends AppCompatActivity {
             case R.id.buttonA :
                 answer = "A";
                 setSound(R.raw.ans_a);
+                btna.setBackgroundResource(R.drawable.case3);
                 break;
             case R.id.buttonB:
                 answer = "B";
                 setSound(R.raw.ans_b);
+                btnb.setBackgroundResource(R.drawable.case3);
                 break;
             case R.id.buttonC:
                 answer = "C";
                 setSound(R.raw.ans_c);
+                btnc.setBackgroundResource(R.drawable.case3);
                 break;
-            case R.id.buttonD:
+            case R.id.button1:
                 answer = "D";
                 setSound(R.raw.ans_d);
+                btnd.setBackgroundResource(R.drawable.case3);
                 break;
         }
         final AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
         alertDialogBuilder.setMessage("Phương án trả lời của bạn là " + answer +  " ?");
-        alertDialogBuilder.setPositiveButton("yes", new DialogInterface.OnClickListener() {
+        alertDialogBuilder.setPositiveButton("Đồng ý", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(final DialogInterface dialog, int whick) {
                 mediaPlayer.stop();
                 switch (b.getId()){
                     case R.id.buttonA :
-                        btna.setBackgroundResource(R.drawable.case3);
                         chooseNum = 1;
                         break;
                     case R.id.buttonB:
-                        btnb.setBackgroundResource(R.drawable.case3);
                         chooseNum = 2;
                         break;
                     case R.id.buttonC:
-                        btnc.setBackgroundResource(R.drawable.case3);
                         chooseNum = 3;
                         break;
                     case R.id.buttonD:
-                        btnd.setBackgroundResource(R.drawable.case3);
                         chooseNum = 4;
                         break;
                     default:
@@ -312,10 +330,14 @@ public class Main2Activity extends AppCompatActivity {
             }
         });
 
-        alertDialogBuilder.setNegativeButton("No",new DialogInterface.OnClickListener() {
+        alertDialogBuilder.setNegativeButton("Hủy bỏ",new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 chooseNum = 0;
+                btna.setBackgroundResource(R.drawable.button_press);
+                btnb.setBackgroundResource(R.drawable.button_press);
+                btnc.setBackgroundResource(R.drawable.button_press);
+                btnd.setBackgroundResource(R.drawable.button_press);
                 mediaPlayer.stop();
             }
         });
@@ -326,6 +348,10 @@ public class Main2Activity extends AppCompatActivity {
         mediaPlayer.start();
     }
     public void PlayGame() {
+        btna.setClickable(false);
+        btnb.setClickable(false);
+        btnc.setClickable(false);
+        btnd.setClickable(false);
         if(alertDialog != null && alertDialog.isShowing()){
             alertDialog.dismiss();
         }
@@ -470,10 +496,14 @@ public class Main2Activity extends AppCompatActivity {
 
     }
     public void Question(){
-        btna.setBackgroundResource(R.drawable.case2);
-        btnb.setBackgroundResource(R.drawable.case2);
-        btnc.setBackgroundResource(R.drawable.case2);
-        btnd.setBackgroundResource(R.drawable.case2);
+        btna.setClickable(true);
+        btnb.setClickable(true);
+        btnc.setClickable(true);
+        btnd.setClickable(true);
+        btna.setBackgroundResource(R.drawable.button_press);
+        btnb.setBackgroundResource(R.drawable.button_press);
+        btnc.setBackgroundResource(R.drawable.button_press);
+        btnd.setBackgroundResource(R.drawable.button_press);
         chooseNum = 0;
         levelstr.setText("Câu hỏi số " + level.toString());
         switch (level) {
@@ -639,7 +669,7 @@ public class Main2Activity extends AppCompatActivity {
                 k =  R.id.buttonC;
                 break;
             case 4:
-               k =  R.id.buttonD;
+               k =  R.id.button1;
                 break;
         }
         return  (Button)findViewById(k);
@@ -647,12 +677,12 @@ public class Main2Activity extends AppCompatActivity {
     public void Fail(){
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         setSound(R.raw.lose);
-        fail = 1;
+        countDownTimer2.cancel();
         if(level == 1) {
             money.setText("1");
             moneyStr = 1;
         }
-        builder.setMessage("Bạn sẽ ra về với số tiền là " + moneyStr +"$\nBạn có muốn chơi lại ?").setCancelable(false).setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+        builder.setMessage("Bạn sẽ ra về với số tiền là " + moneyStr +"$\nBạn có muốn chơi lại ?").setCancelable(false).setPositiveButton("Đồng Ý", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int id) {
                 moneyStr = 0;
                 stopService(intent);
@@ -664,7 +694,7 @@ public class Main2Activity extends AppCompatActivity {
                 Main2Activity.this.startActivity(myIntent);
 
             }
-        }).setNegativeButton("No", new DialogInterface.OnClickListener() {
+        }).setNegativeButton("Hủy bỏ", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int id) {
                 stopService(intent);
                 mediaPlayer.stop();
@@ -680,6 +710,7 @@ public class Main2Activity extends AppCompatActivity {
         super.onStop();
         stopService(intent);
         mediaPlayer.stop();
+        countDownTimer2.cancel();
     }
     @Override
     public void onPause(){
@@ -692,6 +723,7 @@ public class Main2Activity extends AppCompatActivity {
         super.onDestroy();
         stopService(intent);
         mediaPlayer.stop();
+        countDownTimer2.cancel();
     }
     @Override
     public void onResume(){

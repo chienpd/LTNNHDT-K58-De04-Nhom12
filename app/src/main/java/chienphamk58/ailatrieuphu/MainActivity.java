@@ -4,32 +4,41 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.Toast;
 public class MainActivity extends Activity {
     Intent intent;
     PlaySound playSound = new PlaySound();
     Button btnPlay, btnHelp, btnAbout;
+    static ImageButton sound;
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_main);
-        intent = new Intent(MainActivity.this, PlaySongService.class);
+
+            intent = new Intent(MainActivity.this, PlaySongService.class);
+        if(playSound.mutesound)
+            startService(intent);
+
+
         btnPlay = (Button)findViewById(R.id.button1);
         btnHelp = (Button)findViewById(R.id.button2);
         btnAbout = (Button)findViewById(R.id.button4);
-        startService(intent);
+        sound = (ImageButton)findViewById(R.id.imageButton5);
+        if(!playSound.mutesound)
+            sound.setBackgroundResource(R.drawable.sound_mute);
     }
     public void Play(View view){
         AlertDialog.Builder arlertDialogBuiler = new AlertDialog.Builder(this);
         final Intent myIntent = new Intent(MainActivity.this, Main2Activity.class);
-        playSound.setSound(getApplicationContext(),R.raw.ready);
+        if(playSound.mutesound)
+            playSound.setSound(getApplicationContext(),R.raw.ready);
         // set Title
         arlertDialogBuiler.setTitle("");
 
@@ -39,8 +48,10 @@ public class MainActivity extends Activity {
                 btnPlay.setClickable(false);
                 btnHelp.setClickable(false);
                 btnAbout.setClickable(false);
-                playSound.mediaPlayer.stop();
-                playSound.setSound(getApplicationContext(),R.raw.gofind);
+                if(playSound.mutesound) {
+                    playSound.mediaPlayer.stop();
+                    playSound.setSound(getApplicationContext(), R.raw.gofind);
+                }
                 Toast toast=Toast.makeText(MainActivity.this, "Chúng ta bắt đầu đi tìm Ai Là Triệu Phú ",   Toast.LENGTH_LONG);
                 toast.show();
                 btnPlay.setBackgroundResource(R.drawable.case3);
@@ -73,7 +84,8 @@ public class MainActivity extends Activity {
         }).setNegativeButton("No", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int id){
                 dialog.cancel();
-                playSound.mediaPlayer.stop();
+                if(playSound.mutesound)
+                    playSound.mediaPlayer.stop();
                 btnPlay.setClickable(true);
                 btnHelp.setClickable(true);
                 btnAbout.setClickable(true);
@@ -99,13 +111,42 @@ public class MainActivity extends Activity {
         MainActivity.this.startActivity(myIntent);
     }
 
+    public void Mute(View view){
+        if(playSound.mutesound){
+            sound.setBackgroundResource(R.drawable.sound_mute);
+            stopService(intent);
+            playSound.mutesound = false;
+        }
+        else {
+            sound.setBackgroundResource(R.drawable.sound);
+            startService(intent);
+            playSound.mutesound = true;
+        }
+    }
+    public void Exit(View view){
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setMessage("Are you sure you want to exit?").setCancelable(false).setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int id) {
+                MainActivity.this.finish();
+                if(playSound.mutesound)
+                    stopService(intent);
+            }
+        }).setNegativeButton("No", new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int id) {
+                dialog.cancel();
+            }
+        });
+        AlertDialog alert = builder.create();
+        alert.show();
+    }
     @Override
     public void onBackPressed() {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setMessage("Are you sure you want to exit?").setCancelable(false).setPositiveButton("Yes", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int id) {
                 MainActivity.this.finish();
-                stopService(intent);
+                if(playSound.mutesound)
+                    stopService(intent);
             }
         }).setNegativeButton("No", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int id) {
@@ -119,24 +160,25 @@ public class MainActivity extends Activity {
     @Override
     public void onStop(){
         super.onStop();
-        stopService(intent);
+            stopService(intent);
     }
 
     @Override
     public void onPause(){
         super.onPause();
-        stopService(intent);
+            stopService(intent);
     }
 
     @Override
     public void onDestroy(){
         super.onDestroy();
-        stopService(intent);
+            stopService(intent);
     }
 
     @Override
     public void onResume(){
         super.onResume();
-        startService(intent);
+        if(playSound.mutesound)
+            startService(intent);
     }
 }

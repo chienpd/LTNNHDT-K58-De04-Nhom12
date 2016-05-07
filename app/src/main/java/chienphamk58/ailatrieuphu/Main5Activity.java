@@ -14,17 +14,20 @@ import android.view.WindowManager;
 
 public class Main5Activity extends AppCompatActivity {
     Intent intent;
+    PlaySound playSound = new PlaySound();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_main5);
         intent = new Intent(Main5Activity.this, PlaySongServiceLevel1.class);
-        startService(intent);
+        if(playSound.mutesound)
+            startService(intent);
     }
     @Override
     protected void onStop(){
         super.onStop();
+        if(playSound.mutesound)
         stopService(intent);
 
     }
@@ -32,6 +35,7 @@ public class Main5Activity extends AppCompatActivity {
     @Override
     protected void onDestroy(){
         super.onDestroy();
+        if(playSound.mutesound)
         stopService(intent);
     }
 }

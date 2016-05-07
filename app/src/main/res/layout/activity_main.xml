@@ -11,59 +11,99 @@
     android:background="@mipmap/bg_altp"
     android:orientation="vertical">
 
-    <ImageView
-        android:layout_width="250dp"
-        android:layout_height="250dp"
-        android:id="@+id/imageView8"
-        android:background="@mipmap/mlogo"
-        android:layout_above="@+id/button1"
-        android:layout_centerHorizontal="true"
-        android:layout_gravity="center_horizontal" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
 
-    <Button
-        android:layout_width="fill_parent"
-        android:layout_height="50dp"
-        android:text="Chơi "
-        android:id="@+id/button1"
-        android:background="@drawable/button_press"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
-        android:textColor="#ffffff"
-        android:textStyle="bold"
-        android:typeface="serif"
-        android:textSize="20dp"
-        android:onClick="Play"
-        android:layout_gravity="center_horizontal" />
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/imageButton5"
+            android:background="@drawable/mute_press"
+            android:onClick="Mute" />
 
-    <Button
-        android:layout_width="fill_parent"
-        android:layout_height="50dp"
-        android:text="Hướng Dẫn"
-        android:id="@+id/button2"
-        android:background="@drawable/button_press"
-        android:textColor="#ffffff"
-        android:textStyle="normal|bold"
-        android:typeface="serif"
-        android:textSize="20dp"
-        android:layout_below="@+id/button1"
-        android:layout_centerHorizontal="true"
-        android:onClick="Help"
-        android:layout_gravity="center_horizontal" />
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/imageButton6"
+            android:background="@drawable/share_press"/>
 
-    <Button
-        android:layout_width="fill_parent"
-        android:layout_height="50dp"
-        android:text="Thông Tin"
-        android:id="@+id/button4"
-        android:background="@drawable/button_press"
-        android:textColor="#ffffff"
-        android:textStyle="normal|bold"
-        android:typeface="serif"
-        android:textSize="20dp"
-        android:onClick="Setting"
-        android:layout_below="@+id/button3"
-        android:layout_centerHorizontal="true"
-        android:layout_gravity="center_horizontal"
-        />
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/imageButton7"
+            android:background="@drawable/download_press"/>
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/imageButton8"
+            android:background="@drawable/exit_press"
+            android:onClick="Exit" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:id="@+id/imageView8"
+            android:background="@mipmap/mlogo"
+            android:layout_above="@+id/button1"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:text="Chơi "
+            android:id="@+id/button1"
+            android:background="@drawable/button_press"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:typeface="serif"
+            android:textSize="20dp"
+            android:onClick="Play"
+            android:layout_gravity="center_horizontal" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:text="Hướng Dẫn"
+            android:id="@+id/button2"
+            android:background="@drawable/button_press"
+            android:textColor="#ffffff"
+            android:textStyle="normal|bold"
+            android:typeface="serif"
+            android:textSize="20dp"
+            android:layout_below="@+id/button1"
+            android:layout_centerHorizontal="true"
+            android:onClick="Help"
+            android:layout_gravity="center_horizontal" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:text="Thông Tin"
+            android:id="@+id/button4"
+            android:background="@drawable/button_press"
+            android:textColor="#ffffff"
+            android:textStyle="normal|bold"
+            android:typeface="serif"
+            android:textSize="20dp"
+            android:onClick="Setting"
+            android:layout_below="@+id/button3"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            />
+    </LinearLayout>
+
 </LinearLayout>
 

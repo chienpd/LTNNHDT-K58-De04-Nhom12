@@ -97,7 +97,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/imageView3"
-                    android:background="@mipmap/goidien" />
+                    android:background="@drawable/call"/>
 
                 <TextView
                     android:layout_width="wrap_content"

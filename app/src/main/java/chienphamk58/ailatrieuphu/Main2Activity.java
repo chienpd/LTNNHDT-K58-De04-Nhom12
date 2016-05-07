@@ -2,51 +2,33 @@ package chienphamk58.ailatrieuphu;
 
 import android.app.AlertDialog;
 import android.app.Dialog;
-import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.CountDownTimer;
-import android.os.Handler;
-import android.os.SystemClock;
-import android.support.annotation.IntegerRes;
-import android.support.annotation.PluralsRes;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
-import android.widget.ProgressBar;
-import android.widget.SeekBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.List;
 import java.util.Random;
-import java.util.Vector;
 import java.util.concurrent.TimeUnit;
 
 import chienphamk58.ailatrieuphu.Database.DatabaseAccess;
-
-import static chienphamk58.ailatrieuphu.R.drawable.button_press;
-import static chienphamk58.ailatrieuphu.R.drawable.case2;
-
 public class Main2Activity extends AppCompatActivity {
     Intent intent;
-    Integer level = 1, moneyStr = 0, fail = 0;
-    Integer chooseNum = 0,i, j = 0;
+    Integer level = 1, moneyStr = 0, fail = 0, chooseNum = 0,i, j = 0;
     CountDownTimer countDownTimer;
     DatabaseAccess databaseAccess;
     List<String> qst, ansA, ansB, ansC, ansD, ansCorrect;
     static AlertDialog alertDialog;
-
-
-    static Button btna;
-    static Button btnb;
-    static Button btnc;
-    static Button btnd;
+    static Button btna, btnb,btnc, btnd;
     ImageButton change, ask;
     static TextView question;
     MediaPlayer mediaPlayer;
@@ -109,23 +91,40 @@ public class Main2Activity extends AppCompatActivity {
             }
         }.start();
     }
-
-
-    public int getRandom(int min, int max)
-    {
-        Random r = new Random();
-        return min+r.nextInt(max-min);
+    @Override
+    public void onBackPressed() {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        mediaPlayer.stop();
+        setSound(R.raw.lose);
+        if(level == 1) {
+            money.setText("1");
+            moneyStr = 1;
+        }
+        builder.setMessage("Bạn muốn tạm dừng cuộc chơi và nhận số tiền " + moneyStr +"$ của chương trình ?").setCancelable(false).setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int id) {
+                Main2Activity.this.finish();
+                stopService(intent);
+            }
+        }).setNegativeButton("No", new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int id) {
+                mediaPlayer.stop();
+                if(level == 1)
+                    money.setText("0");
+                dialog.cancel();
+            }
+        });
+        AlertDialog alert = builder.create();
+        alert.show();
     }
-
     public void changeQuestion(View view){
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         final Integer j = i;
         //final ImageButton button = (ImageButton)findViewById(R.id.imageButton2);
         builder.setMessage("Bạn có muốn sử dụng sự trợ giúp đổi câu hỏi").setCancelable(false).setPositiveButton("Yes", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int id) {
-            while (j==i){
-                Question();
-            }
+                while (j==i){
+                    Question();
+                }
                 change.setBackgroundResource(R.drawable.switch3);
                 change.setClickable(false);
                 Toast toast=Toast.makeText(Main2Activity.this, "Câu hỏi đã được đổi",   Toast.LENGTH_SHORT);
@@ -247,34 +246,6 @@ public class Main2Activity extends AppCompatActivity {
         AlertDialog alert = builder.create();
         alert.show();
     }
-
-    @Override
-    public void onBackPressed() {
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        mediaPlayer.stop();
-        setSound(R.raw.lose);
-        if(level == 1) {
-            money.setText("1");
-            moneyStr = 1;
-        }
-        builder.setMessage("Bạn muốn tạm dừng cuộc chơi và nhận số tiền " + moneyStr +"$ của chương trình ?").setCancelable(false).setPositiveButton("Yes", new DialogInterface.OnClickListener() {
-            public void onClick(DialogInterface dialog, int id) {
-                Main2Activity.this.finish();
-                stopService(intent);
-            }
-        }).setNegativeButton("No", new DialogInterface.OnClickListener() {
-            public void onClick(DialogInterface dialog, int id) {
-                mediaPlayer.stop();
-                if(level == 1)
-                    money.setText("0");
-                dialog.cancel();
-            }
-        });
-        AlertDialog alert = builder.create();
-        alert.show();
-    }
-
-
     public void onClick(View view) throws InterruptedException {
         b = (Button)view;
         String answer = null;
@@ -350,14 +321,10 @@ public class Main2Activity extends AppCompatActivity {
         });
         alertDialog = alertDialogBuilder.show();
     }
-
-
     public void setSound(Integer id){
         mediaPlayer = new MediaPlayer().create(getApplicationContext(), id);
         mediaPlayer.start();
     }
-
-
     public void PlayGame() {
         if(alertDialog != null && alertDialog.isShowing()){
             alertDialog.dismiss();
@@ -502,151 +469,155 @@ public class Main2Activity extends AppCompatActivity {
 
 
     }
-public void Question(){
-    btna.setBackgroundResource(R.drawable.case2);
-    btnb.setBackgroundResource(R.drawable.case2);
-    btnc.setBackgroundResource(R.drawable.case2);
-    btnd.setBackgroundResource(R.drawable.case2);
-    chooseNum = 0;
-    levelstr.setText("Câu hỏi số " + level.toString());
-    switch (level) {
-        case 1:
-            setSound(R.raw.ques01);
-            i = getRandom(0, 412);
-            setAnswer(i);
-            break;
-        case 2:
-            moneyStr += 1000;
-            setSound(R.raw.ques02);
-            i = getRandom(413, 715);
-            setAnswer(i);
-            break;
+    public void Question(){
+        btna.setBackgroundResource(R.drawable.case2);
+        btnb.setBackgroundResource(R.drawable.case2);
+        btnc.setBackgroundResource(R.drawable.case2);
+        btnd.setBackgroundResource(R.drawable.case2);
+        chooseNum = 0;
+        levelstr.setText("Câu hỏi số " + level.toString());
+        switch (level) {
+            case 1:
+                setSound(R.raw.ques01);
+                i = getRandom(0, 412);
+                setAnswer(i);
+                break;
+            case 2:
+                moneyStr += 1000;
+                setSound(R.raw.ques02);
+                i = getRandom(413, 715);
+                setAnswer(i);
+                break;
 
-        case 3:
-            moneyStr += 1000;
-            setSound(R.raw.ques03);
-            i = getRandom(716, 961);
-            setAnswer(i);
-            break;
-        case 4:
-            moneyStr += 1000;
-            setSound(R.raw.ques04);
-            i = getRandom(962, 1269);
-            setAnswer(i);
-            break;
-        case 5:
-            moneyStr += 2000;
-            setSound(R.raw.ques05);
-            new CountDownTimer(2000,1000){
-                @Override
-                public void onTick(long millisUntilFinished) {
+            case 3:
+                moneyStr += 1000;
+                setSound(R.raw.ques03);
+                i = getRandom(716, 961);
+                setAnswer(i);
+                break;
+            case 4:
+                moneyStr += 1000;
+                setSound(R.raw.ques04);
+                i = getRandom(962, 1269);
+                setAnswer(i);
+                break;
+            case 5:
+                moneyStr += 2000;
+                setSound(R.raw.ques05);
+                new CountDownTimer(2000,1000){
+                    @Override
+                    public void onTick(long millisUntilFinished) {
 
-                }
-                @Override
-                public void onFinish() {
+                    }
+                    @Override
+                    public void onFinish() {
                    setSound(R.raw.important);
                 }
-            }.start();
-            i = getRandom(1270, 1591);
-            setAnswer(i);
-            break;
-        case 6:
-            moneyStr += 5000;
-            setSound(R.raw.ques06);
-            i = getRandom(1592, 1991);
-            setAnswer(i);
-            break;
-        case 7:
-            moneyStr += 10000;
-            setSound(R.raw.ques07);
-            i = getRandom(1992, 2395);
-            setAnswer(i);
-            break;
-        case 8:
-            moneyStr += 10000;
-            setSound(R.raw.ques08);
-            i = getRandom(2396, 2798);
-            setAnswer(i);
-            break;
-        case 9:
-            moneyStr += 30000;
-            setSound(R.raw.ques09);
-            i = getRandom(2799, 3184);
-            setAnswer(i);
-            break;
-        case 10:
-            moneyStr += 30000;
-            setSound(R.raw.ques10);
-            new CountDownTimer(2000,1000){
-                @Override
-                public void onTick(long millisUntilFinished) {
+                }.start();
+                i = getRandom(1270, 1591);
+                setAnswer(i);
+                break;
+            case 6:
+                moneyStr += 5000;
+                setSound(R.raw.ques06);
+                i = getRandom(1592, 1991);
+                setAnswer(i);
+                break;
+            case 7:
+                moneyStr += 10000;
+                setSound(R.raw.ques07);
+                i = getRandom(1992, 2395);
+                setAnswer(i);
+                break;
+            case 8:
+                moneyStr += 10000;
+                setSound(R.raw.ques08);
+                i = getRandom(2396, 2798);
+                setAnswer(i);
+                break;
+            case 9:
+                moneyStr += 30000;
+                setSound(R.raw.ques09);
+                i = getRandom(2799, 3184);
+                setAnswer(i);
+                break;
+            case 10:
+                moneyStr += 30000;
+                setSound(R.raw.ques10);
+                new CountDownTimer(2000,1000){
+                    @Override
+                    public void onTick(long millisUntilFinished) {
 
-                }
-                @Override
-                public void onFinish() {
+                    }
+                    @Override
+                    public void onFinish() {
                     setSound(R.raw.important);
                 }
-            }.start();
-            i = getRandom(3185, 3441);
-            setAnswer(i);
-            break;
-        case 11:
-            moneyStr += 60000;
-            setSound(R.raw.ques11);
-            i = getRandom(3442, 3653);
-            setAnswer(i);
-            break;
-        case 12:
-            moneyStr += 100000;
-            setSound(R.raw.ques12);
-            i = getRandom(3654, 3839);
-            setAnswer(i);
-            break;
-        case 13:
-            moneyStr += 100000;
-            setSound(R.raw.ques13);
-            i = getRandom(3840, 4011);
-            setAnswer(i);
-            break;
-        case 14:
-            moneyStr += 150000;
-            setSound(R.raw.ques14);
-            i = getRandom(4012, 4169);
-            setAnswer(i);
-            break;
-        case 15:
-            moneyStr += 300000;
-            setSound(R.raw.pass14);
-            new CountDownTimer(4000,1000){
-                @Override
-                public void onTick(long millisUntilFinished) {
+                }.start();
+                i = getRandom(3185, 3441);
+                setAnswer(i);
+                break;
+            case 11:
+                moneyStr += 60000;
+                setSound(R.raw.ques11);
+                i = getRandom(3442, 3653);
+                setAnswer(i);
+                break;
+            case 12:
+                moneyStr += 100000;
+                setSound(R.raw.ques12);
+                i = getRandom(3654, 3839);
+                setAnswer(i);
+                break;
+            case 13:
+                moneyStr += 100000;
+                setSound(R.raw.ques13);
+                i = getRandom(3840, 4011);
+                setAnswer(i);
+                break;
+            case 14:
+                moneyStr += 150000;
+                setSound(R.raw.ques14);
+                i = getRandom(4012, 4169);
+                setAnswer(i);
+                break;
+            case 15:
+                moneyStr += 300000;
+                setSound(R.raw.pass14);
+                new CountDownTimer(4000,1000){
+                    @Override
+                    public void onTick(long millisUntilFinished) {
 
-                }
-                @Override
-                public void onFinish() {
-                    setSound(R.raw.ques15);
-                    i = getRandom(4170, 4228);
-                    setAnswer(i);
-                }
-            }.start();
-            break;
-        default:
-            moneyStr += 400000;
-            money.setText(moneyStr.toString());
-            setSound(R.raw.best_player);
-            new CountDownTimer(12000,1000){
-                @Override
-                public void onTick(long millisUntilFinished) {
+                    }
+                    @Override
+                    public void onFinish() {
+                        setSound(R.raw.ques15);
+                        i = getRandom(4170, 4228);
+                        setAnswer(i);
+                    }
+                }.start();
+                break;
+            default:
+                moneyStr += 400000;
+                money.setText(moneyStr.toString());
+                setSound(R.raw.best_player);
+                new CountDownTimer(12000,1000){
+                    @Override
+                    public void onTick(long millisUntilFinished) {
 
-                }
-                @Override
-                public void onFinish() {
+                    }
+                    @Override
+                    public void onFinish() {
                     Fail();
                 }
-            }.start();
-            break;
+                }.start();
+                break;
+        }
     }
-}
+    public int getRandom(int min, int max) {
+        Random r = new Random();
+        return min+r.nextInt(max-min);
+    }
     public void setAnswer(Integer i){
         money.setText(moneyStr.toString());
         question.setText(qst.get(i));
@@ -655,7 +626,6 @@ public void Question(){
         btnc.setText("C. " + ansC.get(i));
         btnd.setText("D. " + ansD.get(i));
     }
-
     public Button getCorrectButton(){
         Integer k = null;
         switch (Integer.parseInt(ansCorrect.get(i))){
@@ -711,25 +681,21 @@ public void Question(){
         stopService(intent);
         mediaPlayer.stop();
     }
-
     @Override
     public void onPause(){
         super.onPause();
         stopService(intent);
         mediaPlayer.stop();
     }
-
     @Override
     public void onDestroy(){
         super.onDestroy();
         stopService(intent);
         mediaPlayer.stop();
     }
-
     @Override
     public void onResume(){
         super.onResume();
         startService(intent);
     }
-
 }

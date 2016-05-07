@@ -14,108 +14,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4ced5131-964c-46b5-b560-e4127d87dd43" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/java/chienphamk58/ailatrieuphu/PlaySongServiceLevel1_1.java" />
-      <change type="NEW" beforePath="" afterPath="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/java/chienphamk58/ailatrieuphu/PlaySongServiceLevel2.java" />
-      <change type="DELETED" beforePath="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/drawable/help.png" afterPath="" />
-      <change type="DELETED" beforePath="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/drawable/help_press.png" afterPath="" />
-      <change type="DELETED" beforePath="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/drawable/highscore.png" afterPath="" />
-      <change type="DELETED" beforePath="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/drawable/highscore_press.png" afterPath="" />
-      <change type="DELETED" beforePath="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/drawable/play.png" afterPath="" />
-      <change type="DELETED" beforePath="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/drawable/play_press.png" afterPath="" />
-      <change type="DELETED" beforePath="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/mipmap-hdpi/anhxtanh.png" afterPath="" />
-      <change type="DELETED" beforePath="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/mipmap-hdpi/back.png" afterPath="" />
-      <change type="DELETED" beforePath="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/mipmap-hdpi/back_press.png" afterPath="" />
-      <change type="DELETED" beforePath="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/mipmap-hdpi/billgate.png" afterPath="" />
-      <change type="DELETED" beforePath="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/mipmap-hdpi/button_not_ready.png" afterPath="" />
-      <change type="DELETED" beforePath="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/mipmap-hdpi/button_ready.png" afterPath="" />
-      <change type="DELETED" beforePath="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/mipmap-hdpi/bxh_logo.png" afterPath="" />
-      <change type="DELETED" beforePath="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/mipmap-hdpi/cast_ic_notification_0.png" afterPath="" />
-      <change type="DELETED" beforePath="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/mipmap-hdpi/cast_ic_notification_1.png" afterPath="" />
-      <change type="DELETED" beforePath="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/mipmap-hdpi/cast_ic_notification_2.png" afterPath="" />
-      <change type="DELETED" beforePath="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/mipmap-hdpi/cast_ic_notification_on.png" afterPath="" />
-      <change type="DELETED" beforePath="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/mipmap-hdpi/cau0.png" afterPath="" />
-      <change type="DELETED" beforePath="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/mipmap-hdpi/cau1.png" afterPath="" />
-      <change type="DELETED" beforePath="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/mipmap-hdpi/cau10.png" afterPath="" />
-      <change type="DELETED" beforePath="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/mipmap-hdpi/cau11.png" afterPath="" />
-      <change type="DELETED" beforePath="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/mipmap-hdpi/cau12.png" afterPath="" />
-      <change type="DELETED" beforePath="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/mipmap-hdpi/cau13.png" afterPath="" />
-      <change type="DELETED" beforePath="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/mipmap-hdpi/cau14.png" afterPath="" />
-      <change type="DELETED" beforePath="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/mipmap-hdpi/cau15.png" afterPath="" />
-      <change type="DELETED" beforePath="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/mipmap-hdpi/cau2.png" afterPath="" />
-      <change type="DELETED" beforePath="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/mipmap-hdpi/cau3.png" afterPath="" />
-      <change type="DELETED" beforePath="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/mipmap-hdpi/cau5.png" afterPath="" />
-      <change type="DELETED" beforePath="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/mipmap-hdpi/cau6.png" afterPath="" />
-      <change type="DELETED" beforePath="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/mipmap-hdpi/cau7.png" afterPath="" />
-      <change type="DELETED" beforePath="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/mipmap-hdpi/cau8.png" afterPath="" />
-      <change type="DELETED" beforePath="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/mipmap-hdpi/cau9.png" afterPath="" />
-      <change type="DELETED" beforePath="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/mipmap-hdpi/common_full_open_on_phone.png" afterPath="" />
-      <change type="DELETED" beforePath="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/mipmap-hdpi/common_ic_googleplayservices.png" afterPath="" />
-      <change type="DELETED" beforePath="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/mipmap-hdpi/common_signin_btn_icon_disabled_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/mipmap-hdpi/common_signin_btn_icon_disabled_focus_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/mipmap-hdpi/common_signin_btn_icon_disabled_focus_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/mipmap-hdpi/common_signin_btn_icon_disabled_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/mipmap-hdpi/common_signin_btn_icon_focus_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/mipmap-hdpi/common_signin_btn_icon_focus_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/mipmap-hdpi/common_signin_btn_icon_normal_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/mipmap-hdpi/common_signin_btn_icon_normal_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/mipmap-hdpi/common_signin_btn_icon_pressed_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/mipmap-hdpi/common_signin_btn_icon_pressed_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/mipmap-hdpi/common_signin_btn_text_disabled_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/mipmap-hdpi/common_signin_btn_text_disabled_focus_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/mipmap-hdpi/common_signin_btn_text_disabled_focus_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/mipmap-hdpi/common_signin_btn_text_disabled_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/mipmap-hdpi/common_signin_btn_text_focus_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/mipmap-hdpi/common_signin_btn_text_focus_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/mipmap-hdpi/common_signin_btn_text_normal_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/mipmap-hdpi/common_signin_btn_text_normal_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/mipmap-hdpi/common_signin_btn_text_pressed_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/mipmap-hdpi/common_signin_btn_text_pressed_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/mipmap-hdpi/download.png" afterPath="" />
-      <change type="DELETED" beforePath="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/mipmap-hdpi/download_press.png" afterPath="" />
-      <change type="DELETED" beforePath="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/mipmap-hdpi/exit.png" afterPath="" />
-      <change type="DELETED" beforePath="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/mipmap-hdpi/exit_press.png" afterPath="" />
-      <change type="DELETED" beforePath="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/mipmap-hdpi/help.png" afterPath="" />
-      <change type="DELETED" beforePath="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/mipmap-hdpi/help_press.png" afterPath="" />
-      <change type="DELETED" beforePath="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/mipmap-hdpi/highscore.png" afterPath="" />
-      <change type="DELETED" beforePath="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/mipmap-hdpi/highscore_press.png" afterPath="" />
-      <change type="DELETED" beforePath="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/mipmap-hdpi/ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/mipmap-hdpi/ic_plusone_medium_off_client.png" afterPath="" />
-      <change type="DELETED" beforePath="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/mipmap-hdpi/ic_plusone_small_off_client.png" afterPath="" />
-      <change type="DELETED" beforePath="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/mipmap-hdpi/ic_plusone_standard_off_client.png" afterPath="" />
-      <change type="DELETED" beforePath="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/mipmap-hdpi/ic_plusone_tall_off_client.png" afterPath="" />
-      <change type="DELETED" beforePath="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/mipmap-hdpi/khongminh.png" afterPath="" />
-      <change type="DELETED" beforePath="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/mipmap-hdpi/levanlan.png" afterPath="" />
-      <change type="DELETED" beforePath="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/mipmap-hdpi/markzukerbeg.png" afterPath="" />
-      <change type="DELETED" beforePath="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/mipmap-hdpi/ngobaochau.png" afterPath="" />
-      <change type="DELETED" beforePath="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/mipmap-hdpi/play.png" afterPath="" />
-      <change type="DELETED" beforePath="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/mipmap-hdpi/play_press.png" afterPath="" />
-      <change type="DELETED" beforePath="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/mipmap-hdpi/powered_by_google_dark.png" afterPath="" />
-      <change type="DELETED" beforePath="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/mipmap-hdpi/powered_by_google_light.png" afterPath="" />
-      <change type="DELETED" beforePath="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/mipmap-hdpi/rank1.png" afterPath="" />
-      <change type="DELETED" beforePath="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/mipmap-hdpi/rank2.png" afterPath="" />
-      <change type="DELETED" beforePath="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/mipmap-hdpi/rank3.png" afterPath="" />
-      <change type="DELETED" beforePath="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/mipmap-hdpi/rank4.png" afterPath="" />
-      <change type="DELETED" beforePath="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/mipmap-hdpi/rank5.png" afterPath="" />
-      <change type="DELETED" beforePath="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/mipmap-hdpi/ready_dialog_bg.png" afterPath="" />
-      <change type="DELETED" beforePath="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/mipmap-hdpi/share.png" afterPath="" />
-      <change type="DELETED" beforePath="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/mipmap-hdpi/share_press.png" afterPath="" />
-      <change type="DELETED" beforePath="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/mipmap-hdpi/tut_title.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="/mnt/DATA/Dropbox/AiLaTrieuPhu/.gradle/2.10/taskArtifacts/cache.properties.lock" afterPath="/mnt/DATA/Dropbox/AiLaTrieuPhu/.gradle/2.10/taskArtifacts/cache.properties.lock" />
-      <change type="MODIFICATION" beforePath="/mnt/DATA/Dropbox/AiLaTrieuPhu/.gradle/2.10/taskArtifacts/fileHashes.bin" afterPath="/mnt/DATA/Dropbox/AiLaTrieuPhu/.gradle/2.10/taskArtifacts/fileHashes.bin" />
-      <change type="MODIFICATION" beforePath="/mnt/DATA/Dropbox/AiLaTrieuPhu/.gradle/2.10/taskArtifacts/fileSnapshots.bin" afterPath="/mnt/DATA/Dropbox/AiLaTrieuPhu/.gradle/2.10/taskArtifacts/fileSnapshots.bin" />
-      <change type="MODIFICATION" beforePath="/mnt/DATA/Dropbox/AiLaTrieuPhu/.gradle/2.10/taskArtifacts/outputFileStates.bin" afterPath="/mnt/DATA/Dropbox/AiLaTrieuPhu/.gradle/2.10/taskArtifacts/outputFileStates.bin" />
-      <change type="MODIFICATION" beforePath="/mnt/DATA/Dropbox/AiLaTrieuPhu/.gradle/2.10/taskArtifacts/taskArtifacts.bin" afterPath="/mnt/DATA/Dropbox/AiLaTrieuPhu/.gradle/2.10/taskArtifacts/taskArtifacts.bin" />
-      <change type="MODIFICATION" beforePath="/mnt/DATA/Dropbox/AiLaTrieuPhu/.gradle/2.10/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" afterPath="/mnt/DATA/Dropbox/AiLaTrieuPhu/.gradle/2.10/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" />
-      <change type="MODIFICATION" beforePath="/mnt/DATA/Dropbox/AiLaTrieuPhu/.gradle/2.10/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" afterPath="/mnt/DATA/Dropbox/AiLaTrieuPhu/.gradle/2.10/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" />
-      <change type="MODIFICATION" beforePath="/mnt/DATA/Dropbox/AiLaTrieuPhu/.gradle/2.10/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.bin" afterPath="/mnt/DATA/Dropbox/AiLaTrieuPhu/.gradle/2.10/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.bin" />
-      <change type="MODIFICATION" beforePath="/mnt/DATA/Dropbox/AiLaTrieuPhu/.gradle/2.10/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterPath="/mnt/DATA/Dropbox/AiLaTrieuPhu/.gradle/2.10/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" />
       <change type="MODIFICATION" beforePath="/mnt/DATA/Dropbox/AiLaTrieuPhu/.idea/workspace.xml" afterPath="/mnt/DATA/Dropbox/AiLaTrieuPhu/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/AndroidManifest.xml" afterPath="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/AndroidManifest.xml" />
       <change type="MODIFICATION" beforePath="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/java/chienphamk58/ailatrieuphu/Main2Activity.java" afterPath="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/java/chienphamk58/ailatrieuphu/Main2Activity.java" />
-      <change type="MODIFICATION" beforePath="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/java/chienphamk58/ailatrieuphu/MainActivity.java" afterPath="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/java/chienphamk58/ailatrieuphu/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/java/chienphamk58/ailatrieuphu/PlaySongService.java" afterPath="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/java/chienphamk58/ailatrieuphu/PlaySongService.java" />
-      <change type="MODIFICATION" beforePath="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/layout/activity_main.xml" afterPath="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/layout/activity_main.xml" />
-      <change type="MODIFICATION" beforePath="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/layout/activity_main3.xml" afterPath="/mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/res/layout/activity_main3.xml" />
     </list>
     <ignored path="AiLaTrieuPhu.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -150,9 +50,26 @@
       <file leaf-file-name="Main2Activity.java" pinned="false" current-in-tab="true">
         <entry file="file:///mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/java/chienphamk58/ailatrieuphu/Main2Activity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4678899">
-              <caret line="96" column="35" selection-start-line="96" selection-start-column="35" selection-end-line="96" selection-end-column="35" />
-              <folding />
+            <state vertical-scroll-proportion="0.3853211">
+              <caret line="34" column="13" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
+              <folding>
+                <element signature="method#onCreate#0;class#Main2Activity#0" expanded="false" />
+                <element signature="method#onBackPressed#0;class#Main2Activity#0" expanded="false" />
+                <element signature="method#changeQuestion#0;class#Main2Activity#0" expanded="false" />
+                <element signature="method#khangia#0;class#Main2Activity#0" expanded="false" />
+                <element signature="method#onClick#0;class#Main2Activity#0" expanded="false" />
+                <element signature="method#setSound#0;class#Main2Activity#0" expanded="false" />
+                <element signature="method#PlayGame#0;class#Main2Activity#0" expanded="false" />
+                <element signature="method#Question#0;class#Main2Activity#0" expanded="false" />
+                <element signature="method#getRandom#0;class#Main2Activity#0" expanded="false" />
+                <element signature="method#setAnswer#0;class#Main2Activity#0" expanded="false" />
+                <element signature="method#getCorrectButton#0;class#Main2Activity#0" expanded="false" />
+                <element signature="method#Fail#0;class#Main2Activity#0" expanded="false" />
+                <element signature="method#onStop#0;class#Main2Activity#0" expanded="false" />
+                <element signature="method#onPause#0;class#Main2Activity#0" expanded="false" />
+                <element signature="method#onDestroy#0;class#Main2Activity#0" expanded="false" />
+                <element signature="method#onResume#0;class#Main2Activity#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -172,7 +89,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="/mnt/DATA/Dropbox/AiLaTrieuPhu" />
     <push-targets>
-      <push-target-info repo="/mnt/DATA/Dropbox/AiLaTrieuPhu" source="master" target-remote="chienpham" target-branch="master" />
+      <push-target-info repo="/mnt/DATA/Dropbox/AiLaTrieuPhu" source="master" target-remote="origin" target-branch="master" />
     </push-targets>
   </component>
   <component name="GradleLocalSettings">
@@ -2217,7 +2134,13 @@
       <option name="project" value="LOCAL" />
       <updated>1462585570146</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Ai La Trieu Phu">
+      <created>1462629515255</created>
+      <option name="number" value="00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1462629515255</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -2238,7 +2161,8 @@
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19242424" sideWeight="0.48963732" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19242424" sideWeight="0.48963732" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32869565" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24960753" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
@@ -2252,7 +2176,6 @@
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" x="100" y="208" width="1166" height="499" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32869565" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -2277,14 +2200,15 @@
     <MESSAGE value="fix hoi y kien khan gia&#10;fix dialog&#10;fix Fail + play again&#10;" />
     <MESSAGE value="add correct/ wrong interface&#10;" />
     <MESSAGE value="ok :D" />
-    <option name="LAST_COMMIT_MESSAGE" value="ok :D" />
+    <MESSAGE value="Ai La Trieu Phu" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ai La Trieu Phu" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file:///mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/java/chienphamk58/ailatrieuphu/Main2Activity.java</url>
-          <line>301</line>
+          <line>272</line>
           <properties />
         </line-breakpoint>
       </breakpoints>
@@ -2319,7 +2243,24 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="method#onCreate#0;class#Main2Activity#0" expanded="false" />
+            <element signature="method#onBackPressed#0;class#Main2Activity#0" expanded="false" />
+            <element signature="method#changeQuestion#0;class#Main2Activity#0" expanded="false" />
+            <element signature="method#khangia#0;class#Main2Activity#0" expanded="false" />
+            <element signature="method#onClick#0;class#Main2Activity#0" expanded="false" />
+            <element signature="method#setSound#0;class#Main2Activity#0" expanded="false" />
+            <element signature="method#PlayGame#0;class#Main2Activity#0" expanded="false" />
+            <element signature="method#Question#0;class#Main2Activity#0" expanded="false" />
+            <element signature="method#getRandom#0;class#Main2Activity#0" expanded="false" />
+            <element signature="method#setAnswer#0;class#Main2Activity#0" expanded="false" />
+            <element signature="method#getCorrectButton#0;class#Main2Activity#0" expanded="false" />
+            <element signature="method#Fail#0;class#Main2Activity#0" expanded="false" />
+            <element signature="method#onStop#0;class#Main2Activity#0" expanded="false" />
+            <element signature="method#onPause#0;class#Main2Activity#0" expanded="false" />
+            <element signature="method#onDestroy#0;class#Main2Activity#0" expanded="false" />
+            <element signature="method#onResume#0;class#Main2Activity#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2349,7 +2290,24 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="187" column="30" selection-start-line="187" selection-start-column="30" selection-end-line="187" selection-end-column="30" />
-          <folding />
+          <folding>
+            <element signature="method#onCreate#0;class#Main2Activity#0" expanded="false" />
+            <element signature="method#onBackPressed#0;class#Main2Activity#0" expanded="false" />
+            <element signature="method#changeQuestion#0;class#Main2Activity#0" expanded="false" />
+            <element signature="method#khangia#0;class#Main2Activity#0" expanded="false" />
+            <element signature="method#onClick#0;class#Main2Activity#0" expanded="false" />
+            <element signature="method#setSound#0;class#Main2Activity#0" expanded="false" />
+            <element signature="method#PlayGame#0;class#Main2Activity#0" expanded="false" />
+            <element signature="method#Question#0;class#Main2Activity#0" expanded="false" />
+            <element signature="method#getRandom#0;class#Main2Activity#0" expanded="false" />
+            <element signature="method#setAnswer#0;class#Main2Activity#0" expanded="false" />
+            <element signature="method#getCorrectButton#0;class#Main2Activity#0" expanded="false" />
+            <element signature="method#Fail#0;class#Main2Activity#0" expanded="false" />
+            <element signature="method#onStop#0;class#Main2Activity#0" expanded="false" />
+            <element signature="method#onPause#0;class#Main2Activity#0" expanded="false" />
+            <element signature="method#onDestroy#0;class#Main2Activity#0" expanded="false" />
+            <element signature="method#onResume#0;class#Main2Activity#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2375,7 +2333,24 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="method#onCreate#0;class#Main2Activity#0" expanded="false" />
+            <element signature="method#onBackPressed#0;class#Main2Activity#0" expanded="false" />
+            <element signature="method#changeQuestion#0;class#Main2Activity#0" expanded="false" />
+            <element signature="method#khangia#0;class#Main2Activity#0" expanded="false" />
+            <element signature="method#onClick#0;class#Main2Activity#0" expanded="false" />
+            <element signature="method#setSound#0;class#Main2Activity#0" expanded="false" />
+            <element signature="method#PlayGame#0;class#Main2Activity#0" expanded="false" />
+            <element signature="method#Question#0;class#Main2Activity#0" expanded="false" />
+            <element signature="method#getRandom#0;class#Main2Activity#0" expanded="false" />
+            <element signature="method#setAnswer#0;class#Main2Activity#0" expanded="false" />
+            <element signature="method#getCorrectButton#0;class#Main2Activity#0" expanded="false" />
+            <element signature="method#Fail#0;class#Main2Activity#0" expanded="false" />
+            <element signature="method#onStop#0;class#Main2Activity#0" expanded="false" />
+            <element signature="method#onPause#0;class#Main2Activity#0" expanded="false" />
+            <element signature="method#onDestroy#0;class#Main2Activity#0" expanded="false" />
+            <element signature="method#onResume#0;class#Main2Activity#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2405,7 +2380,24 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="method#onCreate#0;class#Main2Activity#0" expanded="false" />
+            <element signature="method#onBackPressed#0;class#Main2Activity#0" expanded="false" />
+            <element signature="method#changeQuestion#0;class#Main2Activity#0" expanded="false" />
+            <element signature="method#khangia#0;class#Main2Activity#0" expanded="false" />
+            <element signature="method#onClick#0;class#Main2Activity#0" expanded="false" />
+            <element signature="method#setSound#0;class#Main2Activity#0" expanded="false" />
+            <element signature="method#PlayGame#0;class#Main2Activity#0" expanded="false" />
+            <element signature="method#Question#0;class#Main2Activity#0" expanded="false" />
+            <element signature="method#getRandom#0;class#Main2Activity#0" expanded="false" />
+            <element signature="method#setAnswer#0;class#Main2Activity#0" expanded="false" />
+            <element signature="method#getCorrectButton#0;class#Main2Activity#0" expanded="false" />
+            <element signature="method#Fail#0;class#Main2Activity#0" expanded="false" />
+            <element signature="method#onStop#0;class#Main2Activity#0" expanded="false" />
+            <element signature="method#onPause#0;class#Main2Activity#0" expanded="false" />
+            <element signature="method#onDestroy#0;class#Main2Activity#0" expanded="false" />
+            <element signature="method#onResume#0;class#Main2Activity#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2436,7 +2428,24 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="138" column="5" selection-start-line="138" selection-start-column="5" selection-end-line="138" selection-end-column="5" />
-          <folding />
+          <folding>
+            <element signature="method#onCreate#0;class#Main2Activity#0" expanded="false" />
+            <element signature="method#onBackPressed#0;class#Main2Activity#0" expanded="false" />
+            <element signature="method#changeQuestion#0;class#Main2Activity#0" expanded="false" />
+            <element signature="method#khangia#0;class#Main2Activity#0" expanded="false" />
+            <element signature="method#onClick#0;class#Main2Activity#0" expanded="false" />
+            <element signature="method#setSound#0;class#Main2Activity#0" expanded="false" />
+            <element signature="method#PlayGame#0;class#Main2Activity#0" expanded="false" />
+            <element signature="method#Question#0;class#Main2Activity#0" expanded="false" />
+            <element signature="method#getRandom#0;class#Main2Activity#0" expanded="false" />
+            <element signature="method#setAnswer#0;class#Main2Activity#0" expanded="false" />
+            <element signature="method#getCorrectButton#0;class#Main2Activity#0" expanded="false" />
+            <element signature="method#Fail#0;class#Main2Activity#0" expanded="false" />
+            <element signature="method#onStop#0;class#Main2Activity#0" expanded="false" />
+            <element signature="method#onPause#0;class#Main2Activity#0" expanded="false" />
+            <element signature="method#onDestroy#0;class#Main2Activity#0" expanded="false" />
+            <element signature="method#onResume#0;class#Main2Activity#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2477,7 +2486,24 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="138" column="5" selection-start-line="138" selection-start-column="5" selection-end-line="138" selection-end-column="5" />
-          <folding />
+          <folding>
+            <element signature="method#onCreate#0;class#Main2Activity#0" expanded="false" />
+            <element signature="method#onBackPressed#0;class#Main2Activity#0" expanded="false" />
+            <element signature="method#changeQuestion#0;class#Main2Activity#0" expanded="false" />
+            <element signature="method#khangia#0;class#Main2Activity#0" expanded="false" />
+            <element signature="method#onClick#0;class#Main2Activity#0" expanded="false" />
+            <element signature="method#setSound#0;class#Main2Activity#0" expanded="false" />
+            <element signature="method#PlayGame#0;class#Main2Activity#0" expanded="false" />
+            <element signature="method#Question#0;class#Main2Activity#0" expanded="false" />
+            <element signature="method#getRandom#0;class#Main2Activity#0" expanded="false" />
+            <element signature="method#setAnswer#0;class#Main2Activity#0" expanded="false" />
+            <element signature="method#getCorrectButton#0;class#Main2Activity#0" expanded="false" />
+            <element signature="method#Fail#0;class#Main2Activity#0" expanded="false" />
+            <element signature="method#onStop#0;class#Main2Activity#0" expanded="false" />
+            <element signature="method#onPause#0;class#Main2Activity#0" expanded="false" />
+            <element signature="method#onDestroy#0;class#Main2Activity#0" expanded="false" />
+            <element signature="method#onResume#0;class#Main2Activity#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2518,7 +2544,24 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="method#onCreate#0;class#Main2Activity#0" expanded="false" />
+            <element signature="method#onBackPressed#0;class#Main2Activity#0" expanded="false" />
+            <element signature="method#changeQuestion#0;class#Main2Activity#0" expanded="false" />
+            <element signature="method#khangia#0;class#Main2Activity#0" expanded="false" />
+            <element signature="method#onClick#0;class#Main2Activity#0" expanded="false" />
+            <element signature="method#setSound#0;class#Main2Activity#0" expanded="false" />
+            <element signature="method#PlayGame#0;class#Main2Activity#0" expanded="false" />
+            <element signature="method#Question#0;class#Main2Activity#0" expanded="false" />
+            <element signature="method#getRandom#0;class#Main2Activity#0" expanded="false" />
+            <element signature="method#setAnswer#0;class#Main2Activity#0" expanded="false" />
+            <element signature="method#getCorrectButton#0;class#Main2Activity#0" expanded="false" />
+            <element signature="method#Fail#0;class#Main2Activity#0" expanded="false" />
+            <element signature="method#onStop#0;class#Main2Activity#0" expanded="false" />
+            <element signature="method#onPause#0;class#Main2Activity#0" expanded="false" />
+            <element signature="method#onDestroy#0;class#Main2Activity#0" expanded="false" />
+            <element signature="method#onResume#0;class#Main2Activity#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2533,7 +2576,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#259#277#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2541,7 +2586,24 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="method#onCreate#0;class#Main2Activity#0" expanded="false" />
+            <element signature="method#onBackPressed#0;class#Main2Activity#0" expanded="false" />
+            <element signature="method#changeQuestion#0;class#Main2Activity#0" expanded="false" />
+            <element signature="method#khangia#0;class#Main2Activity#0" expanded="false" />
+            <element signature="method#onClick#0;class#Main2Activity#0" expanded="false" />
+            <element signature="method#setSound#0;class#Main2Activity#0" expanded="false" />
+            <element signature="method#PlayGame#0;class#Main2Activity#0" expanded="false" />
+            <element signature="method#Question#0;class#Main2Activity#0" expanded="false" />
+            <element signature="method#getRandom#0;class#Main2Activity#0" expanded="false" />
+            <element signature="method#setAnswer#0;class#Main2Activity#0" expanded="false" />
+            <element signature="method#getCorrectButton#0;class#Main2Activity#0" expanded="false" />
+            <element signature="method#Fail#0;class#Main2Activity#0" expanded="false" />
+            <element signature="method#onStop#0;class#Main2Activity#0" expanded="false" />
+            <element signature="method#onPause#0;class#Main2Activity#0" expanded="false" />
+            <element signature="method#onDestroy#0;class#Main2Activity#0" expanded="false" />
+            <element signature="method#onResume#0;class#Main2Activity#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2638,6 +2700,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="43" column="5" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2674,6 +2737,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.559633">
           <caret line="40" column="5" selection-start-line="34" selection-start-column="68" selection-end-line="40" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2699,6 +2763,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.41284403">
           <caret line="18" column="43" selection-start-line="18" selection-start-column="43" selection-end-line="18" selection-end-column="43" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2713,6 +2778,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.110091746">
           <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2726,9 +2792,26 @@
     </entry>
     <entry file="file:///mnt/DATA/Dropbox/AiLaTrieuPhu/app/src/main/java/chienphamk58/ailatrieuphu/Main2Activity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4678899">
-          <caret line="96" column="35" selection-start-line="96" selection-start-column="35" selection-end-line="96" selection-end-column="35" />
-          <folding />
+        <state vertical-scroll-proportion="0.3853211">
+          <caret line="34" column="13" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
+          <folding>
+            <element signature="method#onCreate#0;class#Main2Activity#0" expanded="false" />
+            <element signature="method#onBackPressed#0;class#Main2Activity#0" expanded="false" />
+            <element signature="method#changeQuestion#0;class#Main2Activity#0" expanded="false" />
+            <element signature="method#khangia#0;class#Main2Activity#0" expanded="false" />
+            <element signature="method#onClick#0;class#Main2Activity#0" expanded="false" />
+            <element signature="method#setSound#0;class#Main2Activity#0" expanded="false" />
+            <element signature="method#PlayGame#0;class#Main2Activity#0" expanded="false" />
+            <element signature="method#Question#0;class#Main2Activity#0" expanded="false" />
+            <element signature="method#getRandom#0;class#Main2Activity#0" expanded="false" />
+            <element signature="method#setAnswer#0;class#Main2Activity#0" expanded="false" />
+            <element signature="method#getCorrectButton#0;class#Main2Activity#0" expanded="false" />
+            <element signature="method#Fail#0;class#Main2Activity#0" expanded="false" />
+            <element signature="method#onStop#0;class#Main2Activity#0" expanded="false" />
+            <element signature="method#onPause#0;class#Main2Activity#0" expanded="false" />
+            <element signature="method#onDestroy#0;class#Main2Activity#0" expanded="false" />
+            <element signature="method#onResume#0;class#Main2Activity#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

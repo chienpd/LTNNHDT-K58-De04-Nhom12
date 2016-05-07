@@ -6,17 +6,19 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.os.CountDownTimer;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.List;
 
 import chienphamk58.ailatrieuphu.Database.DatabaseAccess;
 
 public class MainActivity extends Activity {
-
     Intent intent;
+    MediaPlayer mediaPlayer;
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,16 +30,30 @@ public class MainActivity extends Activity {
     public void Play(View view){
         AlertDialog.Builder arlertDialogBuiler = new AlertDialog.Builder(this);
         final Intent myIntent = new Intent(MainActivity.this, Main2Activity.class);
-        final MediaPlayer mediaPlayer = new MediaPlayer().create(this, R.raw.ready);
+        mediaPlayer = new MediaPlayer().create(this, R.raw.ready);
         mediaPlayer.start();
         // set Title
         arlertDialogBuiler.setTitle("");
 
         // set dialog Message
-        arlertDialogBuiler.setMessage("Are you ready ?").setCancelable(false).setPositiveButton("Yes",new DialogInterface.OnClickListener(){
+        arlertDialogBuiler.setMessage("Bạn đã sẵn sàng chơi ?").setCancelable(false).setPositiveButton("Yes",new DialogInterface.OnClickListener(){
             public void onClick(DialogInterface dialog, int id){
-                MainActivity.this.startActivity(myIntent);
                 mediaPlayer.stop();
+                setSound(R.raw.gofind);
+                Toast toast=Toast.makeText(MainActivity.this, "Chúng ta bắt đầu đi tìm Ai Là Triệu Phú ",   Toast.LENGTH_LONG);
+                toast.show();
+                new CountDownTimer(3000,1000){
+                    @Override
+                    public void onTick(long millisUntilFinished) {
+
+                    }
+                    @Override
+                    public void onFinish() {
+                        MainActivity.this.startActivity(myIntent);
+                    }
+                }.start();
+
+
             }
         }).setNegativeButton("No", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int id){
@@ -108,5 +124,9 @@ public class MainActivity extends Activity {
     public void onResume(){
         super.onResume();
         startService(intent);
+    }
+    public void setSound(Integer id){
+        mediaPlayer = new MediaPlayer().create(getApplicationContext(), id);
+        mediaPlayer.start();
     }
 }

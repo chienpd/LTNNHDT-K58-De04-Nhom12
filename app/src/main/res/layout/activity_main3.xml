@@ -14,10 +14,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/textView3"
-        android:background="@mipmap/tut_title"
+
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_gravity="center" />
+        android:layout_gravity="center"
+        android:text="HƯỚNG DẪN"
+        android:typeface="serif"
+        android:textStyle="bold"
+        android:textSize="30dp" />
 
     <ScrollView
         android:layout_width="match_parent"
@@ -180,7 +184,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/imageView6"
-                    android:background="@mipmap/cau1"
+                    android:background="@mipmap/cau4"
                     android:layout_gravity="center_vertical" />
 
                 <TextView

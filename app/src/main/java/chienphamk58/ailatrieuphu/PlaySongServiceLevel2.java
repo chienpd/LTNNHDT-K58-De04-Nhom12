@@ -1,15 +1,18 @@
 package chienphamk58.ailatrieuphu;
 
+/**
+ * Created by pdc on 07/05/2016.
+ */
 import android.app.Service;
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.IBinder;
 
-public class PlaySongService extends Service {
+public class PlaySongServiceLevel2 extends Service {
 
     private MediaPlayer mediaPlayer;
 
-    public PlaySongService() {
+    public PlaySongServiceLevel2() {
     }
 
 
@@ -25,7 +28,7 @@ public class PlaySongService extends Service {
     public void onCreate(){
         super.onCreate();
         // Tạo đối tượng MediaPlayer, chơi file nhạc của bạn.
-        mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.background_music);
+        mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.moc2);
         mediaPlayer.setLooping(true);
         if(mediaPlayer.isPlaying())
             mediaPlayer.stop();
@@ -47,10 +50,5 @@ public class PlaySongService extends Service {
         super.onDestroy();
         if(mediaPlayer.isPlaying())
             mediaPlayer.stop();
-    }
-
-    public void setSound(Integer id){
-        mediaPlayer = new MediaPlayer().create(getApplicationContext(), id);
-        mediaPlayer.start();
     }
 }

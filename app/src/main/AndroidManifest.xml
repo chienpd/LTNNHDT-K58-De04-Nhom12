@@ -27,6 +27,10 @@
             android:name=".PlaySongServiceLevel1"
             android:enabled="true"
             android:exported="true"></service>
+        <service
+            android:name=".PlaySongServiceLevel2"
+            android:enabled="true"
+            android:exported="true"></service>
     </application>
 
 </manifest>

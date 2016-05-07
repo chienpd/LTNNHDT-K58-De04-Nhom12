@@ -13,7 +13,7 @@ import android.widget.Button;
 import android.widget.Toast;
 public class MainActivity extends Activity {
     Intent intent;
-    MediaPlayer mediaPlayer;
+    PlaySound playSound = new PlaySound();
     Button btnPlay, btnHelp, btnAbout;
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -29,8 +29,7 @@ public class MainActivity extends Activity {
     public void Play(View view){
         AlertDialog.Builder arlertDialogBuiler = new AlertDialog.Builder(this);
         final Intent myIntent = new Intent(MainActivity.this, Main2Activity.class);
-        mediaPlayer = new MediaPlayer().create(this, R.raw.ready);
-        mediaPlayer.start();
+        playSound.setSound(getApplicationContext(),R.raw.ready);
         // set Title
         arlertDialogBuiler.setTitle("");
 
@@ -40,8 +39,8 @@ public class MainActivity extends Activity {
                 btnPlay.setClickable(false);
                 btnHelp.setClickable(false);
                 btnAbout.setClickable(false);
-                mediaPlayer.stop();
-                setSound(R.raw.gofind);
+                playSound.mediaPlayer.stop();
+                playSound.setSound(getApplicationContext(),R.raw.gofind);
                 Toast toast=Toast.makeText(MainActivity.this, "Chúng ta bắt đầu đi tìm Ai Là Triệu Phú ",   Toast.LENGTH_LONG);
                 toast.show();
                 btnPlay.setBackgroundResource(R.drawable.case3);
@@ -53,6 +52,15 @@ public class MainActivity extends Activity {
                     @Override
                     public void onFinish() {
                         MainActivity.this.startActivity(myIntent);
+                    }
+                }.start();
+                new CountDownTimer(4000,1000){
+                    @Override
+                    public void onTick(long millisUntilFinished) {
+
+                    }
+                    @Override
+                    public void onFinish() {
                         btnPlay.setBackgroundResource(R.drawable.button_press);
                         btnPlay.setClickable(true);
                         btnHelp.setClickable(true);
@@ -65,7 +73,7 @@ public class MainActivity extends Activity {
         }).setNegativeButton("No", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int id){
                 dialog.cancel();
-                mediaPlayer.stop();
+                playSound.mediaPlayer.stop();
                 btnPlay.setClickable(true);
                 btnHelp.setClickable(true);
                 btnAbout.setClickable(true);
@@ -130,9 +138,5 @@ public class MainActivity extends Activity {
     public void onResume(){
         super.onResume();
         startService(intent);
-    }
-    public void setSound(Integer id){
-        mediaPlayer = new MediaPlayer().create(getApplicationContext(), id);
-        mediaPlayer.start();
     }
 }

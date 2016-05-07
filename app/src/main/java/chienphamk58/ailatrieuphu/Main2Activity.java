@@ -4,7 +4,6 @@ import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.support.v7.app.AppCompatActivity;
@@ -22,16 +21,17 @@ import java.util.concurrent.TimeUnit;
 
 import chienphamk58.ailatrieuphu.Database.DatabaseAccess;
 public class Main2Activity extends AppCompatActivity {
+    PlaySound playSound = new PlaySound();
     Intent intent;
-    Integer level = 1, moneyStr = 0, chooseNum = 0,i, j = 0;
+    Integer level = 1, moneyStr = 0, chooseNum = 0,i, j = 0, one, two;
+    Boolean x,y,z,t;
     CountDownTimer countDownTimer2;
     DatabaseAccess databaseAccess;
     List<String> qst, ansA, ansB, ansC, ansD, ansCorrect;
     AlertDialog alertDialog;
     Button btna, btnb,btnc, btnd;
-    ImageButton change, ask;
+    ImageButton change, ask, fifty, call;
     TextView question;
-    MediaPlayer mediaPlayer;
     Button b;
     TextView levelstr,money;
     @Override
@@ -43,6 +43,7 @@ public class Main2Activity extends AppCompatActivity {
         intent = new Intent(getApplicationContext(), PlaySongServiceLevel1.class);
         startService(intent);
 
+
         btna = (Button)findViewById(R.id.buttonA);
         btnb = (Button)findViewById(R.id.buttonB);
         btnc = (Button)findViewById(R.id.buttonC);
@@ -52,6 +53,14 @@ public class Main2Activity extends AppCompatActivity {
         money = (TextView)findViewById(R.id.textView2);
         change = (ImageButton)findViewById(R.id.imageButton4);
         ask = (ImageButton)findViewById(R.id.imageButton3);
+        fifty = (ImageButton)findViewById(R.id.imageButton);
+        call = (ImageButton)findViewById(R.id.imageButton2);
+
+        x = fifty.isClickable();
+        y = call.isClickable();
+        z = ask.isClickable();
+        t = change.isClickable();
+
         final TextView myCounter = (TextView)findViewById(R.id.textView3);
 
         databaseAccess = DatabaseAccess.getInstance(this);
@@ -73,8 +82,8 @@ public class Main2Activity extends AppCompatActivity {
             }
             @Override
             public void onFinish() {
-                mediaPlayer.stop();
-                setSound(R.raw.out_of_time);
+                playSound.mediaPlayer.stop();
+                playSound.setSound(getApplicationContext(),R.raw.out_of_time);
                 new CountDownTimer(2000,1000){
                     @Override
                     public void onTick(long millisUntilFinished) {
@@ -90,8 +99,8 @@ public class Main2Activity extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        mediaPlayer.stop();
-        setSound(R.raw.lose);
+        playSound.mediaPlayer.stop();
+        playSound.setSound(getApplicationContext(),R.raw.lose);
         if(level == 1) {
             money.setText("1");
             moneyStr = 1;
@@ -103,7 +112,7 @@ public class Main2Activity extends AppCompatActivity {
             }
         }).setNegativeButton("Hủy bỏ", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int id) {
-                mediaPlayer.stop();
+                playSound.mediaPlayer.stop();
                 if(level == 1)
                     money.setText("0");
                 dialog.cancel();
@@ -112,6 +121,113 @@ public class Main2Activity extends AppCompatActivity {
         AlertDialog alert = builder.create();
         alert.show();
     }
+
+    public void fifty(View view){
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setMessage("Bạn có muốn sử dụng sự trợ giúp 50:50").setCancelable(false).setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int id) {
+
+                playSound.setSound(getApplicationContext(),R.raw.sound5050);
+
+                btna.setClickable(false);
+                btnb.setClickable(false);
+                btnc.setClickable(false);
+                btnd.setClickable(false);
+
+                if(change.isClickable() && ask.isClickable()){
+                    change.setClickable(false);
+                    ask.setClickable(false);
+                    new CountDownTimer(5000,1000){
+                        @Override
+                        public void onTick(long millisUntilFinished) {
+                        }
+                        @Override
+                        public void onFinish() {
+                            playSound.mediaPlayer.stop();
+                            random50_50();
+                            change.setClickable(true);
+                            ask.setClickable(true);
+                            btna.setClickable(true);
+                            btnb.setClickable(true);
+                            btnc.setClickable(true);
+                            btnd.setClickable(true);
+                            getButton(one).setClickable(true);
+                            getButton(two).setClickable(true);
+                        }
+                    }.start();
+                }
+                else if(change.isClickable() && !ask.isClickable()){
+                    change.setClickable(false);
+                    new CountDownTimer(5000,1000){
+                        @Override
+                        public void onTick(long millisUntilFinished) {
+                        }
+                        @Override
+                        public void onFinish() {
+                            playSound.mediaPlayer.stop();
+                            random50_50();
+                            change.setClickable(true);
+                            btna.setClickable(true);
+                            btnb.setClickable(true);
+                            btnc.setClickable(true);
+                            btnd.setClickable(true);
+                            getButton(one).setClickable(true);
+                            getButton(two).setClickable(true);
+                        }
+                    }.start();
+                }
+                else if(!change.isClickable() && ask.isClickable()){
+                    ask.setClickable(false);
+                    new CountDownTimer(5000,1000){
+                        @Override
+                        public void onTick(long millisUntilFinished) {
+                        }
+                        @Override
+                        public void onFinish() {
+                            playSound.mediaPlayer.stop();
+                            random50_50();
+                            ask.setClickable(true);
+                            btna.setClickable(true);
+                            btnb.setClickable(true);
+                            btnc.setClickable(true);
+                            btnd.setClickable(true);
+                            getButton(one).setClickable(true);
+                            getButton(two).setClickable(true);
+                        }
+                    }.start();
+                }
+                else{
+                    new CountDownTimer(5000,1000){
+                        @Override
+                        public void onTick(long millisUntilFinished) {
+                        }
+                        @Override
+                        public void onFinish() {
+                            playSound.mediaPlayer.stop();
+                            random50_50();
+                            btna.setClickable(true);
+                            btnb.setClickable(true);
+                            btnc.setClickable(true);
+                            btnd.setClickable(true);
+                            getButton(one).setClickable(true);
+                            getButton(two).setClickable(true);
+                        }
+                    }.start();
+                }
+                fifty.setBackgroundResource(R.drawable.fifty2);
+                fifty.setClickable(false);
+
+            }
+        }).setNegativeButton("No", new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int id) {
+                dialog.cancel();
+
+            }
+        });
+        AlertDialog alert = builder.create();
+        alert.show();
+    }
+
     public void changeQuestion(View view){
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         final Integer j = i;
@@ -212,14 +328,34 @@ public class Main2Activity extends AppCompatActivity {
                         break;
                 }
 
-                setSound(R.raw.khan_gia);
+                playSound.setSound(getApplicationContext(),R.raw.khan_gia);
 
                 btna.setClickable(false);
                 btnb.setClickable(false);
                 btnc.setClickable(false);
                 btnd.setClickable(false);
 
-                if(change.isClickable()){
+                if(change.isClickable()&&fifty.isClickable()){
+                    change.setClickable(false);
+                    fifty.setClickable(false);
+                    new CountDownTimer(6000,1000){
+                        @Override
+                        public void onTick(long millisUntilFinished) {
+                        }
+                        @Override
+                        public void onFinish() {
+                            playSound.mediaPlayer.stop();
+                            dialog1.show();
+                            change.setClickable(true);
+                            fifty.setClickable(true);
+                            btna.setClickable(true);
+                            btnb.setClickable(true);
+                            btnc.setClickable(true);
+                            btnd.setClickable(true);
+                        }
+                    }.start();
+                }
+                else if(change.isClickable()&&!fifty.isClickable()){
                     change.setClickable(false);
                     new CountDownTimer(6000,1000){
                         @Override
@@ -227,7 +363,7 @@ public class Main2Activity extends AppCompatActivity {
                         }
                         @Override
                         public void onFinish() {
-                            mediaPlayer.stop();
+                            playSound.mediaPlayer.stop();
                             dialog1.show();
                             change.setClickable(true);
                             btna.setClickable(true);
@@ -235,15 +371,35 @@ public class Main2Activity extends AppCompatActivity {
                             btnc.setClickable(true);
                             btnd.setClickable(true);
                         }
-                    }.start();}
-                else{
+                    }.start();
+                }
+
+                else if(!change.isClickable()&&fifty.isClickable()){
+                    fifty.setClickable(false);
                     new CountDownTimer(6000,1000){
                         @Override
                         public void onTick(long millisUntilFinished) {
                         }
                         @Override
                         public void onFinish() {
-                            mediaPlayer.stop();
+                            playSound.mediaPlayer.stop();
+                            dialog1.show();
+                            fifty.setClickable(true);
+                            btna.setClickable(true);
+                            btnb.setClickable(true);
+                            btnc.setClickable(true);
+                            btnd.setClickable(true);
+                        }
+                    }.start();
+                }
+                else {
+                    new CountDownTimer(6000,1000){
+                        @Override
+                        public void onTick(long millisUntilFinished) {
+                        }
+                        @Override
+                        public void onFinish() {
+                            playSound.mediaPlayer.stop();
                             dialog1.show();
                             btna.setClickable(true);
                             btnb.setClickable(true);
@@ -267,26 +423,26 @@ public class Main2Activity extends AppCompatActivity {
     public void onClick(View view) throws InterruptedException {
         b = (Button)view;
         String answer = null;
-        mediaPlayer.stop();
+        playSound.mediaPlayer.stop();
         switch (b.getId()){
             case R.id.buttonA :
                 answer = "A";
-                setSound(R.raw.ans_a);
+                playSound.setSound(getApplicationContext(),R.raw.ans_a);
                 btna.setBackgroundResource(R.drawable.case3);
                 break;
             case R.id.buttonB:
                 answer = "B";
-                setSound(R.raw.ans_b);
+                playSound.setSound(getApplicationContext(),R.raw.ans_b);
                 btnb.setBackgroundResource(R.drawable.case3);
                 break;
             case R.id.buttonC:
                 answer = "C";
-                setSound(R.raw.ans_c);
+                playSound.setSound(getApplicationContext(),R.raw.ans_c);
                 btnc.setBackgroundResource(R.drawable.case3);
                 break;
             case R.id.buttonD:
                 answer = "D";
-                setSound(R.raw.ans_d);
+                playSound.setSound(getApplicationContext(),R.raw.ans_d);
                 btnd.setBackgroundResource(R.drawable.case3);
                 break;
         }
@@ -295,7 +451,7 @@ public class Main2Activity extends AppCompatActivity {
         alertDialogBuilder.setPositiveButton("Đồng ý", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(final DialogInterface dialog, int whick) {
-                mediaPlayer.stop();
+                playSound.mediaPlayer.stop();
                 switch (b.getId()){
                     case R.id.buttonA :
                         chooseNum = 1;
@@ -338,32 +494,43 @@ public class Main2Activity extends AppCompatActivity {
                 btnb.setBackgroundResource(R.drawable.button_press);
                 btnc.setBackgroundResource(R.drawable.button_press);
                 btnd.setBackgroundResource(R.drawable.button_press);
-                mediaPlayer.stop();
+                playSound.mediaPlayer.stop();
             }
         });
         alertDialog = alertDialogBuilder.show();
     }
-    public void setSound(Integer id){
-        mediaPlayer = new MediaPlayer().create(getApplicationContext(), id);
-        mediaPlayer.start();
-    }
+    /*
+    public void playSound.setSound(getApplicationContext(),Integer id){
+        playSound.mediaPlayer = new playSound.mediaPlayer().create(getApplicationContext(), id);
+        playSound.mediaPlayer.start();
+    }*/
     public void PlayGame() {
         btna.setClickable(false);
         btnb.setClickable(false);
         btnc.setClickable(false);
         btnd.setClickable(false);
+
+        x = fifty.isClickable();
+        y = call.isClickable();
+        z = ask.isClickable();
+        t = change.isClickable();
+
+        fifty.setClickable(false);
+        call.setClickable(false);
+        ask.setClickable(false);
+        change.setClickable(false);
         if(alertDialog != null && alertDialog.isShowing()){
             alertDialog.dismiss();
         }
         if (chooseNum != 0) {
-            mediaPlayer.stop();
+            playSound.mediaPlayer.stop();
             switch (Integer.parseInt(ansCorrect.get(i))) {
                 case 1:
                     if (chooseNum == 1) {
                         level++;
-                        setSound(R.raw.true_a);
+                        playSound.setSound(getApplicationContext(),R.raw.true_a);
                     } else {
-                        setSound(R.raw.lose_a);
+                        playSound.setSound(getApplicationContext(),R.raw.lose_a);
                     }
                     new CountDownTimer(3000,200){
                         @Override
@@ -393,9 +560,9 @@ public class Main2Activity extends AppCompatActivity {
                 case 2:
                     if (chooseNum == 2) {
                         level++;
-                        setSound(R.raw.true_b);
+                        playSound.setSound(getApplicationContext(),R.raw.true_b);
                     } else {
-                        setSound(R.raw.lose_b);
+                        playSound.setSound(getApplicationContext(),R.raw.lose_b);
                     }
 
                     new CountDownTimer(3000,200){
@@ -426,9 +593,9 @@ public class Main2Activity extends AppCompatActivity {
                 case 3:
                     if (chooseNum == 3) {
                         level++;
-                        setSound(R.raw.true_c);
+                        playSound.setSound(getApplicationContext(),R.raw.true_c);
                     } else {
-                        setSound(R.raw.lose_c);
+                        playSound.setSound(getApplicationContext(),R.raw.lose_c);
                     }
 
                     new CountDownTimer(3000,200){
@@ -460,9 +627,9 @@ public class Main2Activity extends AppCompatActivity {
                 case 4:
                     if (chooseNum == 4) {
                         level++;
-                        setSound(R.raw.true_d);
+                        playSound.setSound(getApplicationContext(),R.raw.true_d);
                     } else {
-                        setSound(R.raw.lose_d);
+                        playSound.setSound(getApplicationContext(),R.raw.lose_d);
                     }
 
                     new CountDownTimer(3000,200){
@@ -500,6 +667,14 @@ public class Main2Activity extends AppCompatActivity {
         btnb.setClickable(true);
         btnc.setClickable(true);
         btnd.setClickable(true);
+        if(x)
+            fifty.setClickable(true);
+        if(y)
+            call.setClickable(true);
+        if(z)
+            ask.setClickable(true);
+        if(t)
+            change.setClickable(true);
         btna.setBackgroundResource(R.drawable.button_press);
         btnb.setBackgroundResource(R.drawable.button_press);
         btnc.setBackgroundResource(R.drawable.button_press);
@@ -508,32 +683,32 @@ public class Main2Activity extends AppCompatActivity {
         levelstr.setText("Câu hỏi số " + level.toString());
         switch (level) {
             case 1:
-                setSound(R.raw.ques01);
+                playSound.setSound(getApplicationContext(),R.raw.ques01);
                 i = getRandom(0, 412);
                 setAnswer(i);
                 break;
             case 2:
                 moneyStr += 1000;
-                setSound(R.raw.ques02);
+                playSound.setSound(getApplicationContext(),R.raw.ques02);
                 i = getRandom(413, 715);
                 setAnswer(i);
                 break;
 
             case 3:
                 moneyStr += 1000;
-                setSound(R.raw.ques03);
+                playSound.setSound(getApplicationContext(),R.raw.ques03);
                 i = getRandom(716, 961);
                 setAnswer(i);
                 break;
             case 4:
                 moneyStr += 1000;
-                setSound(R.raw.ques04);
+                playSound.setSound(getApplicationContext(),R.raw.ques04);
                 i = getRandom(962, 1269);
                 setAnswer(i);
                 break;
             case 5:
                 moneyStr += 2000;
-                setSound(R.raw.ques05);
+                playSound.setSound(getApplicationContext(),R.raw.ques05);
                 new CountDownTimer(2000,1000){
                     @Override
                     public void onTick(long millisUntilFinished) {
@@ -541,7 +716,7 @@ public class Main2Activity extends AppCompatActivity {
                     }
                     @Override
                     public void onFinish() {
-                   setSound(R.raw.important);
+                   playSound.setSound(getApplicationContext(),R.raw.important);
                 }
                 }.start();
                 i = getRandom(1270, 1591);
@@ -549,31 +724,31 @@ public class Main2Activity extends AppCompatActivity {
                 break;
             case 6:
                 moneyStr += 5000;
-                setSound(R.raw.ques06);
+                playSound.setSound(getApplicationContext(),R.raw.ques06);
                 i = getRandom(1592, 1991);
                 setAnswer(i);
                 break;
             case 7:
                 moneyStr += 10000;
-                setSound(R.raw.ques07);
+                playSound.setSound(getApplicationContext(),R.raw.ques07);
                 i = getRandom(1992, 2395);
                 setAnswer(i);
                 break;
             case 8:
                 moneyStr += 10000;
-                setSound(R.raw.ques08);
+                playSound.setSound(getApplicationContext(),R.raw.ques08);
                 i = getRandom(2396, 2798);
                 setAnswer(i);
                 break;
             case 9:
                 moneyStr += 30000;
-                setSound(R.raw.ques09);
+                playSound.setSound(getApplicationContext(),R.raw.ques09);
                 i = getRandom(2799, 3184);
                 setAnswer(i);
                 break;
             case 10:
                 moneyStr += 30000;
-                setSound(R.raw.ques10);
+                playSound.setSound(getApplicationContext(),R.raw.ques10);
                 new CountDownTimer(2000,1000){
                     @Override
                     public void onTick(long millisUntilFinished) {
@@ -581,7 +756,7 @@ public class Main2Activity extends AppCompatActivity {
                     }
                     @Override
                     public void onFinish() {
-                    setSound(R.raw.important);
+                    playSound.setSound(getApplicationContext(),R.raw.important);
                 }
                 }.start();
                 i = getRandom(3185, 3441);
@@ -589,31 +764,31 @@ public class Main2Activity extends AppCompatActivity {
                 break;
             case 11:
                 moneyStr += 60000;
-                setSound(R.raw.ques11);
+                playSound.setSound(getApplicationContext(),R.raw.ques11);
                 i = getRandom(3442, 3653);
                 setAnswer(i);
                 break;
             case 12:
                 moneyStr += 100000;
-                setSound(R.raw.ques12);
+                playSound.setSound(getApplicationContext(),R.raw.ques12);
                 i = getRandom(3654, 3839);
                 setAnswer(i);
                 break;
             case 13:
                 moneyStr += 100000;
-                setSound(R.raw.ques13);
+                playSound.setSound(getApplicationContext(),R.raw.ques13);
                 i = getRandom(3840, 4011);
                 setAnswer(i);
                 break;
             case 14:
                 moneyStr += 150000;
-                setSound(R.raw.ques14);
+                playSound.setSound(getApplicationContext(),R.raw.ques14);
                 i = getRandom(4012, 4169);
                 setAnswer(i);
                 break;
             case 15:
                 moneyStr += 300000;
-                setSound(R.raw.pass14);
+                playSound.setSound(getApplicationContext(),R.raw.pass14);
                 new CountDownTimer(4000,1000){
                     @Override
                     public void onTick(long millisUntilFinished) {
@@ -621,7 +796,7 @@ public class Main2Activity extends AppCompatActivity {
                     }
                     @Override
                     public void onFinish() {
-                        setSound(R.raw.ques15);
+                        playSound.setSound(getApplicationContext(),R.raw.ques15);
                         i = getRandom(4170, 4228);
                         setAnswer(i);
                     }
@@ -630,7 +805,7 @@ public class Main2Activity extends AppCompatActivity {
             case 16:
                 moneyStr += 400000;
                 money.setText(moneyStr.toString());
-                setSound(R.raw.best_player);
+                playSound.setSound(getApplicationContext(),R.raw.best_player);
                 new CountDownTimer(12000,1000){
                     @Override
                     public void onTick(long millisUntilFinished) {
@@ -647,6 +822,38 @@ public class Main2Activity extends AppCompatActivity {
     public int getRandom(int min, int max) {
         Random r = new Random();
         return min+r.nextInt(max-min);
+    }
+    public void random50_50(){
+        do{
+            one = getRandom(1,4);
+        }while (one == Integer.parseInt(ansCorrect.get(i)));
+
+        do{
+            two = getRandom(1,4);
+        }while (two == Integer.parseInt(ansCorrect.get(i)) || two == one);
+        getButton(one).setText("");
+        getButton(one).setClickable(false);
+        getButton(two).setText("");
+        getButton(two).setClickable(false);
+    }
+
+    public Button getButton(Integer i){
+        Integer j = 0;
+        switch (i){
+            case 1:
+                j = R.id.buttonA;
+                break;
+            case 2:
+                j = R.id.buttonB;
+                break;
+            case 3:
+                j = R.id.buttonC;
+                break;
+            case 4:
+                j = R.id.buttonD;
+                break;
+        }
+        return (Button)findViewById(j);
     }
     public void setAnswer(Integer i){
         money.setText(moneyStr.toString());
@@ -676,7 +883,7 @@ public class Main2Activity extends AppCompatActivity {
     }
     public void Fail(){
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        setSound(R.raw.lose);
+        playSound.setSound(getApplicationContext(),R.raw.lose);
         countDownTimer2.cancel();
         if(level == 1) {
             money.setText("1");
@@ -686,7 +893,7 @@ public class Main2Activity extends AppCompatActivity {
             public void onClick(DialogInterface dialog, int id) {
                 moneyStr = 0;
                 stopService(intent);
-                mediaPlayer.stop();
+                playSound.mediaPlayer.stop();
                 final Intent myIntent = new Intent(Main2Activity.this, Main2Activity.class);
                 Main2Activity.this.finish();
                 intent = new Intent(Main2Activity.this, PlaySongServiceLevel1_1.class);
@@ -697,7 +904,7 @@ public class Main2Activity extends AppCompatActivity {
         }).setNegativeButton("Hủy bỏ", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int id) {
                 stopService(intent);
-                mediaPlayer.stop();
+                playSound.mediaPlayer.stop();
                 Main2Activity.this.finish();
                 dialog.cancel();
             }
@@ -709,20 +916,20 @@ public class Main2Activity extends AppCompatActivity {
     public void onStop(){
         super.onStop();
         stopService(intent);
-        mediaPlayer.stop();
+        playSound.mediaPlayer.stop();
         countDownTimer2.cancel();
     }
     @Override
     public void onPause(){
         super.onPause();
         stopService(intent);
-        mediaPlayer.stop();
+        playSound.mediaPlayer.stop();
     }
     @Override
     public void onDestroy(){
         super.onDestroy();
         stopService(intent);
-        mediaPlayer.stop();
+        playSound.mediaPlayer.stop();
         countDownTimer2.cancel();
     }
     @Override

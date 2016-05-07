@@ -57,10 +57,11 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:id="@+id/imageButton"
-            android:background="@mipmap/fifty"
+            android:background="@drawable/fifty_press"
             android:layout_alignTop="@+id/imageButton2"
             android:layout_toLeftOf="@+id/imageView"
-            android:layout_toStartOf="@+id/imageView" />
+            android:layout_toStartOf="@+id/imageView"
+            android:onClick="fifty" />
 
         <ImageButton
             android:layout_width="50dp"
@@ -93,6 +94,7 @@
             android:layout_toLeftOf="@+id/textView3"
             android:layout_toStartOf="@+id/textView3"
             android:onClick="changeQuestion" />
+
     </LinearLayout>
 
     <LinearLayout

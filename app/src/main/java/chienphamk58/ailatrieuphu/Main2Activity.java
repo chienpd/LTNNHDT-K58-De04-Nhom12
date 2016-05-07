@@ -627,7 +627,7 @@ public class Main2Activity extends AppCompatActivity {
                     }
                 }.start();
                 break;
-            default:
+            case 16:
                 moneyStr += 400000;
                 money.setText(moneyStr.toString());
                 setSound(R.raw.best_player);

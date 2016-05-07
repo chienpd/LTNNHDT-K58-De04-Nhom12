@@ -85,10 +85,6 @@ public class MainActivity extends Activity {
         MainActivity.this.startActivity(myIntent);
     }
 
-    public void High_Score(View view){
-        Intent myIntent = new Intent(MainActivity.this, Main4Activity.class);
-        MainActivity.this.startActivity(myIntent);
-    }
 
     public void Setting(View view){
         Intent myIntent = new Intent(MainActivity.this, Main5Activity.class);

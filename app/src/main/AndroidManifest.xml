@@ -4,7 +4,7 @@
     <application
         android:allowBackup="true"
         android:icon="@mipmap/icon"
-        android:label="@string/app_name"
+        android:label="Ai Là Triệu Phú"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
         <activity android:name=".MainActivity">
@@ -14,16 +14,20 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Main2Activity" />
-        <activity android:name=".Main3Activity" />
-        <activity android:name=".Main5Activity" />
+        <activity android:name=".Play" />
+        <activity android:name=".Help" />
+        <activity android:name=".About" />
 
         <service
-            android:name=".PlaySongService"
+            android:name=".Sound_Music.PlaySongService"
             android:enabled="true"
             android:exported="true" />
         <service
-            android:name=".PlaySongServiceLevel1"
+            android:name=".Sound_Music.PlaySongServiceLevel1"
+            android:enabled="true"
+            android:exported="true"></service>
+        <service
+            android:name=".Sound_Music.PlaySongServiceLevel1_1"
             android:enabled="true"
             android:exported="true"></service>
     </application>

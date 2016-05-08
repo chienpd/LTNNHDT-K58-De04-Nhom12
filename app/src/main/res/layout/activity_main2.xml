@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent" android:layout_height="match_parent"
-    tools:context="chienphamk58.ailatrieuphu.Main2Activity"
+    tools:context=".Play"
     android:background="@mipmap/bg_altp">
 
     <TextView
@@ -94,6 +94,13 @@
             android:layout_toLeftOf="@+id/textView3"
             android:layout_toStartOf="@+id/textView3"
             android:onClick="changeQuestion" />
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/imageButton13"
+            android:background="@drawable/pause_press"
+            android:onClick="pause"/>
 
     </LinearLayout>
 

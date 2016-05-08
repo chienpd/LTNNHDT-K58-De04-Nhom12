@@ -98,7 +98,7 @@
             android:textStyle="normal|bold"
             android:typeface="serif"
             android:textSize="20dp"
-            android:onClick="Setting"
+            android:onClick="About"
             android:layout_below="@+id/button3"
             android:layout_centerHorizontal="true"
             android:layout_gravity="center_horizontal"

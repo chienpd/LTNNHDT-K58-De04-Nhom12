@@ -11,6 +11,10 @@ import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.Toast;
+
+import chienphamk58.ailatrieuphu.Sound_Music.PlaySongService;
+import chienphamk58.ailatrieuphu.Sound_Music.PlaySound;
+
 public class MainActivity extends Activity {
     Intent intent;
     PlaySound playSound = new PlaySound();
@@ -22,12 +26,9 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_main);
-
             intent = new Intent(MainActivity.this, PlaySongService.class);
         if(playSound.mutesound)
             startService(intent);
-
-
         btnMute = (ImageButton)findViewById(R.id.imageButton5);
         btnDownload = (ImageButton)findViewById(R.id.imageButton6);
         btnShare = (ImageButton)findViewById(R.id.imageButton7);
@@ -42,14 +43,12 @@ public class MainActivity extends Activity {
     }
     public void Play(View view){
         AlertDialog.Builder arlertDialogBuiler = new AlertDialog.Builder(this);
-        final Intent myIntent = new Intent(MainActivity.this, Main2Activity.class);
+        final Intent myIntent = new Intent(MainActivity.this, Play.class);
         if(playSound.mutesound)
             playSound.setSound(getApplicationContext(),R.raw.ready);
         // set Title
         arlertDialogBuiler.setTitle("");
-
-        // set dialog Message
-        arlertDialogBuiler.setMessage("Bạn đã sẵn sàng chơi ?").setCancelable(false).setPositiveButton("Yes",new DialogInterface.OnClickListener(){
+        arlertDialogBuiler.setMessage("Bạn đã sẵn sàng chơi ?").setCancelable(false).setPositiveButton("Sẵn sàng",new DialogInterface.OnClickListener(){
             public void onClick(DialogInterface dialog, int id){
                 btnPlay.setClickable(false);
                 btnHelp.setClickable(false);
@@ -96,10 +95,8 @@ public class MainActivity extends Activity {
                         btnShare.setClickable(true);
                     }
                 }.start();
-
-
             }
-        }).setNegativeButton("No", new DialogInterface.OnClickListener() {
+        }).setNegativeButton("Không", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int id){
                 dialog.cancel();
                 if(playSound.mutesound)
@@ -110,26 +107,17 @@ public class MainActivity extends Activity {
                 btnAbout.setClickable(true);
             }
         });
-
-        // create alert dialog
         AlertDialog alertDialog = arlertDialogBuiler.create();
-
-        // show it
         alertDialog.show();
-
-    }
-
+    }   // bat su kien cho button Play
     public void Help(View view){
-        final Intent myIntent = new Intent(MainActivity.this, Main3Activity.class);
+        final Intent myIntent = new Intent(MainActivity.this, Help.class);
         MainActivity.this.startActivity(myIntent);
-    }
-
-
-    public void Setting(View view){
-        Intent myIntent = new Intent(MainActivity.this, Main5Activity.class);
+    }   // bat su kien cho button Huong Dan
+    public void About(View view){
+        Intent myIntent = new Intent(MainActivity.this, About.class);
         MainActivity.this.startActivity(myIntent);
-    }
-
+    }   // bat su kien cho button Thong Tin
     public void Mute(View view){
         if(playSound.mutesound){
             sound.setBackgroundResource(R.drawable.sound_mute);
@@ -141,33 +129,33 @@ public class MainActivity extends Activity {
             startService(intent);
             playSound.mutesound = true;
         }
-    }
+    }       // bat su kien cho button Mute
     public void Exit(View view){
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setMessage("Are you sure you want to exit?").setCancelable(false).setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+        builder.setMessage("Bạn có muốn thoát trò chơi?").setCancelable(false).setPositiveButton("Đồng ý", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int id) {
                 MainActivity.this.finish();
                 if(playSound.mutesound)
                     stopService(intent);
             }
-        }).setNegativeButton("No", new DialogInterface.OnClickListener() {
+        }).setNegativeButton("Không", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int id) {
                 dialog.cancel();
             }
         });
         AlertDialog alert = builder.create();
         alert.show();
-    }
+    }       // bat su kien cho button Thoat
     @Override
     public void onBackPressed() {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setMessage("Are you sure you want to exit?").setCancelable(false).setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+        builder.setMessage("Bạn có muốn thoát trò chơi?").setCancelable(false).setPositiveButton("Đồng ý", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int id) {
                 MainActivity.this.finish();
                 if(playSound.mutesound)
                     stopService(intent);
             }
-        }).setNegativeButton("No", new DialogInterface.OnClickListener() {
+        }).setNegativeButton("Không", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int id) {
                 dialog.cancel();
             }
@@ -175,25 +163,21 @@ public class MainActivity extends Activity {
         AlertDialog alert = builder.create();
         alert.show();
     }
-
     @Override
     public void onStop(){
         super.onStop();
             stopService(intent);
     }
-
     @Override
     public void onPause(){
         super.onPause();
             stopService(intent);
     }
-
     @Override
     public void onDestroy(){
         super.onDestroy();
             stopService(intent);
     }
-
     @Override
     public void onResume(){
         super.onResume();

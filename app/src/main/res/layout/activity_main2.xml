@@ -70,7 +70,8 @@
             android:layout_gravity="center"
             android:layout_below="@+id/imageView"
             android:layout_alignLeft="@+id/imageView"
-            android:layout_alignStart="@+id/imageView" />
+            android:layout_alignStart="@+id/imageView"
+            android:onClick="call" />
 
         <ImageButton
             android:layout_width="50dp"

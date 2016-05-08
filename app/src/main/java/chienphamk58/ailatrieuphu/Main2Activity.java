@@ -20,7 +20,10 @@ import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
 import chienphamk58.ailatrieuphu.Database.DatabaseAccess;
+
+
 public class Main2Activity extends AppCompatActivity {
+    Dialog dialog2, dialog3;
     PlaySound playSound = new PlaySound();
     Intent intent;
     Integer level = 1, moneyStr = 0, chooseNum = 0,i, j = 0, one, two;
@@ -89,7 +92,7 @@ public class Main2Activity extends AppCompatActivity {
                     playSound.mediaPlayer.stop();
                     playSound.setSound(getApplicationContext(),R.raw.out_of_time);
                 }
-                countDownTimer = new CountDownTimer(2000,1000){
+                new CountDownTimer(2000,1000){
                     @Override
                     public void onTick(long millisUntilFinished) {
                     }
@@ -143,31 +146,9 @@ public class Main2Activity extends AppCompatActivity {
                 btnc.setClickable(false);
                 btnd.setClickable(false);
 
-                if(change.isClickable() && ask.isClickable()){
-                    change.setClickable(false);
-                    ask.setClickable(false);
-                    new CountDownTimer(5000,1000){
-                        @Override
-                        public void onTick(long millisUntilFinished) {
-                        }
-                        @Override
-                        public void onFinish() {
-                            if(playSound.mutesound)
-                                playSound.mediaPlayer.stop();
-                            random50_50();
-                            change.setClickable(true);
-                            ask.setClickable(true);
-                            btna.setClickable(true);
-                            btnb.setClickable(true);
-                            btnc.setClickable(true);
-                            btnd.setClickable(true);
-                            getButton(one).setClickable(true);
-                            getButton(two).setClickable(true);
-                        }
-                    }.start();
-                }
-                else if(change.isClickable() && !ask.isClickable()){
-                    change.setClickable(false);
+                change.setClickable(false);
+                ask.setClickable(false);
+                call.setClickable(false);
                     countDownTimer = new CountDownTimer(5000,1000){
                         @Override
                         public void onTick(long millisUntilFinished) {
@@ -177,7 +158,12 @@ public class Main2Activity extends AppCompatActivity {
                             if(playSound.mutesound)
                                 playSound.mediaPlayer.stop();
                             random50_50();
-                            change.setClickable(true);
+                            if(y)
+                                call.setClickable(true);
+                            if(z)
+                                ask.setClickable(true);
+                            if(t)
+                                change.setClickable(true);
                             btna.setClickable(true);
                             btnb.setClickable(true);
                             btnc.setClickable(true);
@@ -186,47 +172,6 @@ public class Main2Activity extends AppCompatActivity {
                             getButton(two).setClickable(true);
                         }
                     }.start();
-                }
-                else if(!change.isClickable() && ask.isClickable()){
-                    ask.setClickable(false);
-                    new CountDownTimer(5000,1000){
-                        @Override
-                        public void onTick(long millisUntilFinished) {
-                        }
-                        @Override
-                        public void onFinish() {
-                            if(playSound.mutesound)
-                                playSound.mediaPlayer.stop();
-                            random50_50();
-                            ask.setClickable(true);
-                            btna.setClickable(true);
-                            btnb.setClickable(true);
-                            btnc.setClickable(true);
-                            btnd.setClickable(true);
-                            getButton(one).setClickable(true);
-                            getButton(two).setClickable(true);
-                        }
-                    }.start();
-                }
-                else{
-                    countDownTimer = new CountDownTimer(5000,1000){
-                        @Override
-                        public void onTick(long millisUntilFinished) {
-                        }
-                        @Override
-                        public void onFinish() {
-                            if(playSound.mutesound)
-                                playSound.mediaPlayer.stop();
-                            random50_50();
-                            btna.setClickable(true);
-                            btnb.setClickable(true);
-                            btnc.setClickable(true);
-                            btnd.setClickable(true);
-                            getButton(one).setClickable(true);
-                            getButton(two).setClickable(true);
-                        }
-                    }.start();
-                }
                 fifty.setBackgroundResource(R.drawable.fifty2);
                 fifty.setClickable(false);
 
@@ -240,7 +185,140 @@ public class Main2Activity extends AppCompatActivity {
         AlertDialog alert = builder.create();
         alert.show();
     }
+    public void call(View view){
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setMessage("Bạn có muốn sử dụng sự trợ giúp xin tư vấn từ chuyên gia?").setCancelable(false).setPositiveButton("Đồng ý", new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int id) {
+                dialog2 = new Dialog(Main2Activity.this);
+                dialog2.setTitle("Lựa chọn chuyên gia");
+                dialog2.setContentView(R.layout.tuvan);
+                dialog2.setCancelable(false);
+                dialog2.show();
+                call.setBackgroundResource(R.drawable.call2);
+                call.setClickable(false);
 
+                dialog3 = new Dialog(Main2Activity.this);
+                dialog3.setCancelable(false);
+                dialog3.setContentView(R.layout.chuyengia);
+                final ImageView imageView = (ImageView)dialog3.findViewById(R.id.imageView12);
+                Button button = (Button)dialog3.findViewById(R.id.button);
+                button.setOnClickListener(new View.OnClickListener() {
+                    public void onClick(View v) {
+                        dialog3.dismiss();
+                    }
+                });
+
+                ImageButton imageButton1 = (ImageButton)dialog2.findViewById(R.id.imageButton9);
+                imageButton1.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        if(playSound.mutesound)
+                            playSound.setSound(getApplicationContext(),R.raw.call);
+                        imageView.setBackgroundResource(R.mipmap.levanlan);
+                        dialog3.setTitle("GS. Lê Văn Lan");
+                        dialog2.dismiss();
+                        countDownTimer = new CountDownTimer(3000,1000){
+                            @Override
+                            public void onTick(long millisUntilFinished) {
+                            }
+                            @Override
+                            public void onFinish() {
+                                dialog3.show();
+                            }
+                        }.start();
+
+                    }
+                });
+
+
+                ImageButton imageButton2 = (ImageButton)dialog2.findViewById(R.id.imageButton10);
+                imageButton2.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        if(playSound.mutesound)
+                            playSound.setSound(getApplicationContext(),R.raw.call);
+                        imageView.setBackgroundResource(R.mipmap.anhxtanh);
+                        dialog3.setTitle("Albert Einstein");
+                        dialog2.dismiss();
+                        countDownTimer = new CountDownTimer(3000,1000){
+                            @Override
+                            public void onTick(long millisUntilFinished) {
+                            }
+                            @Override
+                            public void onFinish() {
+                                dialog3.show();
+                            }
+                        }.start();
+                    }
+                });
+
+                ImageButton imageButton3 = (ImageButton)dialog2.findViewById(R.id.imageButton11);
+                imageButton3.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        if(playSound.mutesound)
+                            playSound.setSound(getApplicationContext(),R.raw.call);
+                        imageView.setBackgroundResource(R.mipmap.ngobaochau);
+                        dialog3.setTitle("GS. Ngô Bảo Châu");
+                        dialog2.dismiss();
+                        countDownTimer = new CountDownTimer(3000,1000){
+                            @Override
+                            public void onTick(long millisUntilFinished) {
+                            }
+                            @Override
+                            public void onFinish() {
+                                dialog3.show();
+                            }
+                        }.start();
+                    }
+                });
+
+                ImageButton imageButton4 = (ImageButton)dialog2.findViewById(R.id.imageButton12);
+                imageButton4.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        if(playSound.mutesound)
+                            playSound.setSound(getApplicationContext(),R.raw.call);
+                        imageView.setBackgroundResource(R.mipmap.markzukerbeg);
+                        dialog3.setTitle("Cristiano Ronaldo");
+                        dialog2.dismiss();
+                        countDownTimer = new CountDownTimer(3000,1000){
+                            @Override
+                            public void onTick(long millisUntilFinished) {
+                            }
+                            @Override
+                            public void onFinish() {
+                                dialog3.show();
+                            }
+                        }.start();
+                    }
+                });
+
+                TextView textView = (TextView)dialog3.findViewById(R.id.textView25);
+                switch (Integer.parseInt(ansCorrect.get(i))) {
+                    case 1:
+                        textView.setText("Tôi đoán câu trả lời đúng là A");
+                        break;
+                    case 2:
+                        textView.setText("Tôi đoán câu trả lời đúng là B");
+                        break;
+                    case 3:
+                        textView.setText("Tôi đoán câu trả lời đúng là C");
+                        break;
+                    case 4:
+                        textView.setText("Tôi đoán câu trả lời đúng là D");
+                        break;
+                }
+
+            }
+        }).setNegativeButton("Không", new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int id) {
+                dialog.cancel();
+            }
+        });
+        AlertDialog alert = builder.create();
+        alert.show();
+    }
     public void changeQuestion(View view){
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         final Integer j = i;
@@ -270,17 +348,24 @@ public class Main2Activity extends AppCompatActivity {
             public void onClick(DialogInterface dialog, int id) {
                 final Dialog dialog1 = new Dialog(Main2Activity.this);
                 dialog1.setTitle("Tỉ lệ khán giả lựa chọn");
+                dialog1.setCancelable(false);
                 Integer A,B,C,D;
                 dialog1.setContentView(R.layout.chart);
 
-                ImageView imageViewA = (ImageView)dialog1.findViewById(R.id.imageView7);
-                ImageView imageViewB = (ImageView)dialog1.findViewById(R.id.imageView9);
-                ImageView imageViewC = (ImageView)dialog1.findViewById(R.id.imageView10);
-                ImageView imageViewD = (ImageView)dialog1.findViewById(R.id.imageView11);
-                TextView Atv = (TextView)dialog1.findViewById(R.id.textView17);
-                TextView Btv = (TextView)dialog1.findViewById(R.id.textView18);
-                TextView Ctv = (TextView)dialog1.findViewById(R.id.textView19);
-                TextView Dtv = (TextView)dialog1.findViewById(R.id.textView20);
+                ImageView imageViewA = (ImageView)dialog1.findViewById(R.id.imageView9);
+                ImageView imageViewB = (ImageView)dialog1.findViewById(R.id.imageView7);
+                ImageView imageViewC = (ImageView)dialog1.findViewById(R.id.imageView11);
+                ImageView imageViewD = (ImageView)dialog1.findViewById(R.id.imageView10);
+                TextView Atv = (TextView)dialog1.findViewById(R.id.textView14);
+                TextView Btv = (TextView)dialog1.findViewById(R.id.textView13);
+                TextView Ctv = (TextView)dialog1.findViewById(R.id.textView17);
+                TextView Dtv = (TextView)dialog1.findViewById(R.id.textView19);
+                Button button = (Button)dialog1.findViewById(R.id.button5);
+                button.setOnClickListener(new View.OnClickListener() {
+                    public void onClick(View v) {
+                        dialog1.dismiss();
+                    }
+                });
 
                 switch (Integer.parseInt(ansCorrect.get(i))) {
                     case 1:
@@ -349,9 +434,9 @@ public class Main2Activity extends AppCompatActivity {
                 btnc.setClickable(false);
                 btnd.setClickable(false);
 
-                if(change.isClickable()&&fifty.isClickable()){
-                    change.setClickable(false);
-                    fifty.setClickable(false);
+                change.setClickable(false);
+                call.setClickable(false);
+                fifty.setClickable(false);
                     countDownTimer = new CountDownTimer(6000,1000){
                         @Override
                         public void onTick(long millisUntilFinished) {
@@ -361,71 +446,18 @@ public class Main2Activity extends AppCompatActivity {
                             if(playSound.mutesound)
                                 playSound.mediaPlayer.stop();
                             dialog1.show();
-                            change.setClickable(true);
-                            fifty.setClickable(true);
+                            if(x)
+                                fifty.setClickable(true);
+                            if(y)
+                                call.setClickable(true);
+                            if(z)
+                                change.setClickable(true);
                             btna.setClickable(true);
                             btnb.setClickable(true);
                             btnc.setClickable(true);
                             btnd.setClickable(true);
                         }
                     }.start();
-                }
-                else if(change.isClickable()&&!fifty.isClickable()){
-                    change.setClickable(false);
-                    countDownTimer = new CountDownTimer(6000,1000){
-                        @Override
-                        public void onTick(long millisUntilFinished) {
-                        }
-                        @Override
-                        public void onFinish() {
-                            if(playSound.mutesound)
-                                playSound.mediaPlayer.stop();
-                            dialog1.show();
-                            change.setClickable(true);
-                            btna.setClickable(true);
-                            btnb.setClickable(true);
-                            btnc.setClickable(true);
-                            btnd.setClickable(true);
-                        }
-                    }.start();
-                }
-
-                else if(!change.isClickable()&&fifty.isClickable()){
-                    fifty.setClickable(false);
-                    countDownTimer = new CountDownTimer(6000,1000){
-                        @Override
-                        public void onTick(long millisUntilFinished) {
-                        }
-                        @Override
-                        public void onFinish() {
-                            if(playSound.mutesound)
-                                playSound.mediaPlayer.stop();
-                            dialog1.show();
-                            fifty.setClickable(true);
-                            btna.setClickable(true);
-                            btnb.setClickable(true);
-                            btnc.setClickable(true);
-                            btnd.setClickable(true);
-                        }
-                    }.start();
-                }
-                else {
-                    countDownTimer = new CountDownTimer(6000,1000){
-                        @Override
-                        public void onTick(long millisUntilFinished) {
-                        }
-                        @Override
-                        public void onFinish() {
-                            if(playSound.mutesound)
-                                playSound.mediaPlayer.stop();
-                            dialog1.show();
-                            btna.setClickable(true);
-                            btnb.setClickable(true);
-                            btnc.setClickable(true);
-                            btnd.setClickable(true);
-                        }
-                    }.start();
-                }
                 ask.setBackgroundResource(R.drawable.khangia2);
                 ask.setClickable(false);
             }
@@ -883,7 +915,6 @@ public class Main2Activity extends AppCompatActivity {
         getButton(two).setText("");
         getButton(two).setClickable(false);
     }
-
     public Button getButton(Integer i){
         Integer j = 0;
         switch (i){
@@ -932,6 +963,7 @@ public class Main2Activity extends AppCompatActivity {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         if(playSound.mutesound)
             playSound.setSound(getApplicationContext(),R.raw.lose);
+        //countDownTimer.cancel();
         countDownTimer2.cancel();
 
         if(level == 1) {
@@ -979,6 +1011,7 @@ public class Main2Activity extends AppCompatActivity {
         if(playSound.mutesound)
             playSound.mediaPlayer.stop();
         stopService(intent);
+        countDownTimer2.cancel();
     }
     @Override
     public void onDestroy() {

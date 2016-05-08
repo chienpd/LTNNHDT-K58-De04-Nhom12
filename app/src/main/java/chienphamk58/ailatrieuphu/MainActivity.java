@@ -15,6 +15,7 @@ public class MainActivity extends Activity {
     Intent intent;
     PlaySound playSound = new PlaySound();
     Button btnPlay, btnHelp, btnAbout;
+    ImageButton btnMute, btnDownload, btnShare, btnExit;
     static ImageButton sound;
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -26,6 +27,11 @@ public class MainActivity extends Activity {
         if(playSound.mutesound)
             startService(intent);
 
+
+        btnMute = (ImageButton)findViewById(R.id.imageButton5);
+        btnDownload = (ImageButton)findViewById(R.id.imageButton6);
+        btnShare = (ImageButton)findViewById(R.id.imageButton7);
+        btnExit = (ImageButton)findViewById(R.id.imageButton8);
 
         btnPlay = (Button)findViewById(R.id.button1);
         btnHelp = (Button)findViewById(R.id.button2);
@@ -48,14 +54,22 @@ public class MainActivity extends Activity {
                 btnPlay.setClickable(false);
                 btnHelp.setClickable(false);
                 btnAbout.setClickable(false);
+                btnExit.setClickable(false);
+                btnMute.setClickable(false);
+                btnDownload.setClickable(false);
+                btnShare.setClickable(false);
+                btnExit.setClickable(false);
+                Integer wait = 2000;
+
                 if(playSound.mutesound) {
+                    wait = 3000;
                     playSound.mediaPlayer.stop();
                     playSound.setSound(getApplicationContext(), R.raw.gofind);
                 }
                 Toast toast=Toast.makeText(MainActivity.this, "Chúng ta bắt đầu đi tìm Ai Là Triệu Phú ",   Toast.LENGTH_LONG);
                 toast.show();
                 btnPlay.setBackgroundResource(R.drawable.case3);
-                new CountDownTimer(3000,1000){
+                new CountDownTimer(wait,1000){
                     @Override
                     public void onTick(long millisUntilFinished) {
 
@@ -76,6 +90,10 @@ public class MainActivity extends Activity {
                         btnPlay.setClickable(true);
                         btnHelp.setClickable(true);
                         btnAbout.setClickable(true);
+                        btnExit.setClickable(true);
+                        btnMute.setClickable(true);
+                        btnDownload.setClickable(true);
+                        btnShare.setClickable(true);
                     }
                 }.start();
 

@@ -103,7 +103,8 @@ public class MainActivity extends Activity {
             public void onClick(DialogInterface dialog, int id){
                 dialog.cancel();
                 if(playSound.mutesound)
-                    playSound.mediaPlayer.stop();
+                    if(playSound.mediaPlayer.isPlaying())
+                        playSound.mediaPlayer.stop();
                 btnPlay.setClickable(true);
                 btnHelp.setClickable(true);
                 btnAbout.setClickable(true);

@@ -14,7 +14,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/textView3"
-        android:text="ABOUT"
+        android:text="Thông Tin"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_gravity="center"
@@ -59,6 +59,15 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Bài tập lớn OOP"
+                android:id="@+id/textView27"
+                android:typeface="serif"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="Ứng dụng được viết bởi:"
                 android:id="@+id/textView23"
                 android:typeface="serif"
@@ -72,6 +81,16 @@
                 android:id="@+id/textView24"
                 android:typeface="serif"
                 android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="2. Hồ Văn Sang \nmssv: 20133256"
+                android:id="@+id/textView20"
+                android:layout_gravity="center_horizontal"
+                android:typeface="serif" />
+
         </LinearLayout>
     </ScrollView>
 

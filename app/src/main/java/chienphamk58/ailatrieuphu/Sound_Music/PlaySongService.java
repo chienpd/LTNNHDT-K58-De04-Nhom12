@@ -5,6 +5,8 @@ import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.IBinder;
 
+import java.io.IOException;
+
 import chienphamk58.ailatrieuphu.R;
 
 public class PlaySongService extends Service {
@@ -47,12 +49,15 @@ public class PlaySongService extends Service {
     public void onDestroy() {
         // Giải phóng nguồn dữ nguồn phát nhạc.
         super.onDestroy();
-        if(mediaPlayer.isPlaying())
-            mediaPlayer.stop();
+        if(mediaPlayer!=null)
+        {
+            if(mediaPlayer.isPlaying()){
+                mediaPlayer.reset();//It requires again setDataSource for player object.
+                mediaPlayer.stop();// Stop it
+                mediaPlayer.release();// Release it
+                mediaPlayer=null; // Initilize to null so it can be used later
+            }
+        }
     }
 
-    public void setSound(Integer id){
-        mediaPlayer = new MediaPlayer().create(getApplicationContext(), id);
-        mediaPlayer.start();
-    }
 }

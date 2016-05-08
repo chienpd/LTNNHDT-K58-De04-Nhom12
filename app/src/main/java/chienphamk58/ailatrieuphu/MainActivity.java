@@ -12,6 +12,8 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.Toast;
 
+import java.io.IOException;
+
 import chienphamk58.ailatrieuphu.Sound_Music.PlaySongService;
 import chienphamk58.ailatrieuphu.Sound_Music.PlaySound;
 
@@ -63,7 +65,9 @@ public class MainActivity extends Activity {
                 if(playSound.mutesound) {
                     wait = 3000;
                     playSound.mediaPlayer.stop();
-                    playSound.setSound(getApplicationContext(), R.raw.gofind);
+
+                        playSound.setSound(getApplicationContext(), R.raw.gofind);
+
                 }
                 Toast toast=Toast.makeText(MainActivity.this, "Chúng ta bắt đầu đi tìm Ai Là Triệu Phú ",   Toast.LENGTH_LONG);
                 toast.show();
@@ -76,6 +80,16 @@ public class MainActivity extends Activity {
                     @Override
                     public void onFinish() {
                         MainActivity.this.startActivity(myIntent);
+                        if(playSound.mutesound)
+                            if(playSound.mediaPlayer!=null)
+                            {
+                                if(playSound.mediaPlayer.isPlaying()){
+                                    playSound.mediaPlayer.reset();//It requires again setDataSource for player object.
+                                    playSound.mediaPlayer.stop();// Stop it
+                                    playSound.mediaPlayer.release();// Release it
+                                    playSound.mediaPlayer=null; // Initilize to null so it can be used later
+                                }
+                            }
                     }
                 }.start();
                 new CountDownTimer(4000,1000){
@@ -167,21 +181,52 @@ public class MainActivity extends Activity {
     public void onStop(){
         super.onStop();
             stopService(intent);
+        if(playSound.mediaPlayer!=null)
+        {
+            if(playSound.mediaPlayer.isPlaying()){
+                playSound.mediaPlayer.reset();//It requires again setDataSource for player object.
+                playSound.mediaPlayer.stop();// Stop it
+                playSound.mediaPlayer.release();// Release it
+                playSound.mediaPlayer=null; // Initilize to null so it can be used later
+            }
+        }
     }
     @Override
     public void onPause(){
         super.onPause();
-            stopService(intent);
+        stopService(intent);
+        if(playSound.mediaPlayer!=null)
+        {
+            if(playSound.mediaPlayer.isPlaying()){
+                playSound.mediaPlayer.pause();
+            }
+        }
     }
     @Override
     public void onDestroy(){
         super.onDestroy();
             stopService(intent);
+        if(playSound.mediaPlayer!=null)
+        {
+            if(playSound.mediaPlayer.isPlaying()){
+                playSound.mediaPlayer.reset();//It requires again setDataSource for player object.
+                playSound.mediaPlayer.stop();// Stop it
+                playSound.mediaPlayer.release();// Release it
+                playSound.mediaPlayer=null; // Initilize to null so it can be used later
+            }
+        }
     }
     @Override
     public void onResume(){
         super.onResume();
         if(playSound.mutesound)
             startService(intent);
+        if(playSound.mediaPlayer!=null)
+        {
+            if(!playSound.mediaPlayer.isPlaying()){
+                playSound.mediaPlayer.start();//It requires again setDataSource for player object.
+
+            }
+        }
     }
 }

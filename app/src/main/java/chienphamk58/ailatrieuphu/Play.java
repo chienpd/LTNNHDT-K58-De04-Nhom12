@@ -92,8 +92,15 @@ public class Play extends AppCompatActivity {
             public void onFinish() {
                 countDownTimer.cancel();
                 if(playSound.mutesound){
-                    if(playSound.mediaPlayer.isPlaying())
-                        playSound.mediaPlayer.stop();
+                    if(playSound.mediaPlayer!=null)
+                    {
+                        if(playSound.mediaPlayer.isPlaying()){
+                            playSound.mediaPlayer.reset();//It requires again setDataSource for player object.
+                            playSound.mediaPlayer.stop();// Stop it
+                            playSound.mediaPlayer.release();// Release it
+                            playSound.mediaPlayer=null; // Initilize to null so it can be used later
+                        }
+                    }
                     playSound.setSound(getApplicationContext(),R.raw.out_of_time);
                 }
                 new CountDownTimer(1500,1000){
@@ -112,8 +119,15 @@ public class Play extends AppCompatActivity {
     public void pause(View view) {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         if(playSound.mutesound) {
-            if(playSound.mediaPlayer.isPlaying())
-                playSound.mediaPlayer.stop();
+            if(playSound.mediaPlayer!=null)
+            {
+                if(playSound.mediaPlayer.isPlaying()){
+                    playSound.mediaPlayer.reset();//It requires again setDataSource for player object.
+                    playSound.mediaPlayer.stop();// Stop it
+                    playSound.mediaPlayer.release();// Release it
+                    playSound.mediaPlayer=null; // Initilize to null so it can be used later
+                }
+            }
             playSound.setSound(getApplicationContext(), R.raw.lose);
         }
         if(level == 1) {
@@ -127,15 +141,29 @@ public class Play extends AppCompatActivity {
                 Play.this.finish();
                 if(playSound.mutesound) {
                     stopService(intent);
-                    if(playSound.mediaPlayer.isPlaying())
-                        playSound.mediaPlayer.stop();
+                    if(playSound.mediaPlayer!=null)
+                    {
+                        if(playSound.mediaPlayer.isPlaying()){
+                            playSound.mediaPlayer.reset();//It requires again setDataSource for player object.
+                            playSound.mediaPlayer.stop();// Stop it
+                            playSound.mediaPlayer.release();// Release it
+                            playSound.mediaPlayer=null; // Initilize to null so it can be used later
+                        }
+                    }
                 }
             }
         }).setNegativeButton("Không", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int id) {
                 if(playSound.mutesound)
-                    if(playSound.mediaPlayer.isPlaying())
-                        playSound.mediaPlayer.stop();
+                    if(playSound.mediaPlayer!=null)
+                    {
+                        if(playSound.mediaPlayer.isPlaying()){
+                            playSound.mediaPlayer.reset();//It requires again setDataSource for player object.
+                            playSound.mediaPlayer.stop();// Stop it
+                            playSound.mediaPlayer.release();// Release it
+                            playSound.mediaPlayer=null; // Initilize to null so it can be used later
+                        }
+                    }
                 if(level == 1) {
                     money.setText("0");
                     moneyStr = 0;
@@ -552,8 +580,15 @@ public class Play extends AppCompatActivity {
                         @Override
                         public void onFinish() {
                             if(playSound.mutesound)
-                                if(playSound.mediaPlayer.isPlaying())
-                                    playSound.mediaPlayer.stop();
+                                if(playSound.mediaPlayer!=null)
+                                {
+                                    if(playSound.mediaPlayer.isPlaying()){
+                                        playSound.mediaPlayer.reset();//It requires again setDataSource for player object.
+                                        playSound.mediaPlayer.stop();// Stop it
+                                        playSound.mediaPlayer.release();// Release it
+                                        playSound.mediaPlayer=null; // Initilize to null so it can be used later
+                                    }
+                                }
                             dialog1.show();
                             pause.setClickable(true);
                             if(x)
@@ -587,7 +622,15 @@ public class Play extends AppCompatActivity {
         b = (Button)view;
         String answer = null;
         if(playSound.mutesound)
-            playSound.mediaPlayer.stop();
+            if(playSound.mediaPlayer!=null)
+            {
+                if(playSound.mediaPlayer.isPlaying()){
+                    playSound.mediaPlayer.reset();//It requires again setDataSource for player object.
+                    playSound.mediaPlayer.stop();// Stop it
+                    playSound.mediaPlayer.release();// Release it
+                    playSound.mediaPlayer=null; // Initilize to null so it can be used later
+                }
+            }
         switch (b.getId()){
             case R.id.buttonA :
                 answer = "A";
@@ -620,7 +663,15 @@ public class Play extends AppCompatActivity {
             @Override
             public void onClick(final DialogInterface dialog, int whick) {
                 if(playSound.mutesound)
-                    playSound.mediaPlayer.stop();
+                    if(playSound.mediaPlayer!=null)
+                    {
+                        if(playSound.mediaPlayer.isPlaying()){
+                            playSound.mediaPlayer.reset();//It requires again setDataSource for player object.
+                            playSound.mediaPlayer.stop();// Stop it
+                            playSound.mediaPlayer.release();// Release it
+                            playSound.mediaPlayer=null; // Initilize to null so it can be used later
+                        }
+                    }
                 switch (b.getId()){
                     case R.id.buttonA :
                         chooseNum = 1;
@@ -692,8 +743,15 @@ public class Play extends AppCompatActivity {
         }
         if (chooseNum != 0) {
             if(playSound.mutesound){
-                if(playSound.mediaPlayer.isPlaying())
-                    playSound.mediaPlayer.stop();
+                if(playSound.mediaPlayer!=null)
+                {
+                    if(playSound.mediaPlayer.isPlaying()){
+                        playSound.mediaPlayer.reset();//It requires again setDataSource for player object.
+                        playSound.mediaPlayer.stop();// Stop it
+                        playSound.mediaPlayer.release();// Release it
+                        playSound.mediaPlayer=null; // Initilize to null so it can be used later
+                    }
+                }
             }
 
             switch (Integer.parseInt(ansCorrect.get(i))) {
@@ -1065,8 +1123,15 @@ public class Play extends AppCompatActivity {
             public void onClick(DialogInterface dialog, int id) {
                 moneyStr = 0;
                 if(playSound.mutesound)
-                    if(playSound.mediaPlayer.isPlaying())
-                        playSound.mediaPlayer.stop();
+                    if(playSound.mediaPlayer!=null)
+                    {
+                        if(playSound.mediaPlayer.isPlaying()){
+                            playSound.mediaPlayer.reset();//It requires again setDataSource for player object.
+                            playSound.mediaPlayer.stop();// Stop it
+                            playSound.mediaPlayer.release();// Release it
+                            playSound.mediaPlayer=null; // Initilize to null so it can be used later
+                        }
+                    }
                 stopService(intent);
                 final Intent myIntent = new Intent(Play.this, Play.class);
                 Play.this.finish();
@@ -1079,8 +1144,15 @@ public class Play extends AppCompatActivity {
         }).setNegativeButton("Không", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int id) {
                 if(playSound.mutesound)
-                    if(playSound.mediaPlayer.isPlaying())
-                        playSound.mediaPlayer.stop();
+                    if(playSound.mediaPlayer!=null)
+                    {
+                        if(playSound.mediaPlayer.isPlaying()){
+                            playSound.mediaPlayer.reset();//It requires again setDataSource for player object.
+                            playSound.mediaPlayer.stop();// Stop it
+                            playSound.mediaPlayer.release();// Release it
+                            playSound.mediaPlayer=null; // Initilize to null so it can be used later
+                        }
+                    }
                 stopService(intent);
                 Play.this.finish();
                 dialog.cancel();
@@ -1097,33 +1169,56 @@ public class Play extends AppCompatActivity {
     public void onStop(){
         super.onStop();
         if(playSound.mutesound)
-            if(playSound.mediaPlayer.isPlaying())
-                playSound.mediaPlayer.stop();
+            if(playSound.mediaPlayer!=null)
+            {
+                if(playSound.mediaPlayer.isPlaying()){
+                    playSound.mediaPlayer.reset();//It requires again setDataSource for player object.
+                    playSound.mediaPlayer.stop();// Stop it
+                    playSound.mediaPlayer.release();// Release it
+                    playSound.mediaPlayer=null; // Initilize to null so it can be used later
+                }
+            }
         stopService(intent);
-        countDownTimer2.cancel();
+        //countDownTimer2.cancel();
     }
     @Override
     public void onPause(){
         super.onPause();
-        if(playSound.mutesound)
-            if(playSound.mediaPlayer.isPlaying())
-                playSound.mediaPlayer.stop();
         stopService(intent);
-        countDownTimer2.cancel();
+        if(playSound.mediaPlayer!=null)
+        {
+            if(playSound.mediaPlayer.isPlaying()){
+                playSound.mediaPlayer.pause();
+            }
+        }
     }
     @Override
     public void onDestroy() {
         super.onDestroy();
         if(playSound.mutesound)
-            if(playSound.mediaPlayer.isPlaying())
-                playSound.mediaPlayer.stop();
+            if(playSound.mediaPlayer!=null)
+            {
+                if(playSound.mediaPlayer.isPlaying()){
+                    playSound.mediaPlayer.reset();//It requires again setDataSource for player object.
+                    playSound.mediaPlayer.stop();// Stop it
+                    playSound.mediaPlayer.release();// Release it
+                    playSound.mediaPlayer=null; // Initilize to null so it can be used later
+                }
+            }
         stopService(intent);
-        countDownTimer2.cancel();
+        //countDownTimer2.cancel();
     }
     @Override
     public void onResume(){
         super.onResume();
         if(playSound.mutesound)
             startService(intent);
+        if(playSound.mediaPlayer!=null)
+        {
+            if(!playSound.mediaPlayer.isPlaying()){
+                playSound.mediaPlayer.start();//It requires again setDataSource for player object.
+
+            }
+        }
     }
 }

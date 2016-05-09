@@ -7,14 +7,14 @@
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="modules">
           <set>
-            <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/app" />
+            <option value="/mnt/DATA/Dropbox/LTNNHDT-K58-De04-Nhom12_AiLaTrieuPhu" />
+            <option value="/mnt/DATA/Dropbox/LTNNHDT-K58-De04-Nhom12_AiLaTrieuPhu/app" />
           </set>
         </option>
         <option name="myModules">
           <set>
-            <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/app" />
+            <option value="/mnt/DATA/Dropbox/LTNNHDT-K58-De04-Nhom12_AiLaTrieuPhu" />
+            <option value="/mnt/DATA/Dropbox/LTNNHDT-K58-De04-Nhom12_AiLaTrieuPhu/app" />
           </set>
         </option>
       </GradleProjectSettings>

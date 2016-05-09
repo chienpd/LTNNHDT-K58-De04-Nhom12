@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/AiLaTrieuPhu.iml" filepath="$PROJECT_DIR$/AiLaTrieuPhu.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file:///mnt/DATA/Dropbox/LTNNHDT-K58-De04-Nhom12_AiLaTrieuPhu/LTNNHDT-K58-De04-Nhom12_AiLaTrieuPhu.iml" filepath="/mnt/DATA/Dropbox/LTNNHDT-K58-De04-Nhom12_AiLaTrieuPhu/LTNNHDT-K58-De04-Nhom12_AiLaTrieuPhu.iml" />
+      <module fileurl="file:///mnt/DATA/Dropbox/LTNNHDT-K58-De04-Nhom12_AiLaTrieuPhu/app/app.iml" filepath="/mnt/DATA/Dropbox/LTNNHDT-K58-De04-Nhom12_AiLaTrieuPhu/app/app.iml" />
     </modules>
   </component>
 </project>

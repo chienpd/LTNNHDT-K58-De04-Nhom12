@@ -27,7 +27,7 @@ import chienphamk58.ailatrieuphu.Sound_Music.PlaySound;
 
 public class Play extends AppCompatActivity {
     Dialog dialog2, dialog3;
-    PlaySound playSound = new PlaySound();
+    PlaySound playSound = new PlaySound();  // chay nhac
     Intent intent;
     Integer level = 1, moneyStr = 0, chooseNum = 0,i, j = 0, one, two;
     Boolean x = true,y = true,z = true,t = true,w = true;  // set fifty, call, ask, change, pause -> clickAble ?

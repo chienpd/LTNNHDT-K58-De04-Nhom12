@@ -77,7 +77,8 @@
             android:typeface="serif"
             android:textSize="18dp"
             android:onClick="Play"
-            android:layout_gravity="center_horizontal" />
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="3dp" />
 
         <Button
             android:layout_width="fill_parent"
@@ -92,7 +93,8 @@
             android:layout_below="@+id/button1"
             android:layout_centerHorizontal="true"
             android:onClick="Help"
-            android:layout_gravity="center_horizontal" />
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="3dp" />
 
         <Button
             android:layout_width="fill_parent"
@@ -106,7 +108,8 @@
             android:textSize="18dp"
             android:onClick="About"
             android:layout_below="@+id/button3"
-            android:layout_centerHorizontal="true" />
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="3dp" />
     </LinearLayout>
 
 </LinearLayout>

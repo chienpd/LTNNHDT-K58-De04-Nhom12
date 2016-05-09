@@ -30,7 +30,7 @@ public class Play extends AppCompatActivity {
     PlaySound playSound = new PlaySound();
     Intent intent;
     Integer level = 1, moneyStr = 0, chooseNum = 0,i, j = 0, one, two;
-    Boolean x,y,z,t,w;
+    Boolean x = true,y = true,z = true,t = true,w = true;  // set fifty, call, ask, change, pause -> clickAble ?
     CountDownTimer countDownTimer2, countDownTimer;
     DatabaseAccess databaseAccess;
     List<String> qst, ansA, ansB, ansC, ansD, ansCorrect;
@@ -63,11 +63,6 @@ public class Play extends AppCompatActivity {
         call = (ImageButton)findViewById(R.id.imageButton2);
         pause = (ImageButton)findViewById(R.id.imageButton13);
 
-        x = fifty.isClickable();
-        y = call.isClickable();
-        z = ask.isClickable();
-        t = change.isClickable();
-        w = pause.isClickable();
 
         final TextView myCounter = (TextView)findViewById(R.id.textView3);
 
@@ -117,6 +112,7 @@ public class Play extends AppCompatActivity {
     }
 
     public void pause(View view) {
+        w = pause.isClickable();
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         if(playSound.mutesound) {
             if(playSound.mediaPlayer!=null)
@@ -151,6 +147,7 @@ public class Play extends AppCompatActivity {
                         }
                     }
                 }
+
             }
         }).setNegativeButton("Không", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int id) {
@@ -175,6 +172,7 @@ public class Play extends AppCompatActivity {
         alert.show();
     }   // bat su kien cho button Tam dung cuoc choi
     public void fifty(View view){
+        x = fifty.isClickable();
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setMessage("Bạn có muốn sử dụng sự trợ giúp 50:50").setCancelable(false).setPositiveButton("Đồng ý", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int id) {
@@ -218,6 +216,7 @@ public class Play extends AppCompatActivity {
                     }.start();
                 fifty.setBackgroundResource(R.drawable.fifty2);
                 fifty.setClickable(false);
+                x = false;
 
             }
         }).setNegativeButton("Không", new DialogInterface.OnClickListener() {
@@ -229,6 +228,7 @@ public class Play extends AppCompatActivity {
         alert.show();
     }   // bat su kien cho button tro giup 50:50
     public void call(View view){
+        y = call.isClickable();
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setMessage("Bạn có muốn sử dụng sự trợ giúp xin tư vấn từ chuyên gia?").setCancelable(false).setPositiveButton("Đồng ý", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int id) {
@@ -315,7 +315,7 @@ public class Play extends AppCompatActivity {
                             playSound.setSound(getApplicationContext(), R.raw.call);
                         }
                         imageView.setBackgroundResource(R.mipmap.anhxtanh);
-                        dialog3.setTitle("Albert Einstein");
+                        dialog3.setTitle("SDT");
                         dialog2.dismiss();
                         countDownTimer = new CountDownTimer(i,1000){
                             @Override
@@ -363,7 +363,7 @@ public class Play extends AppCompatActivity {
                             playSound.setSound(getApplicationContext(), R.raw.call);
                         }
                         imageView.setBackgroundResource(R.mipmap.markzukerbeg);
-                        dialog3.setTitle("Cristiano Ronaldo");
+                        dialog3.setTitle("Chiến Phạm");
                         dialog2.dismiss();
                         countDownTimer = new CountDownTimer(i,1000){
                             @Override
@@ -392,7 +392,7 @@ public class Play extends AppCompatActivity {
                         textView.setText("Tôi đoán câu trả lời đúng là D");
                         break;
                 }
-
+                y = false;
             }
         }).setNegativeButton("Không", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int id) {
@@ -403,6 +403,7 @@ public class Play extends AppCompatActivity {
         alert.show();
     }   // bat su kien cho button tro giup to tu van
     public void changeQuestion(View view){
+        t = change.isClickable();
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
 
         builder.setMessage("Bạn có muốn sử dụng sự trợ giúp đổi câu hỏi").setCancelable(false).setPositiveButton("Đồng ý", new DialogInterface.OnClickListener() {
@@ -415,7 +416,7 @@ public class Play extends AppCompatActivity {
                 change.setClickable(false);
                 Toast toast=Toast.makeText(Play.this, "Câu hỏi đã được đổi",   Toast.LENGTH_SHORT);
                 toast.show();
-
+        t = false;
             }
         }).setNegativeButton("Không", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int id) {
@@ -427,6 +428,7 @@ public class Play extends AppCompatActivity {
         alert.show();
     }   // bat su kien cho button tro doi cau hoi
     public void khangia(View view){
+        z = ask.isClickable();
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setMessage("Bạn có muốn sử dụng sự trợ giúp của khán giả trong trường quay ?").setCancelable(false).setPositiveButton("Đồng ý", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int id) {
@@ -609,6 +611,7 @@ public class Play extends AppCompatActivity {
                     }.start();
                 ask.setBackgroundResource(R.drawable.khangia2);
                 ask.setClickable(false);
+                z = false;
             }
         }).setNegativeButton("Không", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int id) {
@@ -636,24 +639,66 @@ public class Play extends AppCompatActivity {
                 answer = "A";
                 if(playSound.mutesound)
                     playSound.setSound(getApplicationContext(),R.raw.ans_a);
+                btnb.setClickable(false);
+                btnc.setClickable(false);
+                btnd.setClickable(false);
+
+                fifty.setClickable(false);
+                call.setClickable(false);
+                ask.setClickable(false);
+                change.setClickable(false);
+                pause.setClickable(false);
+
                 btna.setBackgroundResource(R.drawable.case3);
                 break;
             case R.id.buttonB:
                 answer = "B";
                 if(playSound.mutesound)
                     playSound.setSound(getApplicationContext(),R.raw.ans_b);
+                btna.setClickable(false);
+                btnc.setClickable(false);
+                btnd.setClickable(false);
+
+                fifty.setClickable(false);
+                call.setClickable(false);
+                ask.setClickable(false);
+                change.setClickable(false);
+                pause.setClickable(false);
+
                 btnb.setBackgroundResource(R.drawable.case3);
                 break;
             case R.id.buttonC:
                 answer = "C";
                 if(playSound.mutesound)
                     playSound.setSound(getApplicationContext(),R.raw.ans_c);
+                btnb.setClickable(false);
+                btna.setClickable(false);
+                btnd.setClickable(false);
+
+                fifty.setClickable(false);
+                call.setClickable(false);
+                ask.setClickable(false);
+                change.setClickable(false);
+                pause.setClickable(false);
+
+
                 btnc.setBackgroundResource(R.drawable.case3);
                 break;
             case R.id.buttonD:
                 answer = "D";
                 if(playSound.mutesound)
                     playSound.setSound(getApplicationContext(),R.raw.ans_d);
+                btna.setClickable(false);
+                btnb.setClickable(false);
+                btnc.setClickable(false);
+
+                fifty.setClickable(false);
+                call.setClickable(false);
+                ask.setClickable(false);
+                change.setClickable(false);
+                pause.setClickable(false);
+
+
                 btnd.setBackgroundResource(R.drawable.case3);
                 break;
         }
@@ -714,6 +759,28 @@ public class Play extends AppCompatActivity {
                 btnb.setBackgroundResource(R.drawable.button_press);
                 btnc.setBackgroundResource(R.drawable.button_press);
                 btnd.setBackgroundResource(R.drawable.button_press);
+                if(getButton(one) != btna && getButton(two) != btna)
+                    btna.setClickable(true);
+                if(getButton(one) != btnb && getButton(two) != btnb)
+                    btnb.setClickable(true);
+                if(getButton(one) != btnc && getButton(two) != btnc)
+                    btnc.setClickable(true);
+                if(getButton(one) != btnd && getButton(two) != btnd)
+                    btnd.setClickable(true);
+
+
+                if(x)
+                    fifty.setClickable(true);
+                if(y)
+                    call.setClickable(true);
+                if(z)
+                    ask.setClickable(true);
+                if(t)
+                    change.setClickable(true);
+                if(w)
+                    pause.setClickable(true);
+
+
                 if(playSound.mutesound)
                     playSound.mediaPlayer.stop();
             }
@@ -725,12 +792,6 @@ public class Play extends AppCompatActivity {
         btnb.setClickable(false);
         btnc.setClickable(false);
         btnd.setClickable(false);
-
-        x = fifty.isClickable();
-        y = call.isClickable();
-        z = ask.isClickable();
-        t = change.isClickable();
-        w = pause.isClickable();
 
         fifty.setClickable(false);
         call.setClickable(false);
@@ -783,6 +844,14 @@ public class Play extends AppCompatActivity {
                         @Override
                         public void onFinish() {
                             j = 0;
+                            if(x)
+                                fifty.setClickable(true);
+                            if(y)
+                                call.setClickable(true);
+                            if(z)
+                                ask.setClickable(true);
+                            if(t)
+                                change.setClickable(true);
                             if(chooseNum == 1)
                                 Question();
                             else Fail();
@@ -818,6 +887,14 @@ public class Play extends AppCompatActivity {
                         @Override
                         public void onFinish() {
                             j = 0;
+                            if(x)
+                                fifty.setClickable(true);
+                            if(y)
+                                call.setClickable(true);
+                            if(z)
+                                ask.setClickable(true);
+                            if(t)
+                                change.setClickable(true);
                             if(chooseNum == 2)
                                 Question();
                             else Fail();
@@ -853,6 +930,15 @@ public class Play extends AppCompatActivity {
                         @Override
                         public void onFinish() {
                             j = 0;
+                            if(x)
+                                fifty.setClickable(true);
+                            if(y)
+                                call.setClickable(true);
+                            if(z)
+                                ask.setClickable(true);
+                            if(t)
+                                change.setClickable(true);
+
                             if(chooseNum ==3)
                                 Question();
                             else Fail();
@@ -889,6 +975,14 @@ public class Play extends AppCompatActivity {
                         @Override
                         public void onFinish() {
                             j = 0;
+                            if(x)
+                                fifty.setClickable(true);
+                            if(y)
+                                call.setClickable(true);
+                            if(z)
+                                ask.setClickable(true);
+                            if(t)
+                                change.setClickable(true);
                             if(chooseNum == 4)
                                 Question();
                             else Fail();
@@ -907,14 +1001,22 @@ public class Play extends AppCompatActivity {
         btnb.setClickable(true);
         btnc.setClickable(true);
         btnd.setClickable(true);
-        if(x)
+
+
+
+
+
+
+        /*if(x)
             fifty.setClickable(true);
         if(y)
             call.setClickable(true);
         if(z)
             ask.setClickable(true);
         if(t)
-            change.setClickable(true);
+            change.setClickable(true);*/
+
+
         pause.setClickable(true);
         btna.setBackgroundResource(R.drawable.button_press);
         btnb.setBackgroundResource(R.drawable.button_press);
@@ -1162,10 +1264,6 @@ public class Play extends AppCompatActivity {
         alert.show();
     }                   // thua cuoc
     @Override
-    public void onBackPressed() {
-
-    }
-    @Override
     public void onStop(){
         super.onStop();
         if(playSound.mutesound)
@@ -1221,4 +1319,64 @@ public class Play extends AppCompatActivity {
             }
         }
     }
+    @Override
+    public void onBackPressed() {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        if(playSound.mutesound) {
+            if(playSound.mediaPlayer!=null)
+            {
+                if(playSound.mediaPlayer.isPlaying()){
+                    playSound.mediaPlayer.reset();//It requires again setDataSource for player object.
+                    playSound.mediaPlayer.stop();// Stop it
+                    playSound.mediaPlayer.release();// Release it
+                    playSound.mediaPlayer=null; // Initilize to null so it can be used later
+                }
+            }
+            playSound.setSound(getApplicationContext(), R.raw.lose);
+        }
+        if(level == 1) {
+            money.setText("1");
+            moneyStr = 1;
+        }
+        builder.setMessage("Bạn muốn tạm dừng cuộc chơi và nhận số tiền " + moneyStr +"$ của chương trình ?").setCancelable(false).setPositiveButton("Đồng ý", new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int id) {
+                //countDownTimer.cancel();
+                countDownTimer2.cancel();
+                Play.this.finish();
+                if(playSound.mutesound) {
+                    stopService(intent);
+                    if(playSound.mediaPlayer!=null)
+                    {
+                        if(playSound.mediaPlayer.isPlaying()){
+                            playSound.mediaPlayer.reset();//It requires again setDataSource for player object.
+                            playSound.mediaPlayer.stop();// Stop it
+                            playSound.mediaPlayer.release();// Release it
+                            playSound.mediaPlayer=null; // Initilize to null so it can be used later
+                        }
+                    }
+                }
+            }
+        }).setNegativeButton("Không", new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int id) {
+                if(playSound.mutesound)
+                    if(playSound.mediaPlayer!=null)
+                    {
+                        if(playSound.mediaPlayer.isPlaying()){
+                            playSound.mediaPlayer.reset();//It requires again setDataSource for player object.
+                            playSound.mediaPlayer.stop();// Stop it
+                            playSound.mediaPlayer.release();// Release it
+                            playSound.mediaPlayer=null; // Initilize to null so it can be used later
+                        }
+                    }
+                if(level == 1) {
+                    money.setText("0");
+                    moneyStr = 0;
+                }
+                dialog.cancel();
+            }
+        });
+        AlertDialog alert = builder.create();
+        alert.show();
+    }
+
 }

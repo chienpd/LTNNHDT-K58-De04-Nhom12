@@ -45,7 +45,11 @@
                 android:id="@+id/textView22"
                 android:typeface="serif"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginBottom="10dp" />
+                android:layout_marginBottom="4dp"
+                android:textSize="22dp"
+                android:textIsSelectable="true"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -55,7 +59,9 @@
                 android:id="@+id/textView21"
                 android:typeface="serif"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginBottom="10dp" />
+                android:layout_marginBottom="10dp"
+                android:textStyle="bold"
+                android:textSize="15dp" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -65,35 +71,42 @@
                 android:id="@+id/textView27"
                 android:typeface="serif"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginBottom="10dp" />
+                android:layout_marginBottom="50dp"
+                android:textStyle="bold|italic" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Ứng dụng được viết bởi:"
+                android:text="WELL COME"
                 android:id="@+id/textView23"
                 android:typeface="serif"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginBottom="10dp" />
+                android:layout_marginBottom="30dp"
+                android:textStyle="bold" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="1. Phạm Đình Chiến  \n     mssv: 20130401"
+                android:text="1. Phạm Đình Chiến  \n     MSSV: 20130401"
                 android:id="@+id/textView24"
                 android:typeface="serif"
-                android:layout_gravity="center_horizontal" />
+                android:layout_gravity="left|center_horizontal"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="80dp"
+                android:textSize="18dp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="2. Hồ Văn Sang \nmssv: 20133256"
+                android:text="2. Hồ Văn Sang \n    MSSV: 20133256"
                 android:id="@+id/textView20"
-                android:layout_gravity="center_horizontal"
-                android:typeface="serif" />
+                android:layout_gravity="left|center_horizontal"
+                android:typeface="serif"
+                android:layout_marginLeft="80dp"
+                android:textSize="18dp" />
 
         </LinearLayout>
     </ScrollView>

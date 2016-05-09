@@ -11,8 +11,8 @@
         android:layout_height="match_parent">
 
         <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="68dp"
+            android:layout_height="68dp"
             android:id="@+id/imageButton10"
             android:background="@mipmap/anhxtanh"
             android:layout_row="0"
@@ -40,8 +40,8 @@
             android:layout_marginTop="20dp" />
 
         <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="67dp"
+            android:layout_height="67dp"
             android:id="@+id/imageButton12"
             android:background="@mipmap/markzukerbeg"
             android:layout_row="5"

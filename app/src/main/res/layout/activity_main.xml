@@ -28,30 +28,34 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:id="@+id/imageButton6"
-            android:background="@drawable/share_press"/>
+            android:background="@drawable/share_press"
+            android:layout_marginLeft="15dp" />
 
         <ImageButton
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:id="@+id/imageButton7"
-            android:background="@drawable/download_press"/>
+            android:background="@drawable/download_press"
+            android:layout_marginLeft="15dp" />
 
         <ImageButton
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:id="@+id/imageButton8"
             android:background="@drawable/exit_press"
-            android:onClick="Exit" />
+            android:onClick="Exit"
+            android:layout_marginLeft="15dp" />
     </LinearLayout>
 
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:weightSum="1">
 
         <ImageView
-            android:layout_width="250dp"
-            android:layout_height="250dp"
+            android:layout_width="296dp"
+            android:layout_height="297dp"
             android:id="@+id/imageView8"
             android:background="@mipmap/mlogo"
             android:layout_above="@+id/button1"
@@ -100,9 +104,7 @@
             android:textSize="20dp"
             android:onClick="About"
             android:layout_below="@+id/button3"
-            android:layout_centerHorizontal="true"
-            android:layout_gravity="center_horizontal"
-            />
+            android:layout_centerHorizontal="true" />
     </LinearLayout>
 
 </LinearLayout>

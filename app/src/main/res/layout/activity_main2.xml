@@ -14,7 +14,8 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:textColor="#ffd500" />
+        android:textColor="#ffffff"
+        android:layout_marginLeft="10dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -25,7 +26,7 @@
         android:layout_alignParentTop="true"
         android:layout_toRightOf="@+id/textView"
         android:layout_toEndOf="@+id/textView"
-        android:textColor="#ffd500" />
+        android:textColor="#ffffff" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -34,7 +35,8 @@
         android:id="@+id/textView3"
         android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="10dp" />
 
     <ImageView
         android:layout_width="150dp"
@@ -49,8 +51,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/imageView"
-        android:gravity="center"
-        android:id="@+id/linearLayout">
+        android:id="@+id/linearLayout"
+        android:layout_alignRight="@+id/textView3"
+        android:layout_alignEnd="@+id/textView3"
+        android:gravity="center">
 
         <ImageButton
             android:layout_width="50dp"
@@ -60,7 +64,8 @@
             android:layout_alignTop="@+id/imageButton2"
             android:layout_toLeftOf="@+id/imageView"
             android:layout_toStartOf="@+id/imageView"
-            android:onClick="fifty" />
+            android:onClick="fifty"
+            android:layout_marginLeft="0dp" />
 
         <ImageButton
             android:layout_width="50dp"
@@ -71,7 +76,8 @@
             android:layout_below="@+id/imageView"
             android:layout_alignLeft="@+id/imageView"
             android:layout_alignStart="@+id/imageView"
-            android:onClick="call" />
+            android:onClick="call"
+            android:layout_marginLeft="7dp" />
 
         <ImageButton
             android:layout_width="50dp"
@@ -82,7 +88,8 @@
             android:layout_below="@+id/imageView"
             android:layout_toLeftOf="@+id/imageButton4"
             android:layout_toStartOf="@+id/imageButton4"
-            android:onClick="khangia" />
+            android:onClick="khangia"
+            android:layout_marginLeft="7dp" />
 
         <ImageButton
             android:layout_width="50dp"
@@ -93,14 +100,16 @@
             android:layout_below="@+id/imageView"
             android:layout_toLeftOf="@+id/textView3"
             android:layout_toStartOf="@+id/textView3"
-            android:onClick="changeQuestion" />
+            android:onClick="changeQuestion"
+            android:layout_marginLeft="7dp" />
 
         <ImageButton
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:id="@+id/imageButton13"
             android:background="@drawable/pause_press"
-            android:onClick="pause"/>
+            android:onClick="pause"
+            android:layout_marginLeft="7dp" />
 
     </LinearLayout>
 
@@ -132,45 +141,53 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:id="@+id/textView5"
                 android:layout_gravity="center_horizontal"
-                android:textSize="22dp" />
+
+                android:textSize="16dp"
+                android:text="hfuiwhruq ahdoiuadk akjdbiahdj akjdniuauhdiuhaofiu"
+                android:textAlignment="center" />
         </ScrollView>
 
         <Button
-            android:layout_width="fill_parent"
+            android:layout_width="wrap_content"
             android:layout_height="45dp"
             android:id="@+id/buttonA"
             android:layout_gravity="center_horizontal"
             android:background="@drawable/button_press"
             android:textAllCaps="false"
-            android:textSize="18dp"
-            android:onClick="onClick" />
+            android:textSize="17dp"
+            android:onClick="onClick"
+            android:text="ffsdfdsfd"
+            android:gravity="left|center_vertical|center_horizontal" />
         <Button
-            android:layout_width="fill_parent"
+            android:layout_width="wrap_content"
             android:layout_height="45dp"
             android:id="@+id/buttonB"
             android:layout_gravity="center_horizontal"
             android:background="@drawable/button_press"
             android:textAllCaps="false"
-            android:textSize="18dp"
-            android:onClick="onClick" />
+            android:textSize="17dp"
+            android:onClick="onClick"
+            android:gravity="left|center_vertical|center_horizontal" />
         <Button
-            android:layout_width="fill_parent"
+            android:layout_width="wrap_content"
             android:layout_height="45dp"
             android:id="@+id/buttonC"
             android:layout_gravity="center_horizontal"
             android:background="@drawable/button_press"
             android:textAllCaps="false"
-            android:textSize="18dp"
-            android:onClick="onClick" />
+            android:textSize="17dp"
+            android:onClick="onClick"
+            android:gravity="left|center_vertical|center_horizontal" />
         <Button
-            android:layout_width="fill_parent"
+            android:layout_width="wrap_content"
             android:layout_height="45dp"
             android:id="@+id/buttonD"
             android:layout_gravity="center_horizontal"
             android:background="@drawable/button_press"
             android:textAllCaps="false"
-            android:textSize="18dp"
-            android:onClick="onClick" />
+            android:textSize="17dp"
+            android:onClick="onClick"
+            android:gravity="left|center_vertical|center_horizontal" />
 
     </LinearLayout>
 </RelativeLayout>

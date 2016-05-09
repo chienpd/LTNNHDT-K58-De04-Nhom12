@@ -1085,10 +1085,10 @@ public class Play extends AppCompatActivity {
     public void setAnswer(Integer i){
         money.setText(moneyStr.toString());
         question.setText(qst.get(i));
-        btna.setText("A. " + ansA.get(i));
-        btnb.setText("B. " + ansB.get(i));
-        btnc.setText("C. " + ansC.get(i));
-        btnd.setText("D. " + ansD.get(i));
+        btna.setText("                    A. " + ansA.get(i));
+        btnb.setText("                    B. " + ansB.get(i));
+        btnc.setText("                    C. " + ansC.get(i));
+        btnd.setText("                    D. " + ansD.get(i));
     }      // setText cho button cau tra loi
     public Button getCorrectButton(){
         Integer k = null;

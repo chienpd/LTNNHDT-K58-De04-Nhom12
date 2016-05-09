@@ -44,7 +44,7 @@
                 android:text="@string/luat1"
                 android:id="@+id/textView2"
                 android:typeface="serif"
-                android:textSize="20dp" />
+                android:textSize="18dp" />
 
             <LinearLayout
                 android:orientation="horizontal"
@@ -52,8 +52,8 @@
                 android:layout_height="match_parent">
 
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
                     android:id="@+id/imageView"
                     android:background="@mipmap/fifty" />
 
@@ -63,7 +63,7 @@
                     android:text="Bỏ đi hai phương án sai"
                     android:id="@+id/textView4"
                     android:typeface="serif"
-                    android:textSize="20dp"
+                    android:textSize="18dp"
                     android:layout_gravity="center_vertical" />
             </LinearLayout>
 
@@ -73,8 +73,8 @@
                 android:layout_height="match_parent">
 
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
                     android:id="@+id/imageView2"
                     android:background="@mipmap/khangia" />
 
@@ -84,7 +84,7 @@
                     android:text="Sự trợ giúp của khán giả"
                     android:id="@+id/textView5"
                     android:typeface="serif"
-                    android:textSize="20dp"
+                    android:textSize="18dp"
                     android:layout_gravity="center_vertical" />
             </LinearLayout>
 
@@ -94,8 +94,8 @@
                 android:layout_height="match_parent">
 
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
                     android:id="@+id/imageView3"
                     android:background="@mipmap/call"/>
 
@@ -105,7 +105,7 @@
                     android:text="Nhờ sự trợ giúp của chuyên gia"
                     android:id="@+id/textView6"
                     android:typeface="serif"
-                    android:textSize="20dp" />
+                    android:textSize="18dp" />
             </LinearLayout>
 
             <LinearLayout
@@ -114,8 +114,8 @@
                 android:layout_height="match_parent">
 
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
                     android:id="@+id/imageView4"
                     android:background="@mipmap/switch2" />
 
@@ -125,7 +125,7 @@
                     android:text="Đổi câu hỏi"
                     android:id="@+id/textView7"
                     android:typeface="serif"
-                    android:textSize="20dp"
+                    android:textSize="18dp"
                     android:layout_gravity="center_vertical" />
             </LinearLayout>
 
@@ -135,7 +135,7 @@
                 android:text="@string/luat2"
                 android:id="@+id/textView8"
                 android:typeface="serif"
-                android:textSize="20dp" />
+                android:textSize="18dp" />
 
             <LinearLayout
                 android:orientation="horizontal"
@@ -148,12 +148,12 @@
                     android:text="Sử dụng nút"
                     android:id="@+id/textView9"
                     android:typeface="serif"
-                    android:textSize="20dp"
+                    android:textSize="18dp"
                     android:layout_gravity="center_vertical" />
 
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
                     android:id="@+id/imageView5"
                     android:background="@mipmap/pause" />
 
@@ -163,7 +163,7 @@
                     android:text="để dừng cuộc chơi"
                     android:id="@+id/textView10"
                     android:typeface="serif"
-                    android:textSize="20dp"
+                    android:textSize="18dp"
                     android:layout_gravity="center_vertical" />
             </LinearLayout>
 
@@ -173,7 +173,7 @@
                 android:text="@string/luat3"
                 android:id="@+id/textView11"
                 android:typeface="serif"
-                android:textSize="20dp" />
+                android:textSize="18dp" />
 
             <LinearLayout
                 android:orientation="horizontal"

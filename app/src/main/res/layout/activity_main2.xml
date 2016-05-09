@@ -15,7 +15,8 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:textColor="#ffffff"
-        android:layout_marginLeft="10dp" />
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -26,7 +27,8 @@
         android:layout_alignParentTop="true"
         android:layout_toRightOf="@+id/textView"
         android:layout_toEndOf="@+id/textView"
-        android:textColor="#ffffff" />
+        android:textColor="#ffffff"
+        android:layout_marginTop="10dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -36,11 +38,12 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginRight="10dp" />
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp" />
 
     <ImageView
-        android:layout_width="150dp"
-        android:layout_height="150dp"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
         android:id="@+id/imageView"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
@@ -54,7 +57,8 @@
         android:id="@+id/linearLayout"
         android:layout_alignRight="@+id/textView3"
         android:layout_alignEnd="@+id/textView3"
-        android:gravity="center">
+        android:gravity="center"
+        android:layout_marginBottom="15dp">
 
         <ImageButton
             android:layout_width="50dp"
@@ -117,7 +121,8 @@
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/linearLayout">
+        android:layout_below="@+id/linearLayout"
+        android:weightSum="1">
 
         <TextView
             android:layout_width="wrap_content"
@@ -128,12 +133,14 @@
             android:layout_gravity="center_horizontal"
             android:textSize="24dp"
             android:textStyle="bold"
-            android:typeface="serif" />
+            android:typeface="serif"
+            android:layout_marginBottom="5dp" />
 
         <ScrollView
             android:layout_width="wrap_content"
-            android:layout_height="110dp"
-            android:id="@+id/scrollView2" >
+            android:layout_height="59dp"
+            android:id="@+id/scrollView2"
+            android:layout_gravity="center_horizontal">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -143,7 +150,7 @@
                 android:layout_gravity="center_horizontal"
 
                 android:textSize="16dp"
-                android:text="hfuiwhruq ahdoiuadk akjdbiahdj akjdniuauhdiuhaofiu"
+                android:text="fdshfdsfds"
                 android:textAlignment="center" />
         </ScrollView>
 

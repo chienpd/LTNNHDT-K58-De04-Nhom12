@@ -15,7 +15,8 @@
         android:orientation="horizontal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal">
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="25dp">
 
         <ImageButton
             android:layout_width="50dp"
@@ -54,13 +55,14 @@
         android:weightSum="1">
 
         <ImageView
-            android:layout_width="296dp"
-            android:layout_height="297dp"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
             android:id="@+id/imageView8"
             android:background="@mipmap/mlogo"
             android:layout_above="@+id/button1"
             android:layout_centerHorizontal="true"
-            android:layout_gravity="center_horizontal" />
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="20dp" />
 
         <Button
             android:layout_width="fill_parent"
@@ -73,7 +75,7 @@
             android:textColor="#ffffff"
             android:textStyle="bold"
             android:typeface="serif"
-            android:textSize="20dp"
+            android:textSize="18dp"
             android:onClick="Play"
             android:layout_gravity="center_horizontal" />
 
@@ -86,7 +88,7 @@
             android:textColor="#ffffff"
             android:textStyle="normal|bold"
             android:typeface="serif"
-            android:textSize="20dp"
+            android:textSize="18dp"
             android:layout_below="@+id/button1"
             android:layout_centerHorizontal="true"
             android:onClick="Help"
@@ -101,7 +103,7 @@
             android:textColor="#ffffff"
             android:textStyle="normal|bold"
             android:typeface="serif"
-            android:textSize="20dp"
+            android:textSize="18dp"
             android:onClick="About"
             android:layout_below="@+id/button3"
             android:layout_centerHorizontal="true" />

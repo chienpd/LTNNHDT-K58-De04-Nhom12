@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="17492915-f462-41e2-97b4-eb7cf01d72d9" name="Default" comment="">
+    <list default="true" id="d54db3fa-68d8-4fc4-a281-9843987c0455" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="/mnt/DATA/Dropbox/LTNNHDT-K58-De04-Nhom12_AiLaTrieuPhu/app/src/main/assets/databases/Question.db" />
+      <change type="NEW" beforePath="" afterPath="/mnt/DATA/Dropbox/LTNNHDT-K58-De04-Nhom12_AiLaTrieuPhu/app/src/main/res/mipmap-hdpi/bg_altpx.jpg" />
       <change type="MODIFICATION" beforePath="/mnt/DATA/Dropbox/LTNNHDT-K58-De04-Nhom12_AiLaTrieuPhu/.gradle/2.10/taskArtifacts/cache.properties.lock" afterPath="/mnt/DATA/Dropbox/LTNNHDT-K58-De04-Nhom12_AiLaTrieuPhu/.gradle/2.10/taskArtifacts/cache.properties.lock" />
       <change type="MODIFICATION" beforePath="/mnt/DATA/Dropbox/LTNNHDT-K58-De04-Nhom12_AiLaTrieuPhu/.gradle/2.10/taskArtifacts/fileHashes.bin" afterPath="/mnt/DATA/Dropbox/LTNNHDT-K58-De04-Nhom12_AiLaTrieuPhu/.gradle/2.10/taskArtifacts/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="/mnt/DATA/Dropbox/LTNNHDT-K58-De04-Nhom12_AiLaTrieuPhu/.gradle/2.10/taskArtifacts/fileSnapshots.bin" afterPath="/mnt/DATA/Dropbox/LTNNHDT-K58-De04-Nhom12_AiLaTrieuPhu/.gradle/2.10/taskArtifacts/fileSnapshots.bin" />
       <change type="MODIFICATION" beforePath="/mnt/DATA/Dropbox/LTNNHDT-K58-De04-Nhom12_AiLaTrieuPhu/.gradle/2.10/taskArtifacts/outputFileStates.bin" afterPath="/mnt/DATA/Dropbox/LTNNHDT-K58-De04-Nhom12_AiLaTrieuPhu/.gradle/2.10/taskArtifacts/outputFileStates.bin" />
       <change type="MODIFICATION" beforePath="/mnt/DATA/Dropbox/LTNNHDT-K58-De04-Nhom12_AiLaTrieuPhu/.gradle/2.10/taskArtifacts/taskArtifacts.bin" afterPath="/mnt/DATA/Dropbox/LTNNHDT-K58-De04-Nhom12_AiLaTrieuPhu/.gradle/2.10/taskArtifacts/taskArtifacts.bin" />
-      <change type="MODIFICATION" beforePath="/mnt/DATA/Dropbox/LTNNHDT-K58-De04-Nhom12_AiLaTrieuPhu/.idea/.name" afterPath="/mnt/DATA/Dropbox/LTNNHDT-K58-De04-Nhom12_AiLaTrieuPhu/.idea/.name" />
-      <change type="MODIFICATION" beforePath="/mnt/DATA/Dropbox/LTNNHDT-K58-De04-Nhom12_AiLaTrieuPhu/.idea/gradle.xml" afterPath="/mnt/DATA/Dropbox/LTNNHDT-K58-De04-Nhom12_AiLaTrieuPhu/.idea/gradle.xml" />
-      <change type="MODIFICATION" beforePath="/mnt/DATA/Dropbox/LTNNHDT-K58-De04-Nhom12_AiLaTrieuPhu/.idea/libraries/animated_vector_drawable_23_3_0.xml" afterPath="/mnt/DATA/Dropbox/LTNNHDT-K58-De04-Nhom12_AiLaTrieuPhu/.idea/libraries/animated_vector_drawable_23_3_0.xml" />
+      <change type="MODIFICATION" beforePath="/mnt/DATA/Dropbox/LTNNHDT-K58-De04-Nhom12_AiLaTrieuPhu/.gradle/2.10/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" afterPath="/mnt/DATA/Dropbox/LTNNHDT-K58-De04-Nhom12_AiLaTrieuPhu/.gradle/2.10/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" />
+      <change type="MODIFICATION" beforePath="/mnt/DATA/Dropbox/LTNNHDT-K58-De04-Nhom12_AiLaTrieuPhu/.gradle/2.10/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" afterPath="/mnt/DATA/Dropbox/LTNNHDT-K58-De04-Nhom12_AiLaTrieuPhu/.gradle/2.10/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" />
+      <change type="MODIFICATION" beforePath="/mnt/DATA/Dropbox/LTNNHDT-K58-De04-Nhom12_AiLaTrieuPhu/.gradle/2.10/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.bin" afterPath="/mnt/DATA/Dropbox/LTNNHDT-K58-De04-Nhom12_AiLaTrieuPhu/.gradle/2.10/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.bin" />
+      <change type="MODIFICATION" beforePath="/mnt/DATA/Dropbox/LTNNHDT-K58-De04-Nhom12_AiLaTrieuPhu/.gradle/2.10/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterPath="/mnt/DATA/Dropbox/LTNNHDT-K58-De04-Nhom12_AiLaTrieuPhu/.gradle/2.10/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" />
+      <change type="MODIFICATION" beforePath="/mnt/DATA/Dropbox/LTNNHDT-K58-De04-Nhom12_AiLaTrieuPhu/build/generated/mockable-android-23.jar" afterPath="/mnt/DATA/Dropbox/LTNNHDT-K58-De04-Nhom12_AiLaTrieuPhu/build/generated/mockable-android-23.jar" />
+      <change type="MODIFICATION" beforePath="/mnt/DATA/Dropbox/LTNNHDT-K58-De04-Nhom12_AiLaTrieuPhu/.idea/compiler.xml" afterPath="/mnt/DATA/Dropbox/LTNNHDT-K58-De04-Nhom12_AiLaTrieuPhu/.idea/compiler.xml" />
       <change type="MODIFICATION" beforePath="/mnt/DATA/Dropbox/LTNNHDT-K58-De04-Nhom12_AiLaTrieuPhu/.idea/libraries/appcompat_v7_23_3_0.xml" afterPath="/mnt/DATA/Dropbox/LTNNHDT-K58-De04-Nhom12_AiLaTrieuPhu/.idea/libraries/appcompat_v7_23_3_0.xml" />
-      <change type="MODIFICATION" beforePath="/mnt/DATA/Dropbox/LTNNHDT-K58-De04-Nhom12_AiLaTrieuPhu/.idea/libraries/support_v4_23_3_0.xml" afterPath="/mnt/DATA/Dropbox/LTNNHDT-K58-De04-Nhom12_AiLaTrieuPhu/.idea/libraries/support_v4_23_3_0.xml" />
-      <change type="MODIFICATION" beforePath="/mnt/DATA/Dropbox/LTNNHDT-K58-De04-Nhom12_AiLaTrieuPhu/.idea/libraries/support_vector_drawable_23_3_0.xml" afterPath="/mnt/DATA/Dropbox/LTNNHDT-K58-De04-Nhom12_AiLaTrieuPhu/.idea/libraries/support_vector_drawable_23_3_0.xml" />
       <change type="MODIFICATION" beforePath="/mnt/DATA/Dropbox/LTNNHDT-K58-De04-Nhom12_AiLaTrieuPhu/.idea/misc.xml" afterPath="/mnt/DATA/Dropbox/LTNNHDT-K58-De04-Nhom12_AiLaTrieuPhu/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="/mnt/DATA/Dropbox/LTNNHDT-K58-De04-Nhom12_AiLaTrieuPhu/.idea/modules.xml" afterPath="/mnt/DATA/Dropbox/LTNNHDT-K58-De04-Nhom12_AiLaTrieuPhu/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="/mnt/DATA/Dropbox/LTNNHDT-K58-De04-Nhom12_AiLaTrieuPhu/.idea/vcs.xml" afterPath="/mnt/DATA/Dropbox/LTNNHDT-K58-De04-Nhom12_AiLaTrieuPhu/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="/mnt/DATA/Dropbox/LTNNHDT-K58-De04-Nhom12_AiLaTrieuPhu/.idea/workspace.xml" afterPath="/mnt/DATA/Dropbox/LTNNHDT-K58-De04-Nhom12_AiLaTrieuPhu/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="/mnt/DATA/Dropbox/LTNNHDT-K58-De04-Nhom12_AiLaTrieuPhu/app/app.iml" afterPath="/mnt/DATA/Dropbox/LTNNHDT-K58-De04-Nhom12_AiLaTrieuPhu/app/app.iml" />
-      <change type="MODIFICATION" beforePath="/mnt/DATA/Dropbox/LTNNHDT-K58-De04-Nhom12_AiLaTrieuPhu/app/src/main/java/chienphamk58/ailatrieuphu/Play.java" afterPath="/mnt/DATA/Dropbox/LTNNHDT-K58-De04-Nhom12_AiLaTrieuPhu/app/src/main/java/chienphamk58/ailatrieuphu/Play.java" />
     </list>
     <ignored path="LTNNHDT-K58-De04-Nhom12_AiLaTrieuPhu.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -1359,7 +1359,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="4384591481450" />
+        <entry key="$PROJECT_DIR$" value="4384591480619" />
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -1555,7 +1555,7 @@
                   </entry>
                 </map>
               </option>
-              <option name="name" value="LTNNHDT-K58-De04-Nhom12_AiLaTrieuPhu" />
+              <option name="name" value="app" />
               <option name="projectBuildClasspath">
                 <list>
                   <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.10-all/a4w5fzrkeut1ox71xslb49gst/gradle-2.10/src/ui" />
@@ -1685,9 +1685,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="24" />
-    <option name="width" value="1366" />
-    <option name="height" value="699" />
+    <option name="x" value="5" />
+    <option name="y" value="54" />
+    <option name="width" value="1361" />
+    <option name="height" value="671" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -1700,7 +1701,7 @@
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectView">
-    <navigator proportions="" version="1">
+    <navigator currentView="AndroidView" proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -1713,13 +1714,37 @@
       <manualOrder />
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes />
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="ProjectPane" />
+      <pane id="AndroidView">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LTNNHDT-K58-De04-Nhom12_AiLaTrieuPhu" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LTNNHDT-K58-De04-Nhom12_AiLaTrieuPhu" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="android.sdk.path" value="/mnt/DATA/Android_SDK/Sdk" />
     <property name="settings.editor.selected.configurable" value="android.sdk-updates" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="com.android.studio.selected.modules.on.import" value="LTNNHDT-K58-De04-Nhom12_AiLaTrieuPhu&#10;app" />
   </component>
   <component name="RunManager" selected="Android Application.app">
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
@@ -1882,25 +1907,28 @@
     </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="17492915-f462-41e2-97b4-eb7cf01d72d9" name="Default" comment="" />
-      <created>1462791289644</created>
+      <changelist id="d54db3fa-68d8-4fc4-a281-9843987c0455" name="Default" comment="" />
+      <created>1462877106703</created>
       <option name="number" value="Default" />
-      <updated>1462791289644</updated>
+      <updated>1462877106703</updated>
     </task>
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="24" width="1366" height="699" extended-state="6" />
+    <frame x="5" y="54" width="1361" height="671" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32723948" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32869565" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32906765" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1909,7 +1937,7 @@
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24942966" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
